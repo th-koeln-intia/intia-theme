@@ -1,37 +1,8 @@
-- name: Über die Plattform
-  link: /about_platform/
+- name: Über
   dropdown:
-    - name: Über die Plattform
-      link: /about_platform/
-    - name: Das INTIA-Projekt als Start 
+    - name: Projekt
       link: /about/
-    - name: Das Starter-Team
-      link: /team/
-    - name: Glossar
-      link: /glossary/
-- name: Innovations-Koffer
-  link: /innovation/
-  dropdown:
-    - name: Alles über den Koffer
-      link: /case/
-    - name: Kaufen
-      link: /buy/  
-    - name: Selbst bauen
-      link: /build/
-- name: Technologien
-  link: /technologies/
-  dropdown:
-    - name: Prototypen
-      link: /prototypes/
-    - name: Technikblöcke
-      link: /buildingblocks/
-    - name: Methoden
-      link: /methods/
-    - name: Entwurfsmuster
-      link: /patterns/
-- name: Stories
+    - name: Netzwerk
+      link: /network/
+- name: Aktuelles
   link: /stories/
-- name: Fachartikel
-  link: /science/
-- name: Kontakt
-  link: /contact/

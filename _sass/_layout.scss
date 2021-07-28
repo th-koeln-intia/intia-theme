@@ -1,41 +1,47 @@
+html * {
+  font-size: 1.1em;
+}
+.is-outlined {
+  border-width: 2px;
+  border-color: $primary-dark;
+}
 div.highlight {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 @include desktop {
-    .navbar-item {
-        &.is-hoverable:hover {
-            .navbar-dropdown {
-                display: block;
-            }
-        }
+  .navbar-item {
+    &.is-hoverable:hover {
+      .navbar-dropdown {
+        display: block;
+      }
     }
+  }
 }
 
 .contents {
-    box-shadow: $box-shadow;
-    padding: 1.5rem;
-    margin-bottom: 3rem;
-}
-
-.hero-darken {
-    background-color: rgba($hero-darken, 0.5);
+  box-shadow: $box-shadow;
+  padding: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 .content {
-    figure {
-        margin: 0;
-    }
+  figure {
+    margin: 0;
+  }
 }
 
 .callout {
-    &-icon {
-        width: 4rem;
-        height: 4rem;
-        margin-bottom: 0.75rem;
-    }
+  &-icon {
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 0.75rem;
+  }
 }
-.sticky	{
-	position: sticky;
-  	top: 30px;
+.sticky {
+  position: sticky;
+  top: 30px;
+}
+.navbar {
+  padding-top: 0.5rem;
 }

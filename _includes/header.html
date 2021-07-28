@@ -1,41 +1,41 @@
-<nav class="navbar is-hidden-print is-primary {% if site.fixed_navbar %} is-fixed-{{ site.fixed_navbar }} {% endif %}" x-data="{ openNav: false }">
+<nav class="navbar is-hidden-print is-primary is-fixed-top" x-data="{ openNav: false }">
     <div class="container">
         <div class="navbar-brand">
             <a href="{{ site.baseurl }}/" class="navbar-item">
+                <img src="/assets/img/logo.png">
                 {{ site.title }}
             </a>
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu"
+                :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
             </a>
         </div>
         <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
-            <div class="navbar-start">
+            <div class="navbar-end buttons">
                 {% if site.data.navigation %}
                 {% for item in site.data.navigation %}
-                    {% if item.dropdown %}
-                    <div class="navbar-item has-dropdown is-hoverable {% if site.fixed_navbar == 'bottom' %} has-dropdown-up {% endif %}">
-                        <a href="{{ item.link | relative_url }}" class="navbar-link {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
-                        <div class="navbar-dropdown">
-                            {% for subitem in item.dropdown %}
-                            <a href="{{ subitem.link | relative_url }}" class="navbar-item {% if subitem.link == page.url %}is-active{% endif %}">{{ subitem.name }}</a>
-                            {% endfor %}
-                        </div>
+                {% if item.dropdown %}
+                <div
+                    class="navbar-item  button is-rounded is-outlined has-text-primary-dark has-background-primary has-dropdown is-hoverable {% if site.fixed_navbar == 'bottom' %} has-dropdown-up {% endif %}">
+                    <a href="{{ item.link | relative_url }}"
+                        class="navbar-link {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
+                    <div class="navbar-dropdown">
+                        {% for subitem in item.dropdown %}
+                        <a href="{{ subitem.link | relative_url }}"
+                            class="navbar-item button is-rounded is-outlined has-text-primary-dark has-background-primary {% if subitem.link == page.url %}is-active{% endif %}">{{ subitem.name
+                            }}</a>
+                        {% endfor %}
                     </div>
-                    {% else %}
-                    <a href="{{ item.link | relative_url }}" class="navbar-item {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
-                    {% endif %}
+                </div>
+                {% else %}
+                <a href="{{ item.link | relative_url }}"
+                    class="navbar-item button is-rounded is-outlined has-text-weight-bold has-text-primary-dark has-background-primary {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
+                {% endif %}
                 {% endfor %}
                 {% endif %}
             </div>
-
-            <div class="navbar-end">
-                <a class="navbar-item" onclick=changeFontSize()>
-                    <span class="icon"><i class="fas fa-text-height"></i></span>
-                </a>
-            </div>
-
         </div>
     </div>
 </nav>
