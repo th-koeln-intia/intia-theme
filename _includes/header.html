@@ -18,20 +18,20 @@
                 {% for item in site.data.navigation %}
                 {% if item.dropdown %}
                 <div
-                    class="navbar-item  button is-rounded is-outlined has-text-primary-dark has-background-primary has-dropdown is-hoverable {% if site.fixed_navbar == 'bottom' %} has-dropdown-up {% endif %}">
+                    class="navbar-item button is-rounded is-dark has-dropdown is-hoverable {% if site.fixed_navbar == 'bottom' %} has-dropdown-up {% endif %}">
                     <a href="{{ item.link | relative_url }}"
                         class="navbar-link {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
                     <div class="navbar-dropdown">
                         {% for subitem in item.dropdown %}
                         <a href="{{ subitem.link | relative_url }}"
-                            class="navbar-item button is-rounded is-outlined has-text-primary-dark has-background-primary {% if subitem.link == page.url %}is-active{% endif %}">{{ subitem.name
+                            class="navbar-item button is-rounded is-dark  {% if subitem.link == page.url %}is-active{% endif %}">{{ subitem.name
                             }}</a>
                         {% endfor %}
                     </div>
                 </div>
                 {% else %}
                 <a href="{{ item.link | relative_url }}"
-                    class="navbar-item button is-rounded is-outlined has-text-weight-bold has-text-primary-dark has-background-primary {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
+                    class="navbar-item button is-rounded is-dark {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
                 {% endif %}
                 {% endfor %}
                 {% endif %}
