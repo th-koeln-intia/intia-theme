@@ -23,8 +23,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean convallis ut aug
   </div>
   <div class="card-content">
         <h2>Werkzeuge</h2>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Phasellus nec iaculis mauris.
+      Morbi at sodales augue. Nulla ac dolor ligula. Nam nec viverra velit. Duis sodales nisl non leo fermentum, et iaculis arcu congue. Aliquam erat volutpat. Maecenas pretium libero nisl, sed ultrices sem commodo id. Morbi porttitor sem non fringilla maximus.
       <a href="{{ item.link | relative_url }}"
                     class="navbar-item button is-rounded is-dark {% if item.link == page.url %}is-active{% endif %}">Zu den Werkzeugen ></a>
   </div>
@@ -39,8 +38,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean convallis ut aug
       <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" class="right">
     </figure>
         <h2>Lösungen</h2>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Phasellus nec iaculis mauris.
+      Nunc quis nisi quis velit consequat ultrices. Vivamus vel purus ac tortor venenatis convallis. Donec tempus, felis non ultricies congue, odio lorem luctus augue, nec iaculis sem sapien at turpis.
       <a href="{{ item.link | relative_url }}"
                     class="navbar-item button is-rounded is-dark {% if item.link == page.url %}is-active{% endif %}">Zu den Lösungen ></a>
   </div>
@@ -52,8 +50,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean convallis ut aug
       <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
     </figure>
         <h2>Wissen</h2>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Phasellus nec iaculis mauris.
+     Quisque a sagittis eros. Praesent sagittis, lacus a pellentesque gravida, ipsum lorem tincidunt libero, imperdiet auctor sapien nisl ac tellus. Praesent ut tortor orci. Curabitur blandit hendrerit mauris ut dignissim.
       <a href="{{ item.link | relative_url }}"
                     class="navbar-item button is-rounded is-dark {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
   </div>
