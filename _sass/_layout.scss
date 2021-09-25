@@ -59,6 +59,11 @@ div.highlight {
     color: white;
 }
 
+.card .button {
+    width: 30%;
+    text-align: right;
+}
+
 .button.is-dark {
     background-color: #229387;
 }
@@ -80,8 +85,14 @@ div.highlight {
     content: " >";
 }
 
-.article-post {
+.card {
     padding: 3rem 6.5rem;
+    box-shadow: none;
+    height: 600px;
+}
+
+.card .button {
+    margin-top: 50px;
 }
 
 .article-post h1{
@@ -98,11 +109,12 @@ div.highlight {
 .article-post img{
     float: left;
     width: 50%;
-    margin: 0 3rem 3rem;
+    margin: 0 5rem 3rem 0;
     border-radius: 65px;
 }
 .article-post img.right{
     float: right;
+    margin: 0 0 3rem 5rem;
 }
 
 .article-post p{
@@ -114,4 +126,18 @@ div.highlight {
     display: block;
     height: 150px;
     width: 100%;
+}
+
+.card-image {
+}
+
+.card-image:first-child img {
+    border-top-left-radius: 65px;
+    border-top-right-radius: 65px;
+}
+
+.green {
+    background-color: #e7f2ea;
+    height: 450px;
+    width: auto;
 }

@@ -4,8 +4,10 @@
 $family-primary: "Verdana", sans-serif;
 
 // Colors
-$primary: #d1e7d6 !default;
-$primary-light: #e7f2ea;
+//$primary: #d1e7d6 !default;
+$primary: #ffffff !default;
+//$primary-light: #e7f2ea;
+//$primary-light: #ffffff;
 $light: #e7f2ea;
 $primary-dark: #1e7d73;
 $dark: #1e7d73;
@@ -32,7 +34,9 @@ h1 {
   font-weight: 600;
 }
 h2 {
-  font-size: 2.5em;
+  font-size: 1.5em;   
+  font-weight: 600;
+  text-align: left;
 }
 h3 {
   font-size: 1.17em;
