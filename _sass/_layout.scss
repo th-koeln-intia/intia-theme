@@ -9,7 +9,9 @@ div.highlight {
 
 @include desktop {
     .navbar-item {
+        border-width: 2px;
         &.is-hoverable:hover {
+            border-width: 2px;
             .navbar-dropdown {
                 display: block;
             }
@@ -57,6 +59,7 @@ div.highlight {
 
 .navbar-link {
     color: white;
+    background-color: transparent;
 }
 
 .card .button {
@@ -67,7 +70,6 @@ div.highlight {
 .button.is-dark {
     background-color: #229387;
 }
-
 
 .subtitle {
     padding: 50px;
@@ -95,30 +97,32 @@ div.highlight {
     margin-top: 50px;
 }
 
-.article-post h1{
+.article-post h1 {
     padding-top: 50px;
 }
 
-.article-post h1:nth-of-type(1){
-    text-align: center;
-}
-.article-post p:nth-of-type(1){
+.article-post h1:nth-of-type(1) {
     text-align: center;
 }
 
-.article-post img{
+.article-post p:nth-of-type(1) {
+    text-align: center;
+}
+
+.article-post img {
     float: left;
     width: auto;
     margin: 0 5rem 3rem 0;
     border-radius: 65px;
     height: 500px;
 }
-.article-post img.right{
+
+.article-post img.right {
     float: right;
     margin: 0 0 3rem 5rem;
 }
 
-.article-post p{
+.article-post p {
     display: block;
 }
 
@@ -129,8 +133,7 @@ div.highlight {
     width: 100%;
 }
 
-.card-image {
-}
+.card-image {}
 
 .card-image:first-child img {
     border-top-left-radius: 65px;
