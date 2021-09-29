@@ -18,9 +18,13 @@ The Default layout that everything is using
         <div class="content-wrapper has-background-primary-light">
             
             {% include story-slider.html %}
-            {% include introduction.html %}
-            {% include left-right-blocks.html %}
-            {{content}}
+            <div class="columns is-centered">
+                <div class="column is-10-desktop is-12-tablet">
+                    {% include introduction.html %}
+                    {% include left-right-blocks.html %}
+                    {{content | markdownify}}
+                </div>
+            </div> 
         </div> 
         {% unless page.hide_footer %}
             {% include footer.html %}

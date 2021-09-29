@@ -24,3 +24,7 @@
   dropdown:
     - name: Mitmachen
       link: /mitmachen/
+- name: Demos
+  dropdown:
+    - name: Button
+      link: /buttons/
