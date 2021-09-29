@@ -11,9 +11,27 @@
             {% endfor %}
         </div>
         {% endif %}
+        {% if site.data.navigation %}
+        <div class="columns">
+            {% for item in site.data.navigation %}
+                <div class="column has-text-centered">
+                    <a href="{{ subitem.link | relative_url }} " class="link"><strong>{{ item.name }}</strong></a>
+                    {% if item.dropdown %}
+                    <div class="columns">
+                        {% for subitem in item.dropdown %}
+                        <div class="column">
+                            <a href="{{ subitem.link | relative_url }}" class="link">{{ subitem.name }}</a>
+                        </div>
+                        {% endfor %}
+                    </div>                                            
+                {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+        {% endif %}
 
         <div class="content is-small has-text-centered">
-            <p class="">Theme is based on Bulma Clean Theme from <a class="link" href="https://www.csrhymes.com">C.S. Rhymes</a></p>
+            <p class="">INTIA, 2021</p>
         </div>
     </div>
 </footer>

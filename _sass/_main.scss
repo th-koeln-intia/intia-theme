@@ -1,8 +1,7 @@
 // Font
 @charset "utf-8";
 @import url("https://fonts.googleapis.com/css?family=Verdana");
-$family-primary: "Verdana",
-sans-serif;
+$family-primary: "Verdana", sans-serif;
 // Colors
 //$primary: #d1e7d6 !default;
 $primary: #ffffff !default;
@@ -10,7 +9,7 @@ $primary: #ffffff !default;
 //$primary-light: #ffffff;
 $light: #e7f2ea;
 $primary-dark: #1e7d73;
-$dark: #09443E;
+$dark: #09443e;
 //$navbar-box-shadow-color: transparent;
 // Bulma
 @import "../node_modules/bulma/bulma.sass";
@@ -23,65 +22,72 @@ $tabs-link-active-color: $primary;
 $tabs-link-active-border-bottom-color: $primary;
 // Global
 html * {
-    font-size: 16px;
+  font-size: 16px;
 }
 
-h1 {
-    font-size: 3.5rem;
-    font-weight: 600;
+h1,
+h1 p {
+  font-size: 3.5rem;
+  font-weight: 600;
 }
 
-h2 {
-    font-size: 1.5em;
-    font-weight: 600;
-    text-align: left;
+h2,
+h2 p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: left;
 }
 
 h3 {
-    font-size: 1.17em;
+  font-size: 1.17rem;
 }
 
 h4 {
-    font-size: 1em;
+  font-size: 1rem;
 }
 
 h5 {
-    font-size: 0.83em;
+  font-size: 0.83rem;
 }
 
 .button.is-dark:hover,
 .button.is-dark.is-hovered {
-    border-width: 2px;
-    background-color: $dark;
-    border-color: $dark;
-    color: $dark;
+  border-width: 2px;
+  background-color: $dark;
+  border-color: $dark;
+  color: white;
+}
+
+.navbar-brand a.navbar-item img {
+  margin-right: 15px;
 }
 
 .navbar-dropdown,
 .navbar-item:focus,
 .navbar-dropdown a.navbar-item:focus,
 .navbar-dropdown a.navbar-item:hover {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .navbar-dropdown {
-    border-top: transparent;
-    background-color: transparent;
+  border-top: transparent;
+  background-color: transparent;
 }
 
-.navbar-item.button.is-rounded.is-dark.has-dropdown.is-hoverable {}
+.navbar-item.button.is-rounded.is-dark.has-dropdown.is-hoverable {
+}
 
 .footer {
-    background-color: $primary-dark;
-    color: white;
+  background-color: $primary-dark;
+  color: white;
 }
 
 .link {
-    color: $primary;
+  color: $primary;
 }
 
 .footer .link {
-    color: white;
+  color: white;
 }
 
 // Specific styles

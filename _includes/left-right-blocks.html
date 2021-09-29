@@ -1,0 +1,46 @@
+{% if page.left_right_layout %}
+    {% assign layout=site.data.[page.left_right_layout] %}
+        {% for section in layout.sections %}
+        {% capture isEven %}{% cycle 'false', 'true' %}{% endcapture %}
+        <div class="card columns">
+        {% if isEven == 'false' %}
+            <div class="card-image left">
+                <figure class="image">
+                    <img src={{section.image}} alt="placeholder" class="left">
+                </figure>
+            </div>
+            <div class="card-content">
+                <h2>{{ section.title | markdownify  }}</h2>
+                    {{ section.text | markdownify  }}
+                
+                    <a href="{{ section.link | relative_url }}" class="button is-rounded is-dark {% if item.link == page.url %}is-active{% endif %}">
+                        <span>Mehr Lesen</span>
+                        <span class="icon is-small">
+                        <i class="fas fa-chevron-right"></i>
+                        </span>
+                    </a>                    
+            </div>
+        {% else %}
+        <div class="card-content">
+            <h2>{{ section.title | markdownify  }}</h2>
+                {{ section.text | markdownify  }}
+            
+                <a href="{{ section.link | relative_url }}" class="button is-rounded is-dark {% if item.link == page.url %}is-active{% endif %}">
+                    <span>Mehr Lesen</span>
+                    <span class="icon is-small">
+                    <i class="fas fa-chevron-right"></i>
+                    </span>
+                </a>                    
+        </div>
+            <div class="card-image right">
+                <figure class="image">
+                    <img src={{section.image}} alt="placeholder" class="right">
+                </figure>
+            </div>
+        {% endif %}       
+                
+                             
+            </div>
+        <div class="clear"></div>
+        {% endfor %}
+{% endif %}
