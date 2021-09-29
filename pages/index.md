@@ -12,3 +12,5 @@ introduction_content: |
   INTIA bietet Lösungen und Wissen zur partizipativen und inklusiven Technikentwicklung an. In den Kategorien Werkzeuge, Lösungen und Wissen gibt es Produkte, Prototypen und Methoden zum Nachbauen, Mitmachen und Weiterentwickeln.
 left_right_layout: landing-page
 ---
+
+<i class="fas {{ section.icon }}"></i>

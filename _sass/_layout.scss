@@ -77,11 +77,6 @@ div.highlight {
   background-color: transparent;
 }
 
-.card .button {
-  width: 30%;
-  text-align: right;
-}
-
 .button.is-dark {
   background-color: #229387;
 }
@@ -119,7 +114,11 @@ div.highlight {
 }
 
 .content-wrapper p {
-  display: block;
+    display: inline-block;
+}
+
+.card-content h2 p {
+  padding-left: 15px;
 }
 
 .clear {
@@ -144,6 +143,10 @@ div.highlight {
 h2 {
   background-repeat: no-repeat;
   background-size: auto 35px;
+}
+
+h2 p {
+  font-family: "Verdana",sans-serif;
 }
 
 .card-content {
