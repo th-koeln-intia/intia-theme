@@ -1,11 +1,11 @@
 ---
-title: Willkommen auf INTIA
+title: Willkommen auf der Plattform INTIA!
 subtitle: |
-  Kurze Beschreibung Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.
+  Hier kommen Fachkräfte der Sozialen Arbeit, Entwickler:innen und Wissenschaftler:innen zusammen, um gemeinsam mit betroffenen Jugendlichen Technik und digitale Hilfen zur Alltagsbewältigung zu entwickeln und weiterzugeben.
 hero_image: https://via.placeholder.com/440x638
 hero_link: /about/
 hero_link_text: Mehr über INTIA
 permalink: /
-story_slieder: landing-page
+story_slider: landing-page
 left_right_layout: landing-page
 ---
