@@ -1,156 +1,154 @@
 .is-outlined {
-    border-width: 2px;
-    border-color: $primary-dark;
+  border-width: 2px;
+  border-color: $primary-dark;
 }
 
 div.highlight {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 @include desktop {
-    .navbar-item {
-        border-width: 2px;
-        &.is-hoverable:hover {
-            border-width: 2px;
-            .navbar-dropdown {
-                display: block;
-            }
-        }
+  .navbar-item {
+    border-width: 2px;
+    &.is-hoverable:hover {
+      border-width: 2px;
+      .navbar-dropdown {
+        display: block;
+      }
     }
+  }
 }
 
 .contents {
-    box-shadow: $box-shadow;
-    padding: 1.5rem;
-    margin-bottom: 3rem;
+  box-shadow: $box-shadow;
+  padding: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 .content {
-    figure {
-        margin: 0;
-    }
+  figure {
+    margin: 0;
+  }
 }
 
 .callout {
-    &-icon {
-        width: 4rem;
-        height: 4rem;
-        margin-bottom: 0.75rem;
-    }
+  &-icon {
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 0.75rem;
+  }
 }
 
 .sticky {
-    position: sticky;
-    top: 30px;
+  position: sticky;
+  top: 30px;
 }
 
 .navbar {
-    padding-top: 1rem;
+  padding-top: 1rem;
 }
 
 // Bearbeitet
 .hero-body {
-    background-color: white;
+  background-color: white;
 }
 
 .navbar.is-primary {
-    background-color: white;
+  background-color: white;
 }
 
 .navbar-link {
-    color: white;
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .card .button {
-    width: 30%;
-    text-align: right;
+  width: 30%;
+  text-align: right;
 }
 
 .button.is-dark {
-    background-color: #229387;
+  background-color: #229387;
 }
 
 .subtitle {
-    padding: 50px;
+  padding: 50px;
 }
 
 .title.is-2 {
-    font-size: 3.5rem;
+  font-size: 3.5rem;
 }
 
 .hero-body .container .button {
-    float: right;
+  float: right;
 }
 
 .hero-body .container .button::after {
-    content: " >";
+  content: " >";
 }
 
 .card {
-    padding: 5rem 15rem;
-    box-shadow: none;
+  padding: 5rem 15rem;
+  box-shadow: none;
 }
 
 .card .button {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .content-wrapper h1 {
-    padding-top: 50px;
+  padding-top: 50px;
 }
 
 .content-wrapper img {
-    min-width: 400px;
-    border-radius: 65px;
-    height: auto;
+  min-width: 400px;
+  border-radius: 65px;
+  height: auto;
 }
 
 .content-wrapper img.right {
 }
 
 .content-wrapper p {
-    display: block;
+  display: block;
 }
 
 .clear {
-    clear: both;
-    display: block;
-    width: 100%;
+  clear: both;
+  display: block;
+  width: 100%;
 }
 
-.card-image {}
+.card-image {
+}
 
 .card-image:first-child img {
-    border-top-left-radius: 65px;
-    border-top-right-radius: 65px;
+  border-top-left-radius: 65px;
+  border-top-right-radius: 65px;
 }
 
 .green {
-    background-color: #e7f2ea;
-    height: 450px;
-    width: auto;
+  background-color: #e7f2ea;
+  height: 450px;
+  width: auto;
 }
 h2 p {
-    background-image: url("https://via.placeholder.com/64x64");
-    background-repeat: no-repeat;
-    background-size: auto 35px;
-    }
-
-.card-content {   
-    width: 100%; 
-    display: flow-root;
-    margin: auto;
-
+  background-image: url("https://via.placeholder.com/64x64");
+  background-repeat: no-repeat;
+  background-size: auto 35px;
 }
-.card-content p{
-    padding-left: 50px;
+
+.card-content {
+  width: 100%;
+  display: flow-root;
+  margin: auto;
 }
-.card-content a{
-    
-    margin-left: 50px;
+.card-content p {
+  padding-left: 50px;
+}
+.card-content a {
+  margin-left: 50px;
 }
 .card-image:last-child img {
-    border-bottom-left-radius: 65px;
-    border-bottom-right-radius: 65px;
+  border-bottom-left-radius: 65px;
+  border-bottom-right-radius: 65px;
 }
