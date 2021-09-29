@@ -53,6 +53,22 @@ div.highlight {
   background-color: white;
 }
 
+// check das bitte
+.hero.is-large .hero-body {
+  padding-bottom: 12rem;
+}
+
+.hero-body img {
+  float: right;
+  margin-left: 200px;
+} 
+.hero {
+  display: block;
+}
+
+
+// bis hier
+
 .navbar.is-primary {
   background-color: white;
 }
@@ -146,4 +162,8 @@ h2 {
 .card-image:last-child img {
   border-bottom-left-radius: 65px;
   border-bottom-right-radius: 65px;
+}
+
+img.is-rounded {
+  border-radius: 65px;
 }
