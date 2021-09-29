@@ -10,7 +10,7 @@
                 </figure>
             </div>
             <div class="card-content">
-                <h2 style="background-image:url("https://via.placeholder.com/64x64")">{{ section.title | markdownify  }}</h2>
+                <h2 style="background-image:url('https://via.placeholder.com/64x64.jpg')">{{ section.title | markdownify  }}</h2>
                     {{ section.text | markdownify  }}
                 
                     <a href="{{ section.link | relative_url }}" class="button is-rounded is-dark {% if item.link == page.url %}is-active{% endif %}">
@@ -22,7 +22,7 @@
             </div>
         {% else %}
         <div class="card-content">
-            <h2 style="background-image:url("https://via.placeholder.com/64x64")">{{ section.title | markdownify  }}</h2>
+            <h2 style="background-image:url('https://via.placeholder.com/64x64.jpg')">{{ section.title | markdownify  }}</h2>
                 {{ section.text | markdownify  }}
             
                 <a href="{{ section.link | relative_url }}" class="button is-rounded is-dark {% if item.link == page.url %}is-active{% endif %}">
