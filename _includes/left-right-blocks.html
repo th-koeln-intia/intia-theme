@@ -14,7 +14,10 @@
                     {{ section.text | markdownify  }}
                 
                     <a href="{{ section.link | relative_url }}" class="navbar-item button is-rounded is-dark {% if item.link == page.url %}is-active{% endif %}">
-                        Mehr Lesen
+                        <span>Mehr Lesen</span>
+                        <span class="icon is-small">
+                        <i class="fas fa-chevron-right"></i>
+                        </span>
                     </a>                    
             </div>
         {% else %}
@@ -23,7 +26,10 @@
                 {{ section.text | markdownify  }}
             
                 <a href="{{ section.link | relative_url }}" class="navbar-item button is-rounded is-dark {% if item.link == page.url %}is-active{% endif %}">
-                    Mehr Lesen
+                    <span>Mehr Lesen</span>
+                    <span class="icon is-small">
+                    <i class="fas fa-chevron-right"></i>
+                    </span>
                 </a>                    
         </div>
             <div class="card-image right">

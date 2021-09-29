@@ -1,23 +1,23 @@
 style: landing-page-main-content
 sections:
-  - title: Die Idee hinter der Plattform
+  - title: Werkzeuge
     text: |
-        Was bietet die Plattform? Wie kann ich mich beteiligen? Warum wurde das Projekt INTIA gestartet? Und wer steckt dahinter?<br>
+      Sammlung aller Werkzeuge zum Selber-Bauen und Entwickeln eigener Lösungsideen: Methoden, Entwurfsmuster, Anleitungen.
     image: https://via.placeholder.com/1200x800
-    link: /about_platform/
-  - title: Innovations-Koffer
+    icon: fa-tools
+    link: /werkzeuge/
+    link_text: Zu den Werkzeugen
+  - title: Lösungen
     text: |
-        Der oder besser gesagt die Innovations-Koffer sind das Ergebnis der partizipativen Technikentwicklung mit Jugendlichen.<br>
-        Was sie enthalten, wie sie genutzt werden können und wo sie erhältlich sind erfährst du hier.
+        Ideen für technik-bezogene Alltagsprobleme als erste Prototypen: Building Blocks zum Nachbau von Prototypen oder Weiterverwendung sowie ein Baukasten (Toolkit) zur Bedarfserhebung.
     image: https://via.placeholder.com/1200x800
-    link: /innovation/
-  - title: Technologien
+    icon: fa-key
+    link: /loesungen/
+    link_text: Zu den Lösungen
+  - title: Wissen
     text: |
-        Alles rund um das partizipative Entwickeln von digitalen Alltagshelfern. Technik, Methoden und wichtige Begriffe. 
+        Erklärung der verwendeten Begriffe, wissenschaftliche Texte zu partizipativer und inklusiver Technikentwicklung und eigene Veröffentlichungen des Forschungsprojektes.
     image: https://via.placeholder.com/1200x800
-    link: /technologies/
-  - title: Stories
-    text: |
-        Hier erfährst du, was gerade in der Community los ist. 
-    image: https://via.placeholder.com/1200x800
-    link: /stories/
+    icon: fa-case
+    link: /wissen/
+    link_text: Zum Wissen

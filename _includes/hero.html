@@ -4,7 +4,12 @@
             <h1 class="title is-2">{{ page.title }}</h1>
             <p class="subtitle is-3">{{ page.subtitle }}</p>
             {% if page.hero_link %}
-                <a href="{{ page.hero_link | relative_url }}" class="button is-rounded is-large is-dark">{{ page.hero_link_text }}</a>
+                <a href="{{ page.hero_link | relative_url }}" class="button is-rounded is-large is-dark">
+                    <span>{{ page.hero_link_text }}</span>
+                    <span class="icon is-small">
+                    <i class="fas fa-chevron-right"></i>
+                    </span>
+                </a>
             {% endif %}
         </div>
     </div>
