@@ -1,44 +1,147 @@
 .is-outlined {
-  border-width: 2px;
-  border-color: $primary-dark;
+    border-width: 2px;
+    border-color: $primary-dark;
 }
+
 div.highlight {
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 @include desktop {
-  .navbar-item {
-    &.is-hoverable:hover {
-      .navbar-dropdown {
-        display: block;
-      }
+    .navbar-item {
+        border-width: 2px;
+        &.is-hoverable:hover {
+            border-width: 2px;
+            .navbar-dropdown {
+                display: block;
+            }
+        }
     }
-  }
 }
 
 .contents {
-  box-shadow: $box-shadow;
-  padding: 1.5rem;
-  margin-bottom: 3rem;
+    box-shadow: $box-shadow;
+    padding: 1.5rem;
+    margin-bottom: 3rem;
 }
 
 .content {
-  figure {
-    margin: 0;
-  }
+    figure {
+        margin: 0;
+    }
 }
 
 .callout {
-  &-icon {
-    width: 4rem;
-    height: 4rem;
-    margin-bottom: 0.75rem;
-  }
+    &-icon {
+        width: 4rem;
+        height: 4rem;
+        margin-bottom: 0.75rem;
+    }
 }
+
 .sticky {
-  position: sticky;
-  top: 30px;
+    position: sticky;
+    top: 30px;
 }
+
 .navbar {
-  padding-top: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+// Bearbeitet
+.hero-body {
+    background-color: white;
+}
+
+.navbar.is-primary {
+    background-color: white;
+}
+
+.navbar-link {
+    color: white;
+    background-color: transparent;
+}
+
+.card .button {
+    width: 30%;
+    text-align: right;
+}
+
+.button.is-dark {
+    background-color: #229387;
+}
+
+.subtitle {
+    padding: 50px;
+}
+
+.title.is-2 {
+    font-size: 3.5rem;
+}
+
+.hero-body .container .button {
+    float: right;
+}
+
+.hero-body .container .button::after {
+    content: " >";
+}
+
+.card {
+    padding: 3rem 10rem;
+    box-shadow: none;
+    height: 600px;
+}
+
+.card .button {
+    margin-top: 50px;
+}
+
+.article-post h1 {
+    padding-top: 50px;
+}
+
+.article-post h1:nth-of-type(1) {
+    text-align: center;
+}
+
+.article-post p:nth-of-type(1) {
+    text-align: center;
+}
+
+.article-post img {
+    float: left;
+    width: auto;
+    margin: 0 5rem 3rem 0;
+    border-radius: 65px;
+    height: 500px;
+}
+
+.article-post img.right {
+    float: right;
+    margin: 0 0 3rem 5rem;
+}
+
+.article-post p {
+    display: block;
+}
+
+.clear {
+    clear: both;
+    display: block;
+    height: 150px;
+    width: 100%;
+}
+
+.card-image {}
+
+.card-image:first-child img {
+    border-top-left-radius: 65px;
+    border-top-right-radius: 65px;
+}
+
+.green {
+    background-color: #e7f2ea;
+    height: 450px;
+    width: auto;
 }

@@ -1,2 +1,2 @@
-# The INTIA Plattform
-can be found on portal.intia.de
+# The INTIA Theme
+Can be found on theme.intia.de

@@ -4,5 +4,23 @@
       link: /about/
     - name: Netzwerk
       link: /network/
+- name: Werkzeuge
+  dropdown:
+    - name: Werkzeuge
+      link: /werkzeuge/
+- name: Lösungen
+  dropdown:
+    - name: Lösungen
+      link: /loesungen/
+- name: Wissen
+  dropdown:
+    - name: Wissen
+      link: /wissen/
 - name: Aktuelles
-  link: /stories/
+  dropdown:
+    - name: Stories
+      link: /stories/
+- name: Mitmachen
+  dropdown:
+    - name: Mitmachen
+      link: /mitmachen/
