@@ -15,7 +15,10 @@ The Default layout that everything is using
         {% else %}
             
         {% endunless %}
-        <div class="article-post has-background-primary-light">
+        <div class="content-wrapper has-background-primary-light">
+            
+            {% include story-slieder.html %}
+            {% include left-right-blocks.html %}
             {{content}}
         </div> 
         {% unless page.hide_footer %}

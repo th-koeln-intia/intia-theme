@@ -45,7 +45,7 @@ div.highlight {
 }
 
 .navbar {
-    padding-top: 0.5rem;
+    padding-top: 1rem;
 }
 
 // Bearbeitet
@@ -88,48 +88,34 @@ div.highlight {
 }
 
 .card {
-    padding: 3rem 10rem;
+    padding: 5rem 15rem;
     box-shadow: none;
-    height: 600px;
 }
 
 .card .button {
     margin-top: 50px;
 }
 
-.article-post h1 {
+.content-wrapper h1 {
     padding-top: 50px;
 }
 
-.article-post h1:nth-of-type(1) {
-    text-align: center;
-}
-
-.article-post p:nth-of-type(1) {
-    text-align: center;
-}
-
-.article-post img {
-    float: left;
-    width: auto;
-    margin: 0 5rem 3rem 0;
+.content-wrapper img {
+    min-width: 400px;
     border-radius: 65px;
-    height: 500px;
+    height: auto;
 }
 
-.article-post img.right {
-    float: right;
-    margin: 0 0 3rem 5rem;
+.content-wrapper img.right {
 }
 
-.article-post p {
+.content-wrapper p {
     display: block;
 }
 
 .clear {
     clear: both;
     display: block;
-    height: 150px;
     width: 100%;
 }
 
@@ -144,4 +130,27 @@ div.highlight {
     background-color: #e7f2ea;
     height: 450px;
     width: auto;
+}
+h2 p {
+    background-image: url("https://via.placeholder.com/64x64");
+    background-repeat: no-repeat;
+    background-size: auto 35px;
+    }
+
+.card-content {   
+    width: 100%; 
+    display: flow-root;
+    margin: auto;
+
+}
+.card-content p{
+    padding-left: 50px;
+}
+.card-content a{
+    
+    margin-left: 50px;
+}
+.card-image:last-child img {
+    border-bottom-left-radius: 65px;
+    border-bottom-right-radius: 65px;
 }
