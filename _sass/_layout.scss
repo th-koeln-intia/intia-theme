@@ -65,7 +65,9 @@ div.highlight {
 .hero {
   display: block;
 }
-
+.hero.is-primary .title {
+  color: rgba(0,0,0,1);
+}
 
 // bis hier
 
@@ -85,9 +87,7 @@ div.highlight {
   padding: 50px;
 }
 
-.title.is-2 {
-  font-size: 3.5rem;
-}
+
 
 .hero-body .container .button {
   float: right;
@@ -139,6 +139,7 @@ div.highlight {
   background-color: #e7f2ea;
   height: 450px;
   width: auto;
+  padding: 75px;
 }
 h2 {
   background-repeat: no-repeat;
