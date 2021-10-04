@@ -45,15 +45,13 @@ div.highlight {
 }
 
 .navbar {
-  padding-top: 1rem;
+  padding: 0.5rem;
 }
 
-// Bearbeitet
+// Hero
 .hero-body {
   background-color: white;
 }
-
-// check das bitte
 .hero.is-large .hero-body {
   padding-bottom: 12rem;
 }
@@ -67,6 +65,10 @@ div.highlight {
 }
 .hero.is-primary .title {
   color: rgba(0,0,0,1);
+  padding-top: 70px;
+} 
+.hero.is-medium .hero-body {
+    padding: 13rem 9rem 4.5rem;
 }
 
 // bis hier
@@ -168,4 +170,13 @@ h2 p {
 
 img.is-rounded {
   border-radius: 65px;
+}
+
+// Footer
+
+.footer {  
+  margin-top: 10rem;
+}
+.footer-logos img {
+  height: 100px;
 }
