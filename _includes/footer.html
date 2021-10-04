@@ -1,9 +1,8 @@
 <footer class="footer is-hidden-print is-primary">
-    <div class="container columns">
+    <div class="container columns is-centered">
         
         <div class="column is-2">
-            <a href="intia.de"><u>www.intia.de</u></a>
-                <br>
+            <div class="title">www.intia.de</div>
                 TH-Köln | DITIS<br>
                 Campus Südstadt<br>
                 Ubierring 48<br>
@@ -12,9 +11,10 @@
         </div>
         {% if site.data.navigation %}
         <div class="column ">
+            <div class="title">Site Map</div>
             <div class="columns">
                 {% for item in site.data.navigation %}
-                    <div class="column has-text-centered">
+                    <div class="column">
                         <a href="{{ subitem.link | relative_url }} " class="link"><strong>{{ item.name }}</strong></a>
                         {% if item.dropdown %}
                         <div class="">
@@ -32,9 +32,10 @@
         {% endif %}
         {% if site.footer_menu %}
         <div class="column is-2">
+            <div class="title">Rechtliches</div>
             <div class="">
                 {% for item in site.data[site.footer_menu] %}
-                <div class="has-text-centered">
+                <div class="">
                     <div>
                         <a href="{{ item.link | relative_url }}" class="link">{{ item.name }}</a>
                     </div>
