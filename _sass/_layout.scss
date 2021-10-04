@@ -7,6 +7,9 @@ div.highlight {
   margin-bottom: 1rem;
 }
 
+
+
+
 @include desktop {
   .navbar-item {
     border-width: 2px;
@@ -186,4 +189,23 @@ img.is-rounded {
   text-decoration: underline;
   font-weight: 600;  
   font-size: 1rem;
+}
+footer .columns {
+  margin-left: auto;
+  margin-right: auto;
+}
+@include mobile {
+  .button {
+    height: auto;
+    }
+  .buttons {
+    display: table-caption;
+    }
+  .navbar-menu {
+    background-color: #229387;
+  }
+  .hero.is-medium .hero-body {
+    padding: 5rem 1rem 4.5rem;
+}
+
 }
