@@ -51,34 +51,62 @@ h4 {
 h5 {
   font-size: 0.83rem;
 }
+// Button Animation + Gleiche Breite
 .button {
+  // Buttongröße aus Figma
+  width: 166px;
+  height: 47px;
+  // Schrift fett
   font-weight: 600;
+  // Animation
+  transition-timing-function: cubic-bezier(.25, .46, .45, .94);
+  transition-property: background-color, transform;
+  transition-duration: .3s;
+  -webkit-transition-timing-function: cubic-bezier(.25, .46, .45, .94);
+  -webkit-transition-property: background-color, transform;
+  -webkit-transition-duration: .3s;
+  -o-transition-timing-function: cubic-bezier(.25, .46, .45, .94);
+  -o-transition-property: background-color, transform;
+  -o-transition-duration: .3s;
+  -moz-transition-timing-function: cubic-bezier(.25, .46, .45, .94);
+  -moz-transition-property: background-color, transform;
+  -moz-transition-duration: .3s;
 }
+
+// z.B. "Mehr über Intia" Button
 .button.is-dark:hover,
 .button.is-dark.is-hovered {
-  border-width: 2px;
+  border-width: 1px;
   background-color: $dark;
-  border-color: $dark;
+  border-color: transparent;
   color: white;
 }
 
-.navbar-brand a.navbar-item img {
-  margin-right: 15px;
-}
-
+// Dropdownmenüelemente
 .navbar-dropdown,
 .navbar-item:focus,
 .navbar-dropdown a.navbar-item:focus,
 .navbar-dropdown a.navbar-item:hover {
-  background-color: transparent;
+  background-color: $dark;
+  border-width: 2px;
+  color: white;
 }
 
+// Dropdownmenühintergrund und Rand
 .navbar-dropdown {
   border-top: transparent;
   background-color: transparent;
 }
 
-.navbar-item.button.is-rounded.is-dark.has-dropdown.is-hoverable {
+// Navbar Padding
+.navbar-end.buttons {
+  padding-left: 0px;
+  padding-top: 15px;
+  font-weight: bold;
+}
+// Logo Padding
+.navbar-item {
+  padding-top: 21px;
 }
 
 .footer {
