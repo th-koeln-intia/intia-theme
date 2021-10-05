@@ -115,9 +115,6 @@ div.highlight {
   height: auto;
 }
 
-.content-wrapper img.right {
-}
-
 .content-wrapper p {
     display: inline-block;
 }
@@ -130,9 +127,6 @@ div.highlight {
   clear: both;
   display: block;
   width: 100%;
-}
-
-.card-image {
 }
 
 .card-image:first-child img {
@@ -194,6 +188,16 @@ footer .columns {
   margin-left: auto;
   margin-right: auto;
 }
+.footer-logos .column{
+  flex-basis: auto;
+}
+.is-bordered-bottom {
+  border-bottom: solid 1px #FFF;
+}
+.page-owner {
+  display: inline-block;
+}
+
 @include mobile {
   .button {
     height: auto;
@@ -206,8 +210,5 @@ footer .columns {
   }
   .hero.is-medium .hero-body {
     padding: 5rem 1rem 4.5rem;
+  }
 }
-
-}
-
-/** Git-Test - lösch mich
