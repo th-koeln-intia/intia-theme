@@ -21,7 +21,12 @@
                     </a>                    
             </div>
         {% else %}
-        <div class="card-content">
+        <div class="card-content ">
+            <div class="card-image right is-hidden-tablet">
+                <figure class="image">
+                    <img src={{section.image}} alt="placeholder" class="left">
+                </figure>
+            </div>
             <h2 class="fas {{ section.icon }} fa-2x">{{ section.title | markdownify  }}</h2>
                 {{ section.text | markdownify  }}
                 <a href="{{ section.link | relative_url }}" class="button is-rounded is-dark {% if item.link == page.url %}is-active{% endif %}">
@@ -31,7 +36,7 @@
                     </span>
                 </a>                    
         </div>
-            <div class="card-image right">
+            <div class="card-image right is-hidden-mobile">
                 <figure class="image">
                     <img src={{section.image}} alt="placeholder" class="right">
                 </figure>
