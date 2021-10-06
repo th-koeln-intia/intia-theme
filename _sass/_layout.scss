@@ -51,7 +51,7 @@ div.highlight {
 
 .navbar-brand img {
   max-height: 2.5rem;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 .navbar-brand a p {
   color: #000;
@@ -199,6 +199,10 @@ img.is-rounded {
   margin-top: 10rem;
   line-height: 1rem;
 }
+.footer img.column {
+  padding: 0 !important;
+  flex-grow: 0;
+}
 .footer-logos img {
   height: 75px;
 }
@@ -235,6 +239,13 @@ footer .columns {
   }
   .hero.is-medium .hero-body {
     padding: 5rem 1rem 4.5rem;
+  }
+  .navbar-menu .button {
+    // Buttongröße aus Figma
+    height: auto;
+  }
+  .footer-logos .column {
+    text-align: left !important;
   }
 }
 
