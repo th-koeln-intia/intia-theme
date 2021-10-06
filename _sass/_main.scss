@@ -24,19 +24,20 @@ $tabs-link-active-color: $primary;
 $tabs-link-active-border-bottom-color: $primary;
 // Global
 html * {
-  font-size: 16px;
+  font-size: 24px;
+  line-height: 36px;
 }
 
 h1,
 h1 p {
-  font-size: 3.5rem;
-  font-weight: 600;
+  font-size: 48px;
+  line-height: 72px;
+  font-weight: 400;
 }
 
 h2,
 h2 p {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 36px;
   text-align: left;
 }
 
@@ -53,10 +54,8 @@ h5 {
 }
 // Button Animation + Gleiche Breite
 .button {
-  // Buttongröße aus Figma
-  width: 166px;
-  height: 47px;
-  // Schrift fett
+  // Schrifft
+  font-size: 1.31rem !important;
   font-weight: 600;
   // Animation
   transition-timing-function: cubic-bezier(.25, .46, .45, .94);
@@ -71,6 +70,18 @@ h5 {
   -moz-transition-timing-function: cubic-bezier(.25, .46, .45, .94);
   -moz-transition-property: background-color, transform;
   -moz-transition-duration: .3s;
+}
+
+.button a, .button span{
+  // Schrifft
+  font-size: 16px !important;
+  font-weight: 600;
+}
+
+.navbar-menu .button{
+  // Buttongröße aus Figma
+  width: 166px;
+  height: 47px;
 }
 
 // z.B. "Mehr über Intia" Button
