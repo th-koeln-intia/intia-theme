@@ -1,7 +1,68 @@
 {% if page.story_slider %}
     <div class="green">
-
         <h1 class="title is-3 ">Aktuelles</h1>
 
+        <div class="carousel">
+            <div class="story-carousel-item">
+                <div class="container">
+                    <div class="section">
+                      <div class="card story-card columns">
+                        <div class="card-image column is-half">
+                          <figure class="image is-4by3">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Great_Wave_off_Kanagawa2.jpg" alt="this used to be photo">             
+                          </figure>
+                        </div>
+                        <div class="card-content column is-half">
+                            <div class="media">
+                              <div class="media-content">
+                                <p class="title is-4">Once upon a time there was a sailor</p>
+                              </div>
+                            </div>
+                
+                            <div class="content">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                              <a href="/" class="button is-rounded has-text-centert is-dark {% if item.link == page.url %}is-active{% endif %}">
+                                  <span>Important</span>
+                                  <span class="icon is-small">
+                                  <i class="fas fa-chevron-right"></i>
+                                  </span>
+                              </a>           
+                            </div>
+                          </div>
+                      </div>
+                </div>
+                </div>
+            </div>
+            <div class="story-carousel-item">
+                <div class="container">
+                    <div class="section">
+                      <div class="card story-card columns">
+                        <div class="card-image column is-half">
+                          <figure class="image is-4by3">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Great_Wave_off_Kanagawa2.jpg" alt="this used to be photo">             
+                          </figure>
+                        </div>
+                        <div class="card-content column is-half">
+                            <div class="media">
+                              <div class="media-content">
+                                <p class="title is-4">Once upon a time there was a sailor</p>
+                              </div>
+                            </div>
+                
+                            <div class="content">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                              <a href="/" class="button is-rounded has-text-centert is-dark {% if item.link == page.url %}is-active{% endif %}">
+                                  <span>Important</span>
+                                  <span class="icon is-small">
+                                  <i class="fas fa-chevron-right"></i>
+                                  </span>
+                              </a>           
+                            </div>
+                          </div>
+                      </div>
+                </div>
+                </div>
+            </div>
+		</div>
     </div>
 {% endif %}

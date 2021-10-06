@@ -7,9 +7,6 @@ div.highlight {
   margin-bottom: 1rem;
 }
 
-
-
-
 @include desktop {
   .navbar-item {
     border-width: 2px;
@@ -60,7 +57,8 @@ div.highlight {
   color: #000;
 }
 
-.navbar-item, .navbar-link  {
+.navbar-item,
+.navbar-link {
   padding-left: 0em;
   padding-right: 0em;
   padding-top: 0.65em;
@@ -84,16 +82,16 @@ div.highlight {
 .hero-body img {
   float: right;
   margin-left: 200px;
-} 
+}
 .hero {
   display: block;
 }
 .hero.is-primary .title {
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
   padding-top: 70px;
-} 
+}
 .hero.is-medium .hero-body {
-    padding: 13rem 9rem 4.5rem;
+  padding: 13rem 9rem 4.5rem;
 }
 
 // bis hier
@@ -110,15 +108,14 @@ div.highlight {
   background-color: #229387;
 }
 
-.hero-body .button, .content-wrapper .button {
+.hero-body .button,
+.content-wrapper .button {
   padding: 16px !important;
 }
 
 .subtitle {
   padding: 50px;
 }
-
-
 
 .hero-body .container .button {
   float: right;
@@ -142,7 +139,7 @@ div.highlight {
 }
 
 .content-wrapper p {
-    display: inline-block;
+  display: inline-block;
 }
 
 .card-content h2 p {
@@ -162,7 +159,7 @@ div.highlight {
 
 .green {
   background-color: #e7f2ea;
-  height: 450px;
+  height: 900px;
   width: auto;
   padding: 75px;
 }
@@ -172,7 +169,7 @@ h2 {
 }
 
 h2 p {
-  font-family: "Verdana",sans-serif;
+  font-family: "Verdana", sans-serif;
 }
 
 .card-content {
@@ -197,9 +194,9 @@ img.is-rounded {
 
 // Footer
 
-.footer {    
+.footer {
   font-size: 0.75rem;
-  margin-top: 10rem;  
+  margin-top: 10rem;
   line-height: 1rem;
 }
 .footer-logos img {
@@ -208,7 +205,7 @@ img.is-rounded {
 .footer .title {
   color: white;
   text-decoration: underline;
-  font-weight: 600;  
+  font-weight: 600;
   font-size: 1rem;
 }
 footer .columns {
@@ -216,11 +213,11 @@ footer .columns {
   margin-right: auto;
   font-size: 0.75rem;
 }
-.footer-logos .column{
+.footer-logos .column {
   flex-basis: auto;
 }
 .is-bordered-bottom {
-  border-bottom: solid 1px #FFF;
+  border-bottom: solid 1px #fff;
 }
 .page-owner {
   display: inline-block;
@@ -229,14 +226,29 @@ footer .columns {
 @include mobile {
   .button {
     height: auto;
-    }
+  }
   .buttons {
     display: table-caption;
-    }
+  }
   .navbar-menu {
     background-color: #229387;
   }
   .hero.is-medium .hero-body {
     padding: 5rem 1rem 4.5rem;
   }
+}
+
+.story-card {
+  background-color: white;
+  border-bottom-left-radius: 65px !important;
+  border-bottom-right-radius: 65px !important;
+  border-top-left-radius: 65px !important;
+  border-top-right-radius: 65px !important;
+}
+.story-card .column {
+  padding: 0px;
+}
+.story-card .card-image:first-child img {
+  border-bottom-right-radius: 0px !important;
+  border-top-right-radius: 0px !important;
 }
