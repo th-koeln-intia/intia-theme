@@ -23,9 +23,9 @@ $modal-content-width: 800px;
 $tabs-link-active-color: $primary;
 $tabs-link-active-border-bottom-color: $primary;
 // Global
-html * {
-  font-size: 24px;
-  line-height: 36px;
+body {  
+  font-size: 1.5rem;
+  line-height: 2.25rem;
 }
 
 h1,
@@ -117,7 +117,7 @@ h5 {
 }
 // Logo Padding
 .navbar-item {
-  padding-top: 21px;
+  //padding-top: 21px;
 }
 
 .footer {

@@ -13,6 +13,7 @@ div.highlight {
 @include desktop {
   .navbar-item {
     border-width: 2px;
+    display: block;
     &.is-hoverable:hover {
       border-width: 2px;
       .navbar-dropdown {
@@ -48,9 +49,30 @@ div.highlight {
 }
 
 .navbar {
-  padding: 0.5rem;
+  padding-top: 0.6rem;
 }
 
+.navbar-brand img {
+  max-height: 2.5rem;
+  margin-top: 1.5rem;
+}
+.navbar-brand a p {
+  color: #000;
+}
+
+.navbar-item, .navbar-link  {
+  padding-left: 0em;
+  padding-right: 0em;
+  padding-top: 0.65em;
+}
+.button.is-rounded {
+  padding-right: 0em !important;
+}
+
+.brand-title {
+  display: contents;
+  font-weight: 600;
+}
 // Hero
 .hero-body {
   background-color: white;
@@ -159,10 +181,10 @@ h2 p {
   margin: auto;
 }
 .card-content p {
-  padding-left: 50px;
+  padding-left: 4rem;
 }
 .card-content a {
-  margin-left: 50px;
+  margin-left: 4rem;
 }
 .card-image:last-child img {
   border-bottom-left-radius: 65px;
@@ -175,12 +197,13 @@ img.is-rounded {
 
 // Footer
 
-.footer {  
+.footer {    
+  font-size: 0.75rem;
   margin-top: 10rem;  
-  line-height: 1.25;
+  line-height: 1rem;
 }
 .footer-logos img {
-  height: 100px;
+  height: 75px;
 }
 .footer .title {
   color: white;
@@ -191,6 +214,7 @@ img.is-rounded {
 footer .columns {
   margin-left: auto;
   margin-right: auto;
+  font-size: 0.75rem;
 }
 .footer-logos .column{
   flex-basis: auto;
