@@ -204,6 +204,59 @@ img.is-rounded {
   width: auto;
   padding: 75px;
 }
+.slider {
+  box-shadow: none;
+}
+.slider-item {
+  // padding-left: 50px;
+}
+.slider-container .card-content .content {
+  margin: 50px;
+}
+.story-slider {
+  background-color: white;
+  border-bottom-left-radius: 65px !important;
+  border-bottom-right-radius: 65px !important;
+  border-top-left-radius: 65px !important;
+  border-top-right-radius: 65px !important;
+}
+.story-slider .button {
+  float: right;
+}
+.column.slider-image {
+  padding: 0;  
+}
+.column.slider-image img {
+  border-top-right-radius: 0 !important;  
+  border-bottom-right-radius: 0 !important;
+}
+.column.slider-content {
+  padding: 3em;
+}
+
+.slider-content {
+  width: 100%;
+  display: flow-root;
+  margin: auto;
+}
+.slider-pagination .slider-page {
+  background-color: #229387 !important;
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 25091983px;
+  display: inline-block;
+  margin: 0 5px !important;
+  box-shadow: none;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s,-webkit-transform .3s;
+  cursor: pointer;
+}
+.slider-pagination .slider-page.is-active, .slider-pagination .slider-page:hover {  
+  background-color: #09443e;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
 
 // Footer
 
