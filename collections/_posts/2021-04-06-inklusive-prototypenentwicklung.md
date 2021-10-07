@@ -6,6 +6,7 @@ categories: News
 tags: news intia prototyping covid-19 inclusive behaviour-driven
 hero_image: /assets/img/posts/messenger.jpg
 image: /assets/img/posts/messenger.jpg
+abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
 ---
 
 Methoden einer inklusiven Prototypenentwicklung mit Jugendlichen mit Beeinträchtigung

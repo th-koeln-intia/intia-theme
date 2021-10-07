@@ -198,7 +198,7 @@ img.is-rounded {
   border-top-right-radius: 0px !important;
 }
 
-// story-slieder
+// story-slider
 
 .green {
   background-color: #e7f2ea;
@@ -233,9 +233,13 @@ img.is-rounded {
 .column.slider-image {
   padding: 0;
 }
+.column.slider-image .image {
+  height: 100%;
+}
 .column.slider-image img {
   border-top-right-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
+  height: 100%;
 }
 .column.slider-content {
   padding: 3em;

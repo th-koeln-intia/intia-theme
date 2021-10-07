@@ -6,6 +6,7 @@ categories: News
 tags: news intia messenger covid-19
 hero_image: /assets/img/posts/messenger.jpg
 image: /assets/img/posts/messenger.jpg
+abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
 ---
 
 - Corona-Maßnahmen behindern Ihre Zusammenarbeit mit Forschungspartnern und Zielgruppen und Sie wollen auf eine digitale Kommunikation umstellen.

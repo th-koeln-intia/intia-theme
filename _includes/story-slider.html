@@ -3,26 +3,27 @@
         <h1 class="slider-titel">Aktuelles</h1>
 
         <div class="carousel">
+            {% for story in site.posts %}
             <div class="story-carousel-item">
                 <div class="container">
                     <div class="section">
                       <div class="slider story-slider columns">
                         <div class="slider-image column is-half">
                           <figure class="image">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Great_Wave_off_Kanagawa2.jpg" alt="this used to be photo">             
+                            <img src="{{story.image}}" alt="this used to be photo">             
                           </figure>
                         </div>
                         <div class="slider-content column is-half">
                             <div class="media">
                               <div class="media-content">
-                                <h2>Once upon a time there was a sailor</h2>
+                                <h2>{{story.title}}</h2>
                               </div>
                             </div>
                 
                             <div class="content">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
-                              <a href="/" class="button is-rounded has-text-centert is-dark {% if item.link == page.url %}is-active{% endif %}">
-                                  <span>Important</span>
+                              <p>{{story.abstract}}</p>
+                              <a href="{{ story.url | relative_url }}" class="button is-rounded has-text-centert is-dark {% if item.link == page.url %}is-active{% endif %}">
+                                  <span>Mehr lesen</span>
                                   <span class="icon is-small">
                                   <i class="fas fa-chevron-right fa-xs"></i>
                                   </span>
@@ -33,31 +34,7 @@
                 </div>
                 </div>
             </div>
-            <div class="story-carousel-item">
-                <div class="container">
-                    <div class="section">
-                      <div class="slider story-slider columns">
-                        <div class="slider-image column is-half">
-                          <figure class="image">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Great_Wave_off_Kanagawa2.jpg" alt="this used to be photo">             
-                          </figure>
-                        </div>
-                        <div class="slider-content column is-half">
-                
-                            <div class="content">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
-                              <a href="/" class="button is-rounded has-text-centert is-dark {% if item.link == page.url %}is-active{% endif %}">
-                                  <span>Important</span>
-                                  <span class="icon is-small">
-                                  <i class="fas fa-chevron-right fa-xs"></i>
-                                  </span>
-                              </a>           
-                            </div>
-                          </div>
-                      </div>
-                </div>
-                </div>
-            </div>
+            {% endfor %}
 		</div>
     <img src="../assets/img/arrow.png" alt="placeholder"  class="arrow-image is-pulled-right is-hidden-mobile">
     </div>
