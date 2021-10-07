@@ -200,9 +200,7 @@ img.is-rounded {
 
 .green {
   background-color: #e7f2ea;
-  height: 900px;
-  width: auto;
-  padding: 75px;
+  padding: 9rem;
 }
 .slider {
   box-shadow: none;
@@ -241,23 +239,19 @@ img.is-rounded {
 }
 .slider-pagination .slider-page {
   background-color: #229387 !important;
-  width: 20px !important;
-  height: 20px !important;
-  border-radius: 25091983px;
-  display: inline-block;
-  margin: 0 5px !important;
+  width: 25px !important;
+  height: 25px !important;
   box-shadow: none;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s,-webkit-transform .3s;
   cursor: pointer;
 }
 .slider-pagination .slider-page.is-active, .slider-pagination .slider-page:hover {  
-  background-color: #09443e;
-  -webkit-transform: scale(1);
-  transform: scale(1);
+  background-color: #09443e !important;
+  -webkit-transform: scale(1) !important;
+  transform: scale(1) !important;
 }
-
+.slider-pagination {
+  bottom: -40px !important;
+}
 // Footer
 
 .footer {
