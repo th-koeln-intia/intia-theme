@@ -20,6 +20,7 @@ div.highlight {
   }
 }
 
+// Duno
 .contents {
   box-shadow: $box-shadow;
   padding: 1.5rem;
@@ -45,6 +46,25 @@ div.highlight {
   top: 30px;
 }
 
+// Globals
+
+
+img.is-rounded {
+  border-radius: 65px;
+}
+
+.clear {
+  clear: both;
+  display: block;
+  width: 100%;
+}
+
+// Buttons - Mybe global in Buttons und raus damit?
+.button.is-dark {
+  background-color: #229387;
+}
+
+// Navi
 .navbar {
   padding-top: 0.6rem;
 }
@@ -63,14 +83,20 @@ div.highlight {
   padding-right: 0em;
   padding-top: 0.65em;
 }
+
+.navbar.is-primary {
+  background-color: white;
+}
+
+.navbar-link {
+  background-color: transparent;
+}
+
 .button.is-rounded {
   padding-right: 0em !important;
 }
 
-.brand-title {
-  display: contents;
-  font-weight: 600;
-}
+
 // Hero
 .hero-body {
   background-color: white;
@@ -94,31 +120,18 @@ div.highlight {
   padding: 13rem 9rem 4.5rem;
 }
 
-// bis hier
-
-.navbar.is-primary {
-  background-color: white;
-}
-
-.navbar-link {
-  background-color: transparent;
-}
-
-.button.is-dark {
-  background-color: #229387;
-}
-
 .hero-body .button,
 .content-wrapper .button {
   padding: 16px !important;
 }
 
-.subtitle {
-  padding: 50px;
-}
-
 .hero-body .container .button {
   float: right;
+}
+
+// Content
+.subtitle {
+  padding: 50px;
 }
 
 .card {
@@ -146,30 +159,9 @@ div.highlight {
   padding-left: 15px;
 }
 
-.clear {
-  clear: both;
-  display: block;
-  width: 100%;
-}
-
 .card-image:first-child img {
   border-top-left-radius: 65px;
   border-top-right-radius: 65px;
-}
-
-.green {
-  background-color: #e7f2ea;
-  height: 900px;
-  width: auto;
-  padding: 75px;
-}
-h2 {
-  background-repeat: no-repeat;
-  background-size: auto 35px;
-}
-
-h2 p {
-  font-family: "Verdana", sans-serif;
 }
 
 .card-content {
@@ -188,8 +180,29 @@ h2 p {
   border-bottom-right-radius: 65px;
 }
 
-img.is-rounded {
-  border-radius: 65px;
+.story-card {
+  background-color: white;
+  border-bottom-left-radius: 65px !important;
+  border-bottom-right-radius: 65px !important;
+  border-top-left-radius: 65px !important;
+  border-top-right-radius: 65px !important;
+}
+.story-card .column {
+  padding: 0px;
+}
+.story-card .card-image:first-child img {
+  border-bottom-right-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+}
+
+
+// story-slieder
+
+.green {
+  background-color: #e7f2ea;
+  height: 900px;
+  width: auto;
+  padding: 75px;
 }
 
 // Footer
@@ -227,6 +240,13 @@ footer .columns {
   display: inline-block;
 }
 
+// Text neben dem Logo - gut möglich das dies seine darseinsberechtigung verliert
+.brand-title {
+  display: contents;
+  font-weight: 600;
+}
+
+// Hacks für Mobil
 @include mobile {
   .button {
     height: auto;
@@ -249,17 +269,3 @@ footer .columns {
   }
 }
 
-.story-card {
-  background-color: white;
-  border-bottom-left-radius: 65px !important;
-  border-bottom-right-radius: 65px !important;
-  border-top-left-radius: 65px !important;
-  border-top-right-radius: 65px !important;
-}
-.story-card .column {
-  padding: 0px;
-}
-.story-card .card-image:first-child img {
-  border-bottom-right-radius: 0px !important;
-  border-top-right-radius: 0px !important;
-}
