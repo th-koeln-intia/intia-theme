@@ -42,6 +42,12 @@ defaults:
       path: pages
     values:
       layout: default
+  - scope:
+      type: posts
+      path: _posts
+    values:
+      permalink: /stories/:title/
+      layout: default
 
 # Collections
 collections_dir: collections
