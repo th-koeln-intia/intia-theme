@@ -291,6 +291,7 @@ img.is-rounded {
   font-size: 0.75rem;
   margin-top: 5rem;
   line-height: 1rem;
+  padding-top: 0;
 }
 .footer img.column {
   padding: 0 !important;
@@ -309,6 +310,14 @@ footer .columns {
   margin-left: auto;
   margin-right: auto;
   font-size: 0.75rem;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.footer .footer-nav {  
+  padding-top: 0;
+}
+.footer .footer-nav .column {  
+  padding-left: 0;
 }
 .footer-logos .column {
   flex-basis: auto;
