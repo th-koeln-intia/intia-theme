@@ -47,10 +47,14 @@ div.highlight {
 }
 
 // Globals
-
-
 img.is-rounded {
   border-radius: 65px;
+}
+.arrow-image {
+  z-index: 10;
+  position: relative;
+  bottom: -90px;
+  width: 64px;
 }
 
 .clear {
@@ -200,7 +204,10 @@ img.is-rounded {
 
 .green {
   background-color: #e7f2ea;
-  padding: 9rem;
+  padding-left: 9rem;  
+  padding-right: 9rem;  
+  padding-top: 6rem;
+  padding-bottom: 8rem;
 }
 .slider {
   box-shadow: none;
@@ -241,8 +248,8 @@ img.is-rounded {
 }
 .slider-pagination .slider-page {
   background-color: #229387 !important;
-  width: 25px !important;
-  height: 25px !important;
+  width: 20px !important;
+  height: 20px !important;
   box-shadow: none;
   cursor: pointer;
 }
