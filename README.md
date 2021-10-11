@@ -1,6 +1,6 @@
 # The INTIA Theme
 
-A barrier-free from design by [INTIA](intia.de), which can be viewed on theme.intia.de
+A barrier-free design by [INTIA](intia.de), created to be used as an Jekyll theme using Bulma. It can be viewed on theme.intia.de
 
 ## Installation
 

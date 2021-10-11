@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Marc Schmidt"]
   spec.email         = ["marc.schmidt1@th-koeln.de"]
 
-  spec.summary       = "A A barrier-free from design by INTIA, which can be viewed on theme.intia.de"
+  spec.summary       = "A barrier-free design by INTIA, created to be used as an Jekyll theme using Bulma. It can be viewed on theme.intia.de"
   spec.homepage      = "theme.intia.de"
   spec.license       = "MIT"
 
