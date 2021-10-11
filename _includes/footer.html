@@ -1,37 +1,69 @@
 <footer class="footer is-hidden-print is-primary">
-    <div class="container">
-        {% if site.footer_menu %}
-        <div class="columns is-multiline">
-            {% for item in site.data[site.footer_menu] %}
-            <div class="column has-text-centered">
-                <div>
-                    <a href="{{ item.link | relative_url }}" class="link">{{ item.name }}</a>
-                </div>
-            </div>
-            {% endfor %}
+    
+    <div class="container columns is-centered is-multiline is-bordered-bottom">
+        <div class="navbar-brand column is-full">
+            <a href="{{ site.baseurl }}/" class="columns navbar-item">
+                <img class="column" src="{{ site.baseurl }}/assets/img/logo-white.png">
+                <p class="calumn brand-title">Inklusiv für alle</p>
+            </a>
         </div>
-        {% endif %}
-        {% if site.data.navigation %}
-        <div class="columns">
-            {% for item in site.data.navigation %}
-                <div class="column has-text-centered">
-                    <a href="{{ subitem.link | relative_url }} " class="link"><strong>{{ item.name }}</strong></a>
-                    {% if item.dropdown %}
-                    <div class="columns">
-                        {% for subitem in item.dropdown %}
-                        <div class="column">
-                            <a href="{{ subitem.link | relative_url }}" class="link">{{ subitem.name }}</a>
-                        </div>
-                        {% endfor %}
-                    </div>                                            
-                {% endif %}
-                </div>
-            {% endfor %}
-        </div>
-        {% endif %}
+        <div class="column is-2">
+            <div class="title">www.intia.de</div>
+                TH-Köln | DITIS<br>
+                Campus Südstadt<br>
+                Ubierring 48<br>
+                50678 Köln
 
+        </div>
+        {% if site.data.navigation %}
+        <div class="column ">
+            <div class="title">Site Map</div>
+            <div class="columns">
+                {% for item in site.data.navigation %}
+                    <div class="column">
+                        <a href="{{ subitem.link | relative_url }} " class="link"><strong>{{ item.name }}</strong></a>
+                        {% if item.dropdown %}
+                        <div class="">
+                            {% for subitem in item.dropdown %}
+                            <div class="">
+                                <a href="{{ subitem.link | relative_url }}" class="link">{{ subitem.name }}</a>
+                            </div>
+                            {% endfor %}
+                        </div>                                            
+                    {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+        {% if site.footer_menu %}
+        <div class="column is-2">
+            <div class="title">Rechtliches</div>
+            <div class="">
+                {% for item in site.data[site.footer_menu] %}
+                <div class="">
+                    <div>
+                        <a href="{{ item.link | relative_url }}" class="link">{{ item.name }}</a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+    </div>
+        <div class="columns content is-small has-text-centered footer-logos">
+            <div class="column has-text-right"><div class="page-owner">
+                <p class="has-text-left">Eine Seite von</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/TH_Koeln_Logo.svg">
+                <img src="{{ site.baseurl }}/assets/img/logo-dites.png">
+            </div></div>
+            <div class="column has-text-left"><div class="page-sponsor">                
+                <p class="has-text-left">Gefördert von</p>
+                <img src="https://www.bmbf.de/SiteGlobals/Frontend/Images/icons/_common/logo.svg;jsessionid=73771066A725D13D2D34C4D38E4A181D.live382?__blob=normal&v=3">
+            </div></div>
+        </div>
         <div class="content is-small has-text-centered">
             <p class="">INTIA, 2021</p>
         </div>
-    </div>
+    
 </footer>

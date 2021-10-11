@@ -5,6 +5,8 @@ $family-primary: "Verdana", sans-serif;
 // Colors
 //$primary: #d1e7d6 !default;
 $primary: #ffffff !default;
+$text: #000 !default;
+$title-color: #000 !default;
 //$primary-light: #e7f2ea;
 //$primary-light: #ffffff;
 $light: #e7f2ea;
@@ -21,21 +23,26 @@ $modal-content-width: 800px;
 $tabs-link-active-color: $primary;
 $tabs-link-active-border-bottom-color: $primary;
 // Global
-html * {
-  font-size: 16px;
+body {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
 }
 
 h1,
 h1 p {
-  font-size: 3.5rem;
+  font-size: 48px;
+  line-height: 72px;
   font-weight: 600;
 }
 
 h2,
 h2 p {
-  font-size: 1.5rem;
+  font-size: 36px;
   font-weight: 600;
   text-align: left;
+  background-repeat: no-repeat;
+  background-size: auto 35px;
+  font-family: "Verdana", sans-serif;
 }
 
 h3 {
@@ -49,32 +56,74 @@ h4 {
 h5 {
   font-size: 0.83rem;
 }
+// Button Animation + Gleiche Breite
+.button {
+  // Schrifft
+  font-size: 1.31rem !important;
+  font-weight: 600;
+  // Animation
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-property: background-color, transform;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transition-property: background-color, transform;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition-property: background-color, transform;
+  -o-transition-duration: 0.3s;
+  -moz-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -moz-transition-property: background-color, transform;
+  -moz-transition-duration: 0.3s;
+}
 
+.button a,
+.button span {
+  // Schrifft
+  font-size: 16px !important;
+  font-weight: 600;
+}
+
+.navbar-menu .button,
+.navbar-dropdown .button {
+  // Buttongröße aus Figma
+  width: 166px;
+  height: 47px;
+}
+
+// z.B. "Mehr über Intia" Button
 .button.is-dark:hover,
 .button.is-dark.is-hovered {
-  border-width: 2px;
+  border-width: 1px;
   background-color: $dark;
-  border-color: $dark;
+  border-color: transparent;
   color: white;
 }
 
-.navbar-brand a.navbar-item img {
-  margin-right: 15px;
-}
-
+// Dropdownmenüelemente
 .navbar-dropdown,
 .navbar-item:focus,
 .navbar-dropdown a.navbar-item:focus,
 .navbar-dropdown a.navbar-item:hover {
-  background-color: transparent;
+  background-color: $dark;
+  border-width: 2px;
+  color: white;
 }
 
+// Dropdownmenühintergrund und Rand
 .navbar-dropdown {
   border-top: transparent;
   background-color: transparent;
 }
 
-.navbar-item.button.is-rounded.is-dark.has-dropdown.is-hoverable {
+// Navbar Padding
+.navbar-end.buttons {
+  padding-left: 0px;
+  padding-top: 15px;
+  font-weight: bold;
+}
+// Logo Padding
+.navbar-item {
+  //padding-top: 21px;
 }
 
 .footer {

@@ -10,6 +10,7 @@ div.highlight {
 @include desktop {
   .navbar-item {
     border-width: 2px;
+    display: block;
     &.is-hoverable:hover {
       border-width: 2px;
       .navbar-dropdown {
@@ -19,6 +20,7 @@ div.highlight {
   }
 }
 
+// Duno
 .contents {
   box-shadow: $box-shadow;
   padding: 1.5rem;
@@ -44,13 +46,52 @@ div.highlight {
   top: 30px;
 }
 
-.navbar {
-  padding-top: 1rem;
+// Globals
+img.is-rounded {
+  border-radius: 65px;
+}
+.arrow-image {
+  z-index: 10;
+  position: relative;
+  bottom: -90px;
+  width: 64px;
 }
 
-// Bearbeitet
-.hero-body {
-  background-color: white;
+.clear {
+  clear: both;
+  display: block;
+  width: 100%;
+}
+
+// Buttons - Mybe global in Buttons und raus damit?
+.button.is-dark {
+  background-color: #229387;
+}
+
+// Navi
+.navbar {
+  padding-top: 0.6rem;
+}
+
+.navbar.is-primary .navbar-dropdown a.navbar-item.is-active {
+  background-color: #09443e;
+  color: #fff;
+}
+
+.navbar-brand img {
+  max-height: 2.5rem;
+  margin-top: 1rem;
+}
+.navbar-brand a p {
+  color: #000;
+}
+
+.navbar-item,
+.navbar-link,
+.navbar-dropdown {
+  padding-left: 0em;
+  padding-right: 0em;
+  padding-top: 0.65em;
 }
 
 .navbar.is-primary {
@@ -61,29 +102,58 @@ div.highlight {
   background-color: transparent;
 }
 
-.card .button {
-  width: 30%;
-  text-align: right;
+.button.is-rounded {
+  padding-right: 0em !important;
+}
+.navbar-dropdown .button.is-rounded {
+  padding-right: auto !important;
+}
+.navbar-dropdown .navbar-item {
+  padding: 0.5rem 1rem;
+  text-align: left;
 }
 
-.button.is-dark {
-  background-color: #229387;
+// Hero
+.hero-body {
+  background-color: white;
+}
+.hero.is-large .hero-body {
+  padding-bottom: 12rem;
 }
 
-.subtitle {
-  padding: 50px;
+.hero-body img {
+  float: right;
+  margin-left: 200px;
+}
+.hero {
+  display: block;
+}
+.hero.is-primary .title {
+  color: rgba(0, 0, 0, 1);
+  padding-top: 70px;
+}
+.hero.is-medium .hero-body {
+  padding: 13rem 9rem 4.5rem;
 }
 
-.title.is-2 {
-  font-size: 3.5rem;
+.hero-body .button,
+.content-wrapper .button {
+  padding: 16px !important;
 }
 
 .hero-body .container .button {
   float: right;
 }
 
+// Content
+.subtitle {
+  padding: 50px;
+}
+
 .card {
-  padding: 5rem;
+  // margin-left: 3rem;
+  // margin-right: 3rem;
+  margin-top: 6rem;
   box-shadow: none;
 }
 
@@ -96,25 +166,16 @@ div.highlight {
 }
 
 .content-wrapper img {
-  min-width: 400px;
   border-radius: 65px;
   height: auto;
 }
 
-.content-wrapper img.right {
-}
-
 .content-wrapper p {
-  display: block;
+  display: inline-block;
 }
 
-.clear {
-  clear: both;
-  display: block;
-  width: 100%;
-}
-
-.card-image {
+.card-content h2 p {
+  padding-left: 15px;
 }
 
 .card-image:first-child img {
@@ -122,29 +183,173 @@ div.highlight {
   border-top-right-radius: 65px;
 }
 
-.green {
-  background-color: #e7f2ea;
-  height: 450px;
-  width: auto;
-}
-h2 p {
-  background-image: url("https://via.placeholder.com/64x64");
-  background-repeat: no-repeat;
-  background-size: auto 35px;
-}
-
 .card-content {
   width: 100%;
+  padding: 3.5rem;
   display: flow-root;
   margin: auto;
 }
 .card-content p {
-  padding-left: 50px;
+  padding-left: 4rem;
 }
 .card-content a {
-  margin-left: 50px;
+  margin-left: 4rem;
 }
 .card-image:last-child img {
   border-bottom-left-radius: 65px;
   border-bottom-right-radius: 65px;
+}
+
+.story-card {
+  background-color: white;
+  border-bottom-left-radius: 65px !important;
+  border-bottom-right-radius: 65px !important;
+  border-top-left-radius: 65px !important;
+  border-top-right-radius: 65px !important;
+}
+.story-card .column {
+  padding: 0px;
+}
+.story-card .card-image:first-child img {
+  border-bottom-right-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+}
+
+// story-slider
+
+.green {
+  background-color: #e7f2ea;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 6rem;
+  padding-bottom: 8rem;
+}
+.slider {
+  box-shadow: none;
+}
+.slider-item {
+  // padding-left: 50px;
+}
+.story-carousel-item {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.slider-container .card-content .content {
+  margin: 50px;
+}
+.story-slider {
+  background-color: white;
+  border-bottom-left-radius: 65px !important;
+  border-bottom-right-radius: 65px !important;
+  border-top-left-radius: 65px !important;
+  border-top-right-radius: 65px !important;
+}
+.story-slider .button {
+  float: right;
+}
+.column.slider-image {
+  padding: 0;
+}
+.column.slider-image .image {
+  height: 100%;
+}
+.column.slider-image img {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  height: 100%;
+}
+.column.slider-content {
+  padding: 3em;
+}
+.slider-content h2 {
+  margin-bottom: 2rem;
+}
+.slider-content {
+  width: 100%;
+  display: flow-root;
+  margin: auto;
+}
+.slider-pagination .slider-page {
+  background-color: #229387 !important;
+  width: 20px !important;
+  height: 20px !important;
+  box-shadow: none;
+  cursor: pointer;
+}
+.slider-pagination .slider-page.is-active,
+.slider-pagination .slider-page:hover {
+  background-color: #09443e !important;
+  -webkit-transform: scale(1) !important;
+  transform: scale(1) !important;
+}
+.slider-pagination {
+  bottom: -40px !important;
+}
+// Footer
+
+.footer {
+  font-size: 0.75rem;
+  margin-top: 5rem;
+  line-height: 1rem;
+}
+.footer img.column {
+  padding: 0 !important;
+  flex-grow: 0;
+}
+.footer-logos img {
+  height: 75px;
+}
+.footer .title {
+  color: white;
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 1rem;
+}
+footer .columns {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.75rem;
+}
+.footer-logos .column {
+  flex-basis: auto;
+}
+.is-bordered-bottom {
+  border-bottom: solid 1px #fff;
+}
+.page-owner {
+  display: inline-block;
+}
+
+// Text neben dem Logo - gut möglich das dies seine darseinsberechtigung verliert
+.brand-title {
+  display: contents;
+  font-weight: 600;
+}
+
+// Hacks für Mobil
+@include mobile {
+  .button {
+    height: auto;
+  }
+  .button a,
+  .button span {
+    font-size: 24px !important;
+    font-weight: 600;
+  }
+  .buttons {
+    display: table-caption;
+  }
+  .navbar-menu {
+    background-color: #229387;
+  }
+  .hero.is-medium .hero-body {
+    padding: 5rem 1rem 4.5rem;
+  }
+  .navbar-menu .button {
+    // Buttongröße aus Figma
+    height: auto;
+  }
+  .footer-logos .column {
+    text-align: left !important;
+  }
 }
