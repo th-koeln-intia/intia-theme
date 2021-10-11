@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["marc.schmidt1@th-koeln.de"]
 
   spec.summary       = "A barrier-free design by INTIA, created to be used as an Jekyll theme using Bulma. It can be viewed on theme.intia.de"
-  spec.homepage      = "theme.intia.de"
+  spec.homepage      = "https://theme.intia.de"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README|_config\.yml)!i) }
