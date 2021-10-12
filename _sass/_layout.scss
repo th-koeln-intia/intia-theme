@@ -105,6 +105,10 @@ img.is-rounded {
 .button.is-rounded {
   padding-right: 0em !important;
 }
+.button.button.is-rounded:not(.navbar-item) {
+  padding-left: 1.5em !important;
+  padding-right: 1.5em !important;
+}
 .navbar-dropdown .button.is-rounded {
   padding-right: auto !important;
 }
@@ -176,6 +180,7 @@ img.is-rounded {
 
 .card-content h2 p {
   padding-left: 15px;
+  padding-bottom: 0.5em;
 }
 
 .card-image:first-child img {
@@ -226,9 +231,6 @@ img.is-rounded {
 }
 .slider {
   box-shadow: none;
-}
-.slider-item {
-  // padding-left: 50px;
 }
 .story-carousel-item {
   margin-left: 5%;
@@ -284,6 +286,12 @@ img.is-rounded {
 }
 .slider-pagination {
   bottom: -40px !important;
+}
+.slider-navigation-previous,
+.slider-navigation-next {
+  background: transparent !important;
+  border: 0px !important;
+  box-shadow: none !important;
 }
 // Footer
 
