@@ -172,6 +172,7 @@ img.is-rounded {
 .content-wrapper img {
   border-radius: 65px;
   height: auto;
+  object-fit: cover;
 }
 
 .content-wrapper p {
@@ -259,6 +260,7 @@ img.is-rounded {
   border-top-right-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
   height: 100%;
+  object-fit: cover;
 }
 .column.slider-content {
   padding: 3em;
@@ -306,6 +308,7 @@ img.is-rounded {
 }
 .footer-logos img {
   height: 75px;
+  margin-right: 15px;
 }
 .footer .title {
   color: white;
