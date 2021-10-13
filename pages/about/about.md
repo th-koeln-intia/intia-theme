@@ -1,10 +1,11 @@
 ---
 title: Projekt
+title_above: Über
 permalink: /about/
 subtitle: |
   Hier kommen Fachkräfte der Sozialen Arbeit, Entwickler:innen und Wissenschaftler:innen zusammen, um gemeinsam mit betroffenen Jugendlichen Technik und digitale Hilfen zur Alltagsbewältigung zu entwickeln und weiterzugeben.
 abstract: |
-  Einrichtungen und Träger der Sozialen Arbeit erkennen zunehmend, wie gesellschaftlich relevant die mangelnde digitale Teilhabe ihrer Klient\*innen ist. Es mangelt ihnen jedoch an konkreten individuellen Lösungen, die für Teilhabe und selbstbestimmte Alltagsbewältigung ihrer Klient\*innen hilfreich sind, Risiken reduzieren, deren Implementierung und Betrieb keinen hohen Aufwand verursacht, und die unproblematisch hinsichtlich von Haftungs- oder Datenschutzfragen einsetzbar sind. Gesucht werden innovative Ansätze, um Klient*innen der Sozialen Arbeit an Nutzungen digitaler Technologien heranzuführen.    
+  Einrichtungen und Träger der Sozialen Arbeit erkennen zunehmend, wie gesellschaftlich relevant die mangelnde digitale Teilhabe ihrer Klient\*innen ist. Es mangelt ihnen jedoch an konkreten individuellen Lösungen, die für Teilhabe und selbstbestimmte Alltagsbewältigung ihrer Klient\*innen hilfreich sind, Risiken reduzieren, deren Implementierung und Betrieb keinen hohen Aufwand verursacht, und die unproblematisch hinsichtlich von Haftungs- oder Datenschutzfragen einsetzbar sind. Gesucht werden innovative Ansätze, um Klient*innen der Sozialen Arbeit an Nutzungen digitaler Technologien heranzuführen.
 hero_tags: subpage
 ---
 

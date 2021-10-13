@@ -1,5 +1,6 @@
 ---
-title: Über das Projekt
+title: Projekt
+title_above: Über
 permalink: /project/
 subtitle: |
   INTIA ist ein Projekt der Technischen Hochschule Köln, in welchem die gleichnamige Plattform entwickelt wurde. Das Forschungsprojekt möchte mit benachteiligten Jugendlichen herausfinden, wie sie ihren Alltag mit Hilfe von Technik verbessern können.
