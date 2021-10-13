@@ -1,0 +1,7 @@
+---
+layout: default
+---
+{% if page.error_image %}
+<img src="{{page.error_image}}" alt="placeholder">
+{% endif %} 
+{{content | markdownify}}
