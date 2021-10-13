@@ -28,11 +28,31 @@ body {
   line-height: 2.25rem;
 }
 
+h1, h2, h3, p {  
+  padding-bottom:30px;
+}
+h1, h2{  
+  padding-top:90px;
+}
+
+.card h1, .card h2, .card p, .slider h1, .slider h2, .slider p {  
+  padding-top:0;
+  padding-bottom: 0;
+}
+
 h1,
 h1 p {
   font-size: 48px;
   line-height: 72px;
   font-weight: 600;
+  text-align: center;
+}
+
+.green h1,
+.green h1 p,
+.hero-body h1,
+.hero-body h1 p {
+  text-align: left;
 }
 
 h2,
@@ -56,6 +76,7 @@ h4 {
 h5 {
   font-size: 0.83rem;
 }
+
 // Button Animation + Gleiche Breite
 .button {
   // Schrifft
