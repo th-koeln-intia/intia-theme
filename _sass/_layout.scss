@@ -46,6 +46,23 @@ div.highlight {
   top: 30px;
 }
 
+.green {
+  background-color: $light;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 6rem;
+  padding-bottom: 8rem;
+}
+
+.highlighter {
+  background-color: $light;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  border-radius: 65px;
+}
+.highlighter-image {
+}
 // Globals
 img.is-rounded {
   border-radius: 65px;
@@ -153,10 +170,10 @@ img.is-rounded {
   text-align: left;
 }
 //// Hero sub-pages with green text
-.subpage h1, .subpage p {
+.subpage h1,
+.subpage p {
   color: #229387 !important;
 }
-
 
 // Content
 .subtitle {
@@ -231,14 +248,6 @@ img.is-rounded {
 }
 
 // story-slider
-
-.green {
-  background-color: #e7f2ea;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 6rem;
-  padding-bottom: 8rem;
-}
 .slider {
   box-shadow: none;
 }
