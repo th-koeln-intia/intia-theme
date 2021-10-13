@@ -148,6 +148,15 @@ img.is-rounded {
 .hero-body .container .button {
   float: right;
 }
+.home .hero-body h1,
+.home .hero-body h1 p {
+  text-align: left;
+}
+//// Hero sub-pages with green text
+.subpage h1, .subpage p {
+  color: #229387 !important;
+}
+
 
 // Content
 .subtitle {
