@@ -324,6 +324,10 @@ img.is-rounded {
   border: 0px !important;
   box-shadow: none !important;
 }
+.slider-navigation-previous,
+.slider-navigation-next img {
+  border-radius: 0%;
+}
 // Footer
 
 .footer {
