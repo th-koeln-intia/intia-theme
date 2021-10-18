@@ -23,9 +23,21 @@ $modal-content-width: 800px;
 $tabs-link-active-color: $primary;
 $tabs-link-active-border-bottom-color: $primary;
 // Global
-body {  
+body {
   font-size: 1.5rem;
   line-height: 2.25rem;
+}
+
+h1, h2, h3, p {  
+  padding-bottom:30px;
+}
+h1, h2{  
+  padding-top:90px;
+}
+
+.card h1, .card h2, .card p, .slider h1, .slider h2, .slider p {  
+  padding-top:0;
+  padding-bottom: 0;
 }
 
 h1,
@@ -33,6 +45,12 @@ h1 p {
   font-size: 48px;
   line-height: 72px;
   font-weight: 600;
+  text-align: center;
+}
+
+.green h1,
+.green h1 p{
+  text-align: left;
 }
 
 h2,
@@ -56,33 +74,36 @@ h4 {
 h5 {
   font-size: 0.83rem;
 }
+
 // Button Animation + Gleiche Breite
 .button {
   // Schrifft
   font-size: 1.31rem !important;
   font-weight: 600;
   // Animation
-  transition-timing-function: cubic-bezier(.25, .46, .45, .94);
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition-property: background-color, transform;
-  transition-duration: .3s;
-  -webkit-transition-timing-function: cubic-bezier(.25, .46, .45, .94);
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -webkit-transition-property: background-color, transform;
-  -webkit-transition-duration: .3s;
-  -o-transition-timing-function: cubic-bezier(.25, .46, .45, .94);
+  -webkit-transition-duration: 0.3s;
+  -o-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -o-transition-property: background-color, transform;
-  -o-transition-duration: .3s;
-  -moz-transition-timing-function: cubic-bezier(.25, .46, .45, .94);
+  -o-transition-duration: 0.3s;
+  -moz-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -moz-transition-property: background-color, transform;
-  -moz-transition-duration: .3s;
+  -moz-transition-duration: 0.3s;
 }
 
-.button a, .button span{
+.button a,
+.button span {
   // Schrifft
   font-size: 16px !important;
   font-weight: 600;
 }
 
-.navbar-menu .button, .navbar-dropdown .button{
+.navbar-menu .button,
+.navbar-dropdown .button {
   // Buttongröße aus Figma
   width: 166px;
   height: 47px;

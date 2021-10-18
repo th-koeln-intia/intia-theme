@@ -1,5 +1,7 @@
 source "https://rubygems.org"
 
+gemspec
+
 gem "jekyll", group: :jekyll_plugins
 
 # If you have any plugins, put them here!

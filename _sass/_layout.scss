@@ -46,6 +46,33 @@ div.highlight {
   top: 30px;
 }
 
+.green {
+  background-color: $light;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 6rem;
+  padding-bottom: 8rem;
+}
+
+.highlighter {
+  background-color: $light;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  border-radius: 65px;
+  margin-top: 3em;
+}
+.highlighter-image {
+}
+
+.overtitle {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+.title-with-overtitle {
+  margin-top: 0 !important;
+  padding-top: 0.25em !important;
+}
 // Globals
 img.is-rounded {
   border-radius: 65px;
@@ -55,6 +82,7 @@ img.is-rounded {
   position: relative;
   bottom: -90px;
   width: 64px;
+  cursor: pointer;
 }
 
 .clear {
@@ -105,6 +133,10 @@ img.is-rounded {
 .button.is-rounded {
   padding-right: 0em !important;
 }
+.button.button.is-rounded:not(.navbar-item) {
+  padding-left: 1.5em !important;
+  padding-right: 1.5em !important;
+}
 .navbar-dropdown .button.is-rounded {
   padding-right: auto !important;
 }
@@ -144,6 +176,15 @@ img.is-rounded {
 .hero-body .container .button {
   float: right;
 }
+.home .hero-body h1,
+.home .hero-body h1 p {
+  text-align: left;
+}
+//// Hero sub-pages with green text
+.subpage h1,
+.subpage p {
+  color: #229387 !important;
+}
 
 // Content
 .subtitle {
@@ -168,6 +209,7 @@ img.is-rounded {
 .content-wrapper img {
   border-radius: 65px;
   height: auto;
+  object-fit: cover;
 }
 
 .content-wrapper p {
@@ -176,6 +218,7 @@ img.is-rounded {
 
 .card-content h2 p {
   padding-left: 15px;
+  padding-bottom: 0.5em;
 }
 
 .card-image:first-child img {
@@ -216,19 +259,8 @@ img.is-rounded {
 }
 
 // story-slider
-
-.green {
-  background-color: #e7f2ea;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 6rem;
-  padding-bottom: 8rem;
-}
 .slider {
   box-shadow: none;
-}
-.slider-item {
-  // padding-left: 50px;
 }
 .story-carousel-item {
   margin-left: 5%;
@@ -257,6 +289,7 @@ img.is-rounded {
   border-top-right-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
   height: 100%;
+  object-fit: cover;
 }
 .column.slider-content {
   padding: 3em;
@@ -285,6 +318,16 @@ img.is-rounded {
 .slider-pagination {
   bottom: -40px !important;
 }
+.slider-navigation-previous,
+.slider-navigation-next {
+  background: transparent !important;
+  border: 0px !important;
+  box-shadow: none !important;
+}
+.slider-navigation-previous img,
+.slider-navigation-next img {
+  border-radius: 0%;
+}
 // Footer
 
 .footer {
@@ -299,6 +342,7 @@ img.is-rounded {
 }
 .footer-logos img {
   height: 75px;
+  margin-right: 15px;
 }
 .footer .title {
   color: white;

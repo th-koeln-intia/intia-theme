@@ -3,5 +3,7 @@ import './bulma-carousel/js/bulma-carousel.js';
 const carousels = bulmaCarousel.attach('.carousel',{
     slidesToScroll: 1,
     slidesToShow: 1,
-    infinite: true
+    icons: {
+        'previous': `<img src="../assets/img/arrow-left.png"></img>`,
+        'next': `<img src="../assets/img/arrow-left.png" style="transform: rotate(180deg);"></img>`}
 });
