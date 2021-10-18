@@ -23,20 +23,32 @@ $modal-content-width: 800px;
 $tabs-link-active-color: $primary;
 $tabs-link-active-border-bottom-color: $primary;
 // Global
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-size: 1.5rem;
   line-height: 2.25rem;
 }
 
-h1, h2, h3, p {  
-  padding-bottom:30px;
+h1,
+h2,
+h3,
+p {
+  padding-bottom: 30px;
 }
-h1, h2{  
-  padding-top:90px;
+h1,
+h2 {
+  padding-top: 90px;
 }
 
-.card h1, .card h2, .card p, .slider h1, .slider h2, .slider p {  
-  padding-top:0;
+.card h1,
+.card h2,
+.card p,
+.slider h1,
+.slider h2,
+.slider p {
+  padding-top: 0;
   padding-bottom: 0;
 }
 
@@ -49,7 +61,7 @@ h1 p {
 }
 
 .green h1,
-.green h1 p{
+.green h1 p {
   text-align: left;
 }
 
