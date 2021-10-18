@@ -4,27 +4,35 @@
       link: /about/
     - name: Netzwerk
       link: /network/
-- name: Werkzeuge
+#- name: Werkzeuge
+#  dropdown:
+#    - name: Werkzeuge
+#      link: /werkzeuge/
+#- name: Lösungen
+#  dropdown:
+#    - name: Lösungen
+#      link: /loesungen/
+#- name: Wissen
+#  dropdown:
+#    - name: Wissen
+#      link: /wissen/
+#- name: Aktuelles
+#  dropdown:
+#    - name: Stories
+#      link: /stories/
+#- name: Mitmachen
+#  dropdown:
+#    - name: Mitmachen
+#      link: /mitmachen/
+- name: Showcases
   dropdown:
-    - name: Werkzeuge
-      link: /werkzeuge/
-- name: Lösungen
-  dropdown:
-    - name: Lösungen
-      link: /loesungen/
-- name: Wissen
-  dropdown:
-    - name: Wissen
-      link: /wissen/
-- name: Aktuelles
-  dropdown:
-    - name: Stories
-      link: /stories/
-- name: Mitmachen
-  dropdown:
-    - name: Mitmachen
-      link: /mitmachen/
+    - name: Landing page
+      link: /landing-page/
 - name: Demos
   dropdown:
     - name: Button
       link: /buttons/
+    - name: Header for landing page
+      link: /header-landing-page/
+    - name: Header for landing pag without image
+      link: /header-landing-page-without-image/

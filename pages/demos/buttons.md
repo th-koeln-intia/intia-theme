@@ -2,18 +2,20 @@
 title: Buttons
 permalink: /buttons/
 ---
-Dies ist ein Beispiel für einen Button: 
+
+This is an example of a button:
 <a href="/" class="navbar-item button is-rounded is-dark {% if item.link == page.url %} is-active {% endif %}">
-    <span>Test</span>
-    <span class="icon is-small">
-    <i class="fas fa-chevron-right"></i>
-    </span>
+<span>Test</span>
+<span class="icon is-small">
+<i class="fas fa-chevron-right"></i>
+</span>
 </a>  
-Dieser passt sich der Größe seiner Column an.
+This adapts to the size of its column.
+
 <div class="columns">
     <div class="column is-3">
         <a href="/" class="button is-rounded is-dark {% if item.link == page.url %} is-active {% endif %}">
-            <span>Test</span>
+            <span>Example</span>
             <span class="icon is-small">
             <i class="fas fa-chevron-right"></i>
             </span>
@@ -21,7 +23,7 @@ Dieser passt sich der Größe seiner Column an.
     </div>
     <div class="column is-3">
         <a href="/" class="button is-rounded {% if item.link == page.url %} is-active {% endif %}">
-            <span>Test</span>
+            <span>Example</span>
             <span class="icon is-small">
             <i class="fas fa-chevron-right"></i>
             </span>
@@ -29,7 +31,7 @@ Dieser passt sich der Größe seiner Column an.
     </div>
     <div class="column is-3">
         <a href="/" class="button is-dark {% if item.link == page.url %} is-active {% endif %}">
-            <span>Test</span>
+            <span>Example</span>
             <span class="icon is-small">
             <i class="fas fa-chevron-right"></i>
             </span>
@@ -37,12 +39,16 @@ Dieser passt sich der Größe seiner Column an.
     </div>
 </div>
 
-Einen Button erstellt man mit:
+A button is created with:
+
 ```html
-<a href="{{ section.link | relative_url }}" class="button is-rounded is-dark { % if item.link == page.url % } is-active { % endif % }">
-    <span>Mehr Lesen</span>
-    <span class="icon is-small">
+<a
+  href="{{ section.link | relative_url }}"
+  class="button is-rounded is-dark { % if item.link == page.url % } is-active { % endif % }"
+>
+  <span>Example</span>
+  <span class="icon is-small">
     <i class="fas fa-chevron-right"></i>
-    </span>
-</a>  
+  </span>
+</a>
 ```
