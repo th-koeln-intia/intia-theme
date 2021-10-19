@@ -60,6 +60,8 @@
   dropdown:
     - name: Button
       link: /buttons/
+    - name: Tooltips
+      link: /tooltips/
     - name: Contact form
       link: /contact-form/
     - name: Glossary abstract
