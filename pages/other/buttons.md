@@ -4,8 +4,8 @@ permalink: /buttons/
 ---
 
 This is an example of a button:
-<a href="/" class="navbar-item button is-rounded is-dark {% if item.link == page.url %} is-active {% endif %}">
-<span>Test</span>
+<a href="/" class="button is-rounded is-dark {% if item.link == page.url %} is-active {% endif %}">
+<span>Example</span>
 <span class="icon is-small">
 <i class="fas fa-chevron-right"></i>
 </span>
