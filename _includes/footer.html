@@ -18,7 +18,7 @@
         {% if site.data.navigation %}
         <div class="column ">
             <div class="title">Site Map</div>
-            <div class="columns">
+            <div class="columns footer-nav">
                 {% for item in site.data.navigation %}
                     <div class="column">
                         <a href="{{ subitem.link | relative_url }} " class="link"><strong>{{ item.name }}</strong></a>
