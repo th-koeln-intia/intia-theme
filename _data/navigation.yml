@@ -1,9 +1,9 @@
-- name: Über
-  dropdown:
-    - name: Projekt
-      link: /about/
-    - name: Netzwerk
-      link: /network/
+#- name: Über
+#  dropdown:
+#    - name: Projekt
+#      link: /about/
+#    - name: Netzwerk
+#      link: /network/
 #- name: Werkzeuge
 #  dropdown:
 #    - name: Werkzeuge
@@ -28,11 +28,53 @@
   dropdown:
     - name: Landing page
       link: /landing-page/
-- name: Demos
+    - name: Projekt
+      link: /about/
+    - name: Netzwerk
+      link: /network/    
+- name: Header
   dropdown:
-    - name: Button
-      link: /buttons/
+    - name: Header A
+      link: /header-a/
+    - name: Header B
+      link: /header-b/
+    - name: Header C
+      link: /header-c/
+    - name: Header Glossary
+      link: /header-glossary/
     - name: Header for landing page
       link: /header-landing-page/
     - name: Header for landing pag without image
       link: /header-landing-page-without-image/
+- name: Highlighter
+  dropdown:
+    - name: Highlighter A
+      link: /highlighter-a/
+    - name: Highlighter B
+      link: /highlighter-b/
+    - name: Highlighter C
+      link: /highlighter-c/ 
+    - name: Highlighter D
+      link: /highlighter-d/ 
+- name: Other
+  dropdown:
+    - name: Button
+      link: /buttons/
+    - name: Contact form
+      link: /contact-form/
+    - name: Glossary abstract
+      link: /glossary-abstract/
+    - name: Glossary full entry
+      link: /glossary-full-entry/
+    - name: Left-Right Blocks
+      link: /left-right-blocks/
+    - name: Methods filter
+      link: /methods-filter/
+    - name: Stories teaser
+      link: /stories-teaser/
+    - name: Textblock
+      link: /textblock/
+    - name: Textblock highlight
+      link: /textblock-highlight/
+    - name: Textblock with image
+      link: /textblock-with-image/
