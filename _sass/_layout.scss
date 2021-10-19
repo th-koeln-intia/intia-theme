@@ -350,6 +350,64 @@ img.is-rounded {
 .slider-navigation-next img {
   border-radius: 0%;
 }
+
+//highlighter
+.highlighter {
+  background-color: $light;
+  border-radius: 65px;
+  padding: 75px;
+  font-size: 1.4rem;
+}
+.highlighter h1{
+  text-align: left;
+  padding-top: 0;
+}
+.highlighter h2{
+  padding-top: 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.two-columns p{
+  column-count: 2;
+  column-gap: 5rem;
+}
+
+.highlighter .button {
+  float: right;
+}
+
+.highlighter img {
+  border-radius: 0;
+  height: auto;
+  width: 50%;
+  float: right;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.highlighter .column {  
+  margin-right: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.highlighter .is-round {
+  display: flex;
+  background-color: white;
+  border-radius: 1000px;
+  padding: 3rem;
+  float: none;
+  overflow: hidden;
+  height: 300px;
+  width: 300px;
+}
+.highlighter .is-round img  {
+  background-color: white;
+  padding-left: 0;
+  padding-right: 0;
+  height: auto;
+  width: auto;
+}
+
 // Footer
 
 .footer {
