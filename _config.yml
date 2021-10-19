@@ -43,6 +43,12 @@ defaults:
     values:
       layout: default
   - scope:
+      type: glossary
+      path: _glossary
+    values:
+      permalink: /glossary/:title/
+      layout: default      
+  - scope:
       type: posts
       path: _posts
     values:
@@ -51,6 +57,9 @@ defaults:
 
 # Collections
 collections_dir: collections
+collections:
+  glossary:
+    output: true
 
 # --------------------------- Includes and Excludes -------------------------- #
 

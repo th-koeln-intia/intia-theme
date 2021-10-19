@@ -31,7 +31,9 @@
     - name: Projekt
       link: /about/
     - name: Netzwerk
-      link: /network/    
+      link: /network/   
+    - name: Glossary
+      link: /glossary/ 
 - name: Header
   dropdown:
     - name: Header A
@@ -62,6 +64,8 @@
       link: /buttons/
     - name: Tooltips
       link: /tooltips/
+    - name: Glossary usage
+      link: /glossary-usage/
     - name: Contact form
       link: /contact-form/
     - name: Glossary abstract
