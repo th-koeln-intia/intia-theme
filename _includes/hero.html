@@ -1,14 +1,14 @@
 <section class="hero is-primary is-hidden-print {% if page.hero_height %} {{ page.hero_height }} {% else %} is-medium {% endif %} {% if page.hero_tags %} {{ page.hero_tags }} {% endif %}" {% if page.hero_background_image %} style="background: url('{{ page.hero_background_image }}') no-repeat center center; background-size: cover;" {% endif %}>
     <div class="hero-body">
         <div class="container">
-            {% if page.hero_image %}
-                <img src="{{page.hero_image}}" alt="placeholder"  class="is-rounded is-hidden-mobile">
-            {% endif %}
             {% if page.title_above %}
                 <h1 class="overtitle subtitle is-4">{{ page.title_above }}</h1>
             {% endif %}
             <h1 class="title is-1  {% if page.title_above %} title-with-overtitle {% endif %}">{{ page.title }}</h1>
-            <p class="subtitle is-4">{{ page.subtitle }}</p>
+            {% if page.hero_image %}
+                <img src="{{page.hero_image}}" alt="placeholder"  class="is-rounded is-hidden-mobile">
+            {% endif %}
+            <p class="subtitle is-4 {% if page.hero_image %}has-text-centered{% endif %}">{{ page.subtitle }}</p>
             {% if page.hero_link %}
                 <a href="{{ page.hero_link | relative_url }}" class="button is-rounded is-dark">
                     <span>{{ page.hero_link_text }}</span>

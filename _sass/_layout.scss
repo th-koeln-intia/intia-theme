@@ -93,12 +93,13 @@ img.is-rounded {
 
 // Buttons - Mybe global in Buttons und raus damit?
 .button.is-dark {
-  background-color: #229387;
+  background-color: $primary-dark;
 }
 
 // Navi
 .navbar {
   padding-top: 0.6rem;
+  padding-bottom: 2.6rem;
 }
 
 .navbar.is-primary .navbar-dropdown a.navbar-item.is-active {
@@ -156,6 +157,8 @@ img.is-rounded {
 .hero-body img {
   float: right;
   margin-left: 200px;
+  top: -175px;
+  position: inherit;
 }
 .hero {
   display: block;
@@ -165,7 +168,7 @@ img.is-rounded {
   padding-top: 70px;
 }
 .hero.is-medium .hero-body {
-  padding: 13rem 9rem 4.5rem;
+  padding: 10rem 9rem 4.5rem;
 }
 
 .hero-body .button,
@@ -183,10 +186,29 @@ img.is-rounded {
 //// Hero sub-pages with green text
 .subpage h1,
 .subpage p {
-  color: #229387 !important;
+  color: $primary-dark !important;
+}
+.subpage .hero-body img , .toppage .hero-body img {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  top: 0;
+}
+
+//// Hero top-pages with green box
+.toppage .hero-body{
+  background-color: $light !important; 
+}
+
+.glossary {
+  text-align: center;
 }
 
 // Content
+#main .columns{
+  width: 100%;
+}
 .subtitle {
   padding: 50px;
 }
