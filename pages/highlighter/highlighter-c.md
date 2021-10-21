@@ -7,7 +7,7 @@ permalink: /highlighter-c/
 
 # Highlighter with Image Text-Aligment Right
 
-<div class="highlighter">
+<div class="highlighter min-height25p">
 
 ## Lorum ipsum
 

@@ -363,6 +363,11 @@ img.is-rounded {
   padding: 75px;
   font-size: 1.4rem;
 }
+
+.min-height25p {
+  min-height: 25vw;
+}
+
 .highlighter h1 {
   text-align: left;
   padding-top: 0;
@@ -490,4 +495,21 @@ footer .columns {
   .footer-logos .column {
     text-align: left !important;
   }
+}
+
+// Tool-Tip
+
+a:hover .tooltip-popup {
+  visibility: visible;
+}
+.tooltip-popup {
+  position: relative;
+  width: 20vw;
+  //left: -50%;
+  display: inline;
+  visibility: hidden;
+  background: $light;
+}
+.visible {
+  visibility: visible;
 }
