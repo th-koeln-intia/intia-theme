@@ -89,6 +89,12 @@ img.is-rounded {
 .is-pointed-down {
   transform: scaleY(-1);
 }
+.is-hidden {
+  visibility: hidden;
+}
+.is-visible {
+  visibility: visible;
+}
 .clear {
   clear: both;
   display: block;

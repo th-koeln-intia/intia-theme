@@ -11,8 +11,8 @@ The Default layout that everything is using
     <body>
         {% include header.html %}
         <div class="arrow-image is-pulled-left is-hidden-mobile">
-            <img src="{{ site.baseurl }}/assets/img/arrow-down.png" alt="placeholder"  class="" onmouseover="window.scrollBy(0, -10);">
-            <img src="{{ site.baseurl }}/assets/img/arrow-down.png" alt="placeholder"  class="is-pointed-down" onmouseover="window.scrollBy(0, 10);">     
+            <img id="scroll-up" src="{{ site.baseurl }}/assets/img/arrow-down.png" alt="placeholder">
+            <img id="scroll-down" src="{{ site.baseurl }}/assets/img/arrow-down.png" alt="placeholder"  class="is-pointed-down">     
         </div>
         {% unless page.hide_hero %}
             {% include hero.html %}

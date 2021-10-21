@@ -3,7 +3,7 @@
         <h1 class="slider-titel">Aktuelles</h1>
 
         <div class="carousel">
-            {% for story in site.posts %}
+            {% for story in site.posts limit:5 %}
             <div class="story-carousel-item">
                 <div class="container">
                     <div class="section">
