@@ -1,11 +1,10 @@
 ---
 title: Highlighter B
 subtitle: |
-  Some Explanation.
+  A highlighter with read more button.
 permalink: /highlighter-b/
+hero_tags: subpage
 ---
-
-# Highlighter B
 
 <div class="highlighter">
 
@@ -24,7 +23,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 <div class="clear"></div>
 </div>
 
-Should look like this:
+## Should look like this:
 
 <figure class="image">
   <img src="{{baseurl}}/assets/templates/highlighter-b.png">

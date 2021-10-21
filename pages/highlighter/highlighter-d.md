@@ -1,10 +1,10 @@
 ---
 title: Highlighter D
 subtitle: |
-  Some Explanation.
+  A highlighter with introduction cards
 permalink: /highlighter-d/
+hero_tags: subpage
 ---
-# Highlighter mit Karten
 
 <div class="highlighter">
 
@@ -21,8 +21,6 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
       <span>Text</span>
   </a>
   <div class="clear"></div>
-
-
 
 <div class="columns">       
   <div class="column is-4 is-round is-centered">
@@ -64,10 +62,9 @@ Ideen für technik-bezogene Alltagsprobleme als erste Prototypen: Building Block
   </div>
   </div>
 
-
 </div>
 
-Should look like this:
+## Should look like this:
 
 <figure class="image">
   <img src="{{baseurl}}/assets/templates/highlighter-d.png">

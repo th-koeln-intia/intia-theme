@@ -1,12 +1,25 @@
 ---
 title: Textblock
 subtitle: |
-  Some Explanation.
+  A textblock as introduction to a page
 permalink: /textblock/
+hero_tags: subpage
+introduction_title: Quickstart
+introduction_content: |
+  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.
 ---
 
-Should look like this:
+## How it works:
 
-<figure class="image">
-  <img src="{{baseurl}}/assets/templates/textblock.png">
-</figure>
+An introduction can be added by providing a title and content in the meta-tags.
+
+```yaml
+introduction_title: Quickstart
+
+introduction_content: |
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.
+```

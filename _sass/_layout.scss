@@ -507,15 +507,13 @@ footer .columns {
 
 a:hover .tooltip-popup {
   visibility: visible;
+  display: block;
 }
 .tooltip-popup {
   position: relative;
   width: 20vw;
-  //left: -50%;
-  display: inline;
   visibility: hidden;
+  display: none;
   background: $light;
-}
-.visible {
-  visibility: visible;
+  border-radius: 65px;
 }
