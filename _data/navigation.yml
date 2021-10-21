@@ -1,29 +1,3 @@
-#- name: Über
-#  dropdown:
-#    - name: Projekt
-#      link: /about/
-#    - name: Netzwerk
-#      link: /network/
-#- name: Werkzeuge
-#  dropdown:
-#    - name: Werkzeuge
-#      link: /werkzeuge/
-#- name: Lösungen
-#  dropdown:
-#    - name: Lösungen
-#      link: /loesungen/
-#- name: Wissen
-#  dropdown:
-#    - name: Wissen
-#      link: /wissen/
-#- name: Aktuelles
-#  dropdown:
-#    - name: Stories
-#      link: /stories/
-#- name: Mitmachen
-#  dropdown:
-#    - name: Mitmachen
-#      link: /mitmachen/
 - name: Showcases
   dropdown:
     - name: Landing page
@@ -44,9 +18,9 @@
       link: /header-c/
     - name: Header Glossary
       link: /header-glossary/
-    - name: Header for landing page
+    - name: Header LP
       link: /header-landing-page/
-    - name: Header for landing pag without image
+    - name: Header LP no image
       link: /header-landing-page-without-image/
 - name: Highlighter
   dropdown:
@@ -78,9 +52,9 @@
       link: /methods-filter/
     - name: Stories teaser
       link: /stories-teaser/
-    - name: Textblock
+    - name: Text
       link: /textblock/
-    - name: Textblock highlight
+    - name: Text highlight
       link: /textblock-highlight/
-    - name: Textblock with image
+    - name: Text with image
       link: /textblock-with-image/

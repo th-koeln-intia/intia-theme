@@ -79,12 +79,16 @@ img.is-rounded {
 }
 .arrow-image {
   z-index: 10;
-  top: 50%;
+  top: calc(50% - 68px);
   position: sticky;
   width: 64px;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
 }
-
+.is-pointed-down {
+  transform: scaleY(-1);
+}
 .clear {
   clear: both;
   display: block;
@@ -188,7 +192,8 @@ img.is-rounded {
 .subpage p {
   color: $primary-dark !important;
 }
-.subpage .hero-body img , .toppage .hero-body img {
+.subpage .hero-body img,
+.toppage .hero-body img {
   float: none;
   margin-left: auto;
   margin-right: auto;
@@ -197,8 +202,8 @@ img.is-rounded {
 }
 
 //// Hero top-pages with green box
-.toppage .hero-body{
-  background-color: $light !important; 
+.toppage .hero-body {
+  background-color: $light !important;
 }
 
 .glossary {
@@ -206,7 +211,7 @@ img.is-rounded {
 }
 
 // Content
-#main .columns{
+#main .columns {
   width: 100%;
 }
 .subtitle {
@@ -358,16 +363,16 @@ img.is-rounded {
   padding: 75px;
   font-size: 1.4rem;
 }
-.highlighter h1{
+.highlighter h1 {
   text-align: left;
   padding-top: 0;
 }
-.highlighter h2{
+.highlighter h2 {
   padding-top: 0;
   font-size: 2rem;
   font-weight: 600;
 }
-.two-columns p{
+.two-columns p {
   column-count: 2;
   column-gap: 5rem;
 }
@@ -384,7 +389,7 @@ img.is-rounded {
   padding-left: 5rem;
   padding-right: 5rem;
 }
-.highlighter .column {  
+.highlighter .column {
   margin-right: 4rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -400,7 +405,7 @@ img.is-rounded {
   height: 300px;
   width: 300px;
 }
-.highlighter .is-round img  {
+.highlighter .is-round img {
   background-color: white;
   padding-left: 0;
   padding-right: 0;
@@ -437,10 +442,10 @@ footer .columns {
   padding-top: 2em;
   padding-bottom: 2em;
 }
-.footer .footer-nav {  
+.footer .footer-nav {
   padding-top: 0;
 }
-.footer .footer-nav .column {  
+.footer .footer-nav .column {
   padding-left: 0;
 }
 .footer-logos .column {
