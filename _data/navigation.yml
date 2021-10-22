@@ -3,9 +3,15 @@
     - name: Landing page
       link: /landing-page/
     - name: Projekt
+      link: /project/
+    - name: Plattform
       link: /about/
-    - name: Netzwerk
+    - name: Network
       link: /network/   
+    - name: Stories
+      link: /stories/ 
+    - name: Contact
+      link: /contact/               
     - name: Glossary
       link: /glossary/ 
 - name: Header
