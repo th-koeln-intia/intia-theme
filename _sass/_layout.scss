@@ -517,3 +517,43 @@ a:hover .tooltip-popup {
   background: $light;
   border-radius: 65px;
 }
+
+// Contect
+
+.input, .textarea, #thema {
+  border: 3px solid $primary-dark;
+  border-radius: 45px;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+}
+.input, #thema {
+  height: 2.75em;
+}
+
+.textarea {
+  padding-left: 2.5em;
+  padding-top: 1.5em;
+  min-height: 13.5em !important;
+}
+.label {
+  color: $primary-dark;
+  font-weight: 600;
+  padding-left: 1rem;
+  margin-bottom: 0 !important;
+}
+.contact .column {
+  padding: 5rem;
+  padding-left: 0;
+}
+.select:not(.is-multiple):not(.is-loading)::after {
+  border-color: $primary-dark;
+  right: 2.3em;
+  z-index: 4;
+}
+.contact .control.has-icons-left .icon.is-left {
+  left: 5px;
+  top: 2px;
+}
+.contact .button {
+  float: right;
+}
