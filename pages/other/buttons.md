@@ -1,7 +1,12 @@
 ---
 title: Buttons
+subtitle: |
+  Different examples and usge of Buttons
+hero_tags: subpage
 permalink: /buttons/
 ---
+
+## Simple Button
 
 This is an example of a button:
 <a href="/" class="button is-rounded is-dark {% if item.link == page.url %} is-active {% endif %}">
@@ -9,13 +14,16 @@ This is an example of a button:
 <span class="icon is-small">
 <i class="fas fa-chevron-right"></i>
 </span>
-</a>  
+</a>
+
+## Adaptable Button
+
 This adapts to the size of its column.
 
 <div class="columns">
     <div class="column is-3">
         <a href="/" class="button is-rounded is-dark {% if item.link == page.url %} is-active {% endif %}">
-            <span>Example</span>
+            <span>Classic button</span>
             <span class="icon is-small">
             <i class="fas fa-chevron-right"></i>
             </span>
@@ -23,7 +31,7 @@ This adapts to the size of its column.
     </div>
     <div class="column is-3">
         <a href="/" class="button is-rounded {% if item.link == page.url %} is-active {% endif %}">
-            <span>Example</span>
+            <span>With white Background</span>
             <span class="icon is-small">
             <i class="fas fa-chevron-right"></i>
             </span>
@@ -31,13 +39,15 @@ This adapts to the size of its column.
     </div>
     <div class="column is-3">
         <a href="/" class="button is-dark {% if item.link == page.url %} is-active {% endif %}">
-            <span>Example</span>
+            <span>Without round borders</span>
             <span class="icon is-small">
             <i class="fas fa-chevron-right"></i>
             </span>
         </a>  
     </div>
 </div>
+
+## Using buttons
 
 A button is created with:
 

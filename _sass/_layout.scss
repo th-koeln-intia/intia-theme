@@ -79,12 +79,22 @@ img.is-rounded {
 }
 .arrow-image {
   z-index: 10;
-  top: 50%;
+  top: calc(50% - 68px);
   position: sticky;
   width: 64px;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
 }
-
+.is-pointed-down {
+  transform: scaleY(-1);
+}
+.is-hidden {
+  visibility: hidden;
+}
+.is-visible {
+  visibility: visible;
+}
 .clear {
   clear: both;
   display: block;
@@ -188,7 +198,8 @@ img.is-rounded {
 .subpage p {
   color: $primary-dark !important;
 }
-.subpage .hero-body img , .toppage .hero-body img {
+.subpage .hero-body img,
+.toppage .hero-body img {
   float: none;
   margin-left: auto;
   margin-right: auto;
@@ -197,8 +208,8 @@ img.is-rounded {
 }
 
 //// Hero top-pages with green box
-.toppage .hero-body{
-  background-color: $light !important; 
+.toppage .hero-body {
+  background-color: $light !important;
 }
 
 .glossary {
@@ -206,7 +217,7 @@ img.is-rounded {
 }
 
 // Content
-#main .columns{
+#main .columns {
   width: 100%;
 }
 .subtitle {
@@ -350,6 +361,69 @@ img.is-rounded {
 .slider-navigation-next img {
   border-radius: 0%;
 }
+
+//highlighter
+.highlighter {
+  background-color: $light;
+  border-radius: 65px;
+  padding: 75px;
+  font-size: 1.4rem;
+}
+
+.min-height25p {
+  min-height: 25vw;
+}
+
+.highlighter h1 {
+  text-align: left;
+  padding-top: 0;
+}
+.highlighter h2 {
+  padding-top: 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.two-columns p {
+  column-count: 2;
+  column-gap: 5rem;
+}
+
+.highlighter .button {
+  float: right;
+}
+
+.highlighter img {
+  border-radius: 0;
+  height: auto;
+  width: 50%;
+  float: right;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.highlighter .column {
+  margin-right: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.highlighter .is-round {
+  display: flex;
+  background-color: white;
+  border-radius: 1000px;
+  padding: 3rem;
+  float: none;
+  overflow: hidden;
+  height: 300px;
+  width: 300px;
+}
+.highlighter .is-round img {
+  background-color: white;
+  padding-left: 0;
+  padding-right: 0;
+  height: auto;
+  width: auto;
+}
+
 // Footer
 
 .footer {
@@ -379,10 +453,10 @@ footer .columns {
   padding-top: 2em;
   padding-bottom: 2em;
 }
-.footer .footer-nav {  
+.footer .footer-nav {
   padding-top: 0;
 }
-.footer .footer-nav .column {  
+.footer .footer-nav .column {
   padding-left: 0;
 }
 .footer-logos .column {
@@ -427,4 +501,59 @@ footer .columns {
   .footer-logos .column {
     text-align: left !important;
   }
+}
+
+// Tool-Tip
+
+a:hover .tooltip-popup {
+  visibility: visible;
+  display: block;
+}
+.tooltip-popup {
+  position: relative;
+  width: 20vw;
+  visibility: hidden;
+  display: none;
+  background: $light;
+  border-radius: 65px;
+}
+
+// Contect
+
+.input, .textarea, #thema {
+  border: 3px solid $primary-dark;
+  border-radius: 45px;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+}
+.input, #thema {
+  height: 2.75em;
+}
+
+.textarea {
+  padding-left: 2.5em;
+  padding-top: 1.5em;
+  min-height: 13.5em !important;
+}
+.label {
+  color: $primary-dark;
+  font-weight: 600;
+  padding-left: 1rem;
+  margin-bottom: 0 !important;
+}
+.contact .column {
+  padding: 5rem;
+  padding-left: 0;
+}
+.select:not(.is-multiple):not(.is-loading)::after {
+  border-color: $primary-dark;
+  right: 2.3em;
+  z-index: 4;
+}
+.contact .control.has-icons-left .icon.is-left {
+  left: 5px;
+  top: 2px;
+}
+.contact .button {
+  float: right;
 }

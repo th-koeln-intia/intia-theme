@@ -1,0 +1,70 @@
+{% if page.contact %}
+<div class="green contact">
+    <h1>Write us</h1>
+    Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non mi porta gravida at eget
+    metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis
+    consectetur purus sit amet fermentum.
+    <form action="https://submit-form.com/ujaWfjyi"  class="columns">
+        <div class="column is-6">
+            <div class="field">
+                <label class="label">Name</label>
+                <div class="control has-icons-left">
+                  <input class="input" type="text" id="name" name="name" placeholder="Name" required>
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">E-Mail</label>
+                <div class="control has-icons-left">
+                  <input class="input" type="email" id="email" name="email" placeholder="E-Mail">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Thema</label>
+                <div class="control">
+                  <div class="select">
+                    <select id="thema" name="thema">
+                      <option value="Sonstige">Sonstige</option>
+                      <option value="Plattform">Plattform</option>
+                      <option value="Innovationskoffer">Innovationskoffer</option>
+                      <option value="Methoden">Methoden</option>
+                      <option value="Prototypen">Prototypen</option>
+                      <option value="Stories">Stories</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="column is-6">
+            <div class="field">
+                <label class="label">Nachricht</label>
+                <div class="control">
+                  <textarea
+                      class="textarea"
+                      id="message"
+                      name="message"
+                      placeholder="Wie können wir dir helfen?"
+                      required=""
+                  ></textarea>
+                </div>
+              </div>
+              <div class="checkbox columns">
+                <div class="column is-1">
+                  <input class="column" type="checkbox" id="agree" name="privacy-policy" value="agreed" required oninvalid="this.setCustomValidity('Bitte dieses Feld anklicken, um fortzufahren')"
+                       oninput="this.setCustomValidity('')">
+                </div>
+                
+                <div class="column">
+                  <label for="agree">Ich akzeptiere das für die Daten-Erfassung der Dienst Formspark.io genutzt wird. Für nähere Informationen zur Daten-Erfassung <a href="https://formspark.io/legal/privacy-policy/">hier klicken</a>.</label><br><br>
+                  <button class="button is-rounded is-dark" type="submit">Abschicken</button>
+                </div>
+              </div>
+        </div>
+    </form>
+  </div>
+  {% endif %}

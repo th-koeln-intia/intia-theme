@@ -1,0 +1,15 @@
+sections:
+  - title: Lorem Ipsum
+    text: |
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non enim dolor. Pellentesque eget eros blandit, imperdiet metus id, sagittis dolor. 
+    image: https://via.placeholder.com/1200x800
+    icon: fa-tools
+    link: /
+    link_text: More
+  - title: Lorem Lipsum
+    text: |
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non enim dolor. Pellentesque eget eros blandit, imperdiet metus id, sagittis dolor. 
+    image: https://via.placeholder.com/1200x800
+    icon: fa-key
+    link: /
+    link_text: Read more

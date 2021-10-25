@@ -1,12 +1,12 @@
 ---
 title: Stories/News teaser
 subtitle: |
-  Some Explanation.
+  A simple teaser for stories in form of a carousel.
 permalink: /stories-teaser/
+hero_tags: subpage
+story_slider: true
 ---
 
-Should look like this:
+## How it works:
 
-<figure class="image">
-  <img src="{{baseurl}}/assets/templates/stories-teaser.png">
-</figure>
+A story teaser can be added with the tag 'story_slider: true'.

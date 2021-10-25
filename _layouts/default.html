@@ -10,8 +10,10 @@ The Default layout that everything is using
     {% include head.html %}
     <body>
         {% include header.html %}
-        <img src="{{ site.baseurl }}/assets/img/arrow-down.png" alt="placeholder"  class="arrow-image is-pulled-left is-hidden-mobile" style="transform: rotate(180deg);" onmouseover="window.scrollBy(0, -10);">
-        <img src="{{ site.baseurl }}/assets/img/arrow-down.png" alt="placeholder"  class="arrow-image is-pulled-left is-hidden-mobile" onmouseover="window.scrollBy(0, 10);">     
+        <div class="arrow-image is-pulled-left is-hidden-mobile">
+            <img id="scroll-up" src="{{ site.baseurl }}/assets/img/arrow-down.png" alt="placeholder">
+            <img id="scroll-down" src="{{ site.baseurl }}/assets/img/arrow-down.png" alt="placeholder"  class="is-pointed-down">     
+        </div>
         {% unless page.hide_hero %}
             {% include hero.html %}
         {% else %}
@@ -19,6 +21,7 @@ The Default layout that everything is using
         <div id="main" class="content-wrapper has-background-primary-light">
             
             {% include story-slider.html %}
+            {% include contact.html %}
             <div class="columns is-centered">
                 <div id="content" class="column is-10-desktop is-12-tablet">
                     {% include introduction.html %}
