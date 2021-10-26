@@ -215,6 +215,19 @@ img.is-rounded {
   top: 0;
   max-width: auto;
 }
+.buttons-hero {
+  display: none;
+}
+
+.pdf .buttons-hero {
+  display: block;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.hero-body .container .buttons-hero .button {
+  float: none;
+}
 
 //// Hero top-pages with green box
 .toppage .hero-body {

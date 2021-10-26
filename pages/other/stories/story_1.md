@@ -11,7 +11,7 @@ tags: news intia probes
 hero_image: /assets/img/posts/photoprobe.jpg
 image: /assets/img/posts/photoprobe.jpg
 permalink: /stories/story_1
-hero_tags: subpage post
+hero_tags: subpage post pdf
 
 ---
 
