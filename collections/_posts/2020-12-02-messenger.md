@@ -1,11 +1,15 @@
 ---
 title: "Forschungsdaten erheben trotz COVID-19 Kontaktbeschränkungen: Wie geht das mit einem Messenger?"
+title_above: AKTUELLES
 published: true
 author: Marc Schmidt
+date: 10.01.2020
 categories: News
 tags: news intia messenger covid-19
 image: /assets/img/posts/messenger.jpg
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+hero_tags: subpage post pdf
+subtitle: |
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
 ---
 
 - Corona-Maßnahmen behindern Ihre Zusammenarbeit mit Forschungspartnern und Zielgruppen und Sie wollen auf eine digitale Kommunikation umstellen.
