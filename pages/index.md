@@ -1,15 +1,17 @@
 ---
 title: Willkommen auf INTIA!
 subtitle: |
-  Hier kommen Fachkräfte der Sozialen Arbeit, Entwickler:innen und Wissenschaftler:innen zusammen, um gemeinsam mit betroffenen Jugendlichen Technik und digitale Hilfen zur Alltagsbewältigung zu entwickeln und weiterzugeben.
+  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
 hero_image: https://via.placeholder.com/440x638
 hero_link: /about/
 hero_tags: home
 hero_link_text: Mehr über INTIA
 permalink: /
 story_slider: true
-introduction_title: Schnelleinstieg
-introduction_content: |
-  INTIA bietet Lösungen und Wissen zur partizipativen und inklusiven Technikentwicklung an. In den Kategorien Werkzeuge, Lösungen und Wissen gibt es Produkte, Prototypen und Methoden zum Nachbauen, Mitmachen und Weiterentwickeln.
-left_right_layout: landing-page
 ---
+
+{% include introduction.md title="Quickstart" content="
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et."
+%}
+
+{% include left-right-blocks.html data="left-right-demo" %}
