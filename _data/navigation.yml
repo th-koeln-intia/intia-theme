@@ -30,14 +30,8 @@
       link: /header-landing-page-without-image/
 - name: Highlighter
   dropdown:
-    - name: Highlighter A
-      link: /highlighter-a/
-    - name: Highlighter B
-      link: /highlighter-b/
-    - name: Highlighter C
-      link: /highlighter-c/ 
-    - name: Highlighter D
-      link: /highlighter-d/ 
+    - name: Highlighter
+      link: /highlighter/
 - name: Other
   dropdown:
     - name: Button
