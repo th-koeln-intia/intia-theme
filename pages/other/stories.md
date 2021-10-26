@@ -6,6 +6,7 @@ subtitle: |
 subtitle: |
   Kurzer Text zur Einleitung etwas in die Richtung – INTIA ist ein Projekt, dass noch bis Juni 2022 läuft. In dieser Zeit sind wir noch für Fragen erreichbar danach nicht mehr ... oder sowas in diese Richtung.
 permalink: /stories/
+story_slider: true
 hero_tags: subpage
 ---
 
