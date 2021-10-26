@@ -3,7 +3,7 @@ published: true
 title: Prototypen mit Jugendlichen entwickelt
 title_above: AKTUELLES
 author: Marc Schmidt
-date: 26.10.2020
+date: 26.10.2021
 subtitle: |
   Zusammenfassung/Abstrakt in Leicht<br> Methoden einer inklusiven Prototypenentwicklung mit Jugendlichen mit Beeinträchtigung. Das INTIA Projekt strebt eine Technikentwicklung an, die Jugendliche aus dem Kontext der Behinderten und Jugendhilfe partizipativ mitgestalten.
 categories: News
