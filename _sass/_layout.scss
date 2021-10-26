@@ -566,3 +566,55 @@ a:hover .tooltip-popup {
 .contact .button {
   float: right;
 }
+
+
+
+// newss
+.news {
+  box-shadow: none;
+}
+.news-item {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.news-container .card-content .content {
+  margin: 50px;
+}
+.story-news {
+  background-color: $light;
+  border-bottom-left-radius: 65px !important;
+  border-bottom-right-radius: 65px !important;
+  border-top-left-radius: 65px !important;
+  border-top-right-radius: 65px !important;
+}
+.news-slider .button {
+  float: right;
+}
+.column.news-image {
+  padding: 0;
+}
+.column.news-image .image {
+  height: 100%;
+}
+.column.news-image img {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  height: 100%;
+  object-fit: cover;
+}
+.column.news-content {
+  padding: 3em;
+}
+.news-content h2 {
+  margin-bottom: 2rem;
+  padding-top: 0;
+}
+.news-content h4 {
+  font-size: 0.75rem;
+  letter-spacing: 0.3rem;
+}
+.news-content {
+  width: 100%;
+  display: flow-root;
+  margin: auto;
+}
