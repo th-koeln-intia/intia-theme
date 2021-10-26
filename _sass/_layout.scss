@@ -160,6 +160,9 @@ img.is-rounded {
 .hero-body {
   background-color: white;
 }
+.home .hero-body h1 {
+  max-width: 60%;
+}
 .hero.is-large .hero-body {
   padding-bottom: 12rem;
 }
@@ -169,6 +172,11 @@ img.is-rounded {
   margin-left: 200px;
   top: -175px;
   position: inherit;
+}
+.home .hero-body img {
+  max-width: 40%;
+  height: 66vh;
+  object-fit: cover;
 }
 .hero {
   display: block;
@@ -205,6 +213,7 @@ img.is-rounded {
   margin-right: auto;
   display: block;
   top: 0;
+  max-width: auto;
 }
 
 //// Hero top-pages with green box
