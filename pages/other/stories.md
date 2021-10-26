@@ -1,10 +1,10 @@
 ---
-title: Neuigkeiten
-title_above: AKTUELLES
+title: News
+title_above: Stories
 subtitle: |
   Some Explanation.
 subtitle: |
-  Kurzer Text zur Einleitung etwas in die Richtung – INTIA ist ein Projekt, dass noch bis Juni 2022 läuft. In dieser Zeit sind wir noch für Fragen erreichbar danach nicht mehr ... oder sowas in diese Richtung.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus, ipsum vel ullamcorper tincidunt, eros tortor tempus odio, nec tincidunt eros massa vitae enim. Ut efficitur quam et efficitur consectetur. Vestibulum feugiat semper congue. 
 permalink: /stories/
 story_slider: true
 hero_tags: subpage
