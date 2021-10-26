@@ -62,9 +62,6 @@ div.highlight {
   border-radius: 65px;
   margin-top: 3em;
 }
-.highlighter-image {
-}
-
 .overtitle {
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
@@ -94,6 +91,12 @@ img.is-rounded {
 }
 .is-visible {
   visibility: visible;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
 }
 .clear {
   clear: both;

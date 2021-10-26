@@ -122,8 +122,29 @@ Aufteilen der MEs in unterschiedliche Betriebe auf Grundlage des Bundesteilhabeg
 weiteren Iterationen mit der Einrichtung nicht mehr durchgeführt werden, denn es fanden in der
 Qualifizierungsmaßnahme keine gemeinsamen Arbeitseinheiten mehr statt.
 
-
-
+<div class="columns">
+<div class="column left">
+  <a  href=""  class="button is-rounded is-dark { % if item.link == page.url % } { % endif % }">
+      <span class="icon is-small">
+          <i class="fas fa-chevron-left"></i>
+      </span>
+      <span>Zur Übersicht</span>
+  </a>
+</div>
+  <div class="column right">
+  <a  href=""  class="button is-rounded is-dark { % if item.link == page.url % } { % endif % }">
+      <span>Als PDF Herunterladen</span>
+      <span class="icon is-small">
+          <i class="fas fa-chevron-right"></i>
+      </span>
+  </a>
+  <a  href=""  class="button is-rounded is-dark { % if item.link == page.url % } { % endif % }">
+      <span>Zum Anfang</span>
+      <span class="icon is-small">
+          <i class="fas fa-chevron-left"></i>
+      </span>
+  </a>
+</div>
 
 
 
