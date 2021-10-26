@@ -4,7 +4,8 @@ published: true
 author: Alena Schmier, Hanna Thielmann, Jan Seidler
 categories: News
 tags: news intia prototyping covid-19 inclusive behaviour-driven
-image: /assets/img/posts/messenger.jpg
+hero_image: /assets/img/posts/messenger.jpg
+preview_image: /assets/img/posts/messenger.jpg
 abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
 ---
 

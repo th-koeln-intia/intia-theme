@@ -4,7 +4,8 @@ published: true
 author: Marc Schmidt
 categories: News
 tags: news intia messenger covid-19
-image: /assets/img/posts/messenger.jpg
+hero_image: /assets/img/posts/messenger.jpg
+preview_image: /assets/img/posts/messenger.jpg
 abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
 ---
 
