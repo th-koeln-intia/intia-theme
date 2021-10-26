@@ -60,3 +60,5 @@
       link: /textblock-highlight/
     - name: Text with image
       link: /textblock-with-image/
+    - name: Search
+      link: /search/
