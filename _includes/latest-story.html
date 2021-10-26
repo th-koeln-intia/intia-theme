@@ -1,0 +1,35 @@
+{% if page.latest-story %}
+<div class="green">
+{% assign story = site.posts | first %}
+<div class="story-carousel-item">
+    <div class="container">
+        <div class="section">
+          <div class="slider story-slider columns">
+            <div class="slider-image column is-half">
+              <figure class="image">
+                <img src="{{story.preview_image}}" alt="this used to be photo">             
+              </figure>
+            </div>
+            <div class="slider-content column is-half">
+                <div class="media">
+                  <div class="media-content">
+                    <h2>{{story.title}}</h2>
+                  </div>
+                </div>
+    
+                <div class="content">
+                  <p>{{story.abstract}}</p>
+                  <a href="{{ story.url | relative_url }}" class="button is-rounded has-text-centert is-dark {% if item.link == page.url %}is-active{% endif %}">
+                      <span>Mehr lesen</span>
+                      <span class="icon is-small">
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                      </span>
+                  </a>           
+                </div>
+              </div>
+          </div>
+    </div>
+    </div>
+</div>
+</div>
+{% endif %}

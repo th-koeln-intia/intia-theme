@@ -6,7 +6,7 @@ subtitle: |
 subtitle: |
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus, ipsum vel ullamcorper tincidunt, eros tortor tempus odio, nec tincidunt eros massa vitae enim. Ut efficitur quam et efficitur consectetur. Vestibulum feugiat semper congue. 
 permalink: /stories/
-story_slider: true
+latest-story: true
 hero_tags: subpage
 ---
 
