@@ -1,0 +1,40 @@
+{% for story in site.posts %}
+
+<div class="news">
+    <div class="news-item">
+      <div class="container">
+        <div class="section">
+          <div class="story-news columns">
+            <div class="news-image column is-half">
+              <figure class="image">
+                <img src={{story.image}} alt="this used to be photo">             
+              </figure>
+            </div>
+            <div class="news-content column is-half">
+                <div class="media">
+                  <div class="media-content">
+                    <h4>{{story.date | date: "%m.%d.%Y"}}</h4>
+                    <h2>{{story.title}}</h2>
+                  </div>
+                </div>                
+                <div class="content">
+                  <p>
+                  {{story.abstract}}</p>
+                  <a href="{{ story.url | relative_url }}" class="button is-rounded has-text-centert is-dark {% if item.link == page.url %}is-active{% endif %}">
+                      <span>Mehr lesen</span>
+                      <span class="icon is-small">
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                      </span>
+                  </a>           
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endfor %}
+
+
+

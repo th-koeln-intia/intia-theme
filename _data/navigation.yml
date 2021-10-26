@@ -52,6 +52,8 @@
       link: /methods-filter/
     - name: Stories teaser
       link: /stories-teaser/
+    - name: Stories
+      link: /stories/
     - name: Text
       link: /textblock/
     - name: Text highlight
