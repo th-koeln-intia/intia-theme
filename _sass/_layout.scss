@@ -286,6 +286,7 @@ img.is-rounded {
 .card-image:first-child img {
   border-top-left-radius: 65px;
   border-top-right-radius: 65px;
+  max-height: 100vh;
 }
 
 .card-content {
@@ -303,6 +304,7 @@ img.is-rounded {
 .card-image:last-child img {
   border-bottom-left-radius: 65px;
   border-bottom-right-radius: 65px;
+  max-height: 100vh;
 }
 
 .story-card {
@@ -549,13 +551,16 @@ a:hover .tooltip-popup {
 
 // Contect
 
-.input, .textarea, #thema {
+.input,
+.textarea,
+#thema {
   border: 3px solid $primary-dark;
   border-radius: 45px;
   padding-left: 2.5em;
   padding-right: 2.5em;
 }
-.input, #thema {
+.input,
+#thema {
   height: 2.75em;
 }
 
@@ -586,8 +591,6 @@ a:hover .tooltip-popup {
 .contact .button {
   float: right;
 }
-
-
 
 // newss
 .news {
