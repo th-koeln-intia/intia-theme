@@ -62,9 +62,6 @@ div.highlight {
   border-radius: 65px;
   margin-top: 3em;
 }
-.highlighter-image {
-}
-
 .overtitle {
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
@@ -94,6 +91,12 @@ img.is-rounded {
 }
 .is-visible {
   visibility: visible;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
 }
 .clear {
   clear: both;
@@ -160,6 +163,9 @@ img.is-rounded {
 .hero-body {
   background-color: white;
 }
+.home .hero-body h1 {
+  max-width: 60%;
+}
 .hero.is-large .hero-body {
   padding-bottom: 12rem;
 }
@@ -169,6 +175,11 @@ img.is-rounded {
   margin-left: 200px;
   top: -175px;
   position: inherit;
+}
+.home .hero-body img {
+  max-width: 40%;
+  height: 66vh;
+  object-fit: cover;
 }
 .hero {
   display: block;
@@ -205,6 +216,21 @@ img.is-rounded {
   margin-right: auto;
   display: block;
   top: 0;
+  max-height: 50vh;
+  max-width: auto;
+}
+.buttons-hero {
+  display: none;
+}
+
+.pdf .buttons-hero {
+  display: block;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.hero-body .container .buttons-hero .button {
+  float: none;
 }
 
 //// Hero top-pages with green box
@@ -224,6 +250,10 @@ img.is-rounded {
   padding: 50px;
 }
 
+.post h3 {
+  font-weight: 600;
+  padding-top: 2rem;
+}
 .card {
   // margin-left: 3rem;
   // margin-right: 3rem;
@@ -257,6 +287,7 @@ img.is-rounded {
 .card-image:first-child img {
   border-top-left-radius: 65px;
   border-top-right-radius: 65px;
+  max-height: 100vh;
 }
 
 .card-content {
@@ -274,6 +305,7 @@ img.is-rounded {
 .card-image:last-child img {
   border-bottom-left-radius: 65px;
   border-bottom-right-radius: 65px;
+  max-height: 100vh;
 }
 
 .story-card {
@@ -420,6 +452,7 @@ img.is-rounded {
   background-color: white;
   padding-left: 0;
   padding-right: 0;
+  object-fit: contain;
   height: auto;
   width: auto;
 }
@@ -520,13 +553,16 @@ a:hover .tooltip-popup {
 
 // Contect
 
-.input, .textarea, #thema {
+.input,
+.textarea,
+#thema {
   border: 3px solid $primary-dark;
   border-radius: 45px;
   padding-left: 2.5em;
   padding-right: 2.5em;
 }
-.input, #thema {
+.input,
+#thema {
   height: 2.75em;
 }
 
@@ -556,4 +592,54 @@ a:hover .tooltip-popup {
 }
 .contact .button {
   float: right;
+}
+
+// newss
+.news {
+  box-shadow: none;
+}
+.news-item {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.news-container .card-content .content {
+  margin: 50px;
+}
+.story-news {
+  background-color: $light;
+  border-bottom-left-radius: 65px !important;
+  border-bottom-right-radius: 65px !important;
+  border-top-left-radius: 65px !important;
+  border-top-right-radius: 65px !important;
+}
+.news-slider .button {
+  float: right;
+}
+.column.news-image {
+  padding: 0;
+}
+.column.news-image .image {
+  height: 100%;
+}
+.column.news-image img {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  height: 100%;
+  object-fit: cover;
+}
+.column.news-content {
+  padding: 3em;
+}
+.news-content h2 {
+  margin-bottom: 2rem;
+  padding-top: 0;
+}
+.news-content h4 {
+  font-size: 0.75rem;
+  letter-spacing: 0.3rem;
+}
+.news-content {
+  width: 100%;
+  display: flow-root;
+  margin: auto;
 }

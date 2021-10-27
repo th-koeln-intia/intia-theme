@@ -1,0 +1,7 @@
+
+<div class="highlighter {% if include.two-columns %} two-columns {% endif %} {% if include.min-height25p %} min-height25p {% endif %} {% if include.style %} include.style {% endif %} ">
+    {{ include.content }}
+    {% if include.button %}
+        {% include button.html label=include.button %}
+    {% endif %} 
+</div>

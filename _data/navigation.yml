@@ -30,14 +30,8 @@
       link: /header-landing-page-without-image/
 - name: Highlighter
   dropdown:
-    - name: Highlighter A
-      link: /highlighter-a/
-    - name: Highlighter B
-      link: /highlighter-b/
-    - name: Highlighter C
-      link: /highlighter-c/ 
-    - name: Highlighter D
-      link: /highlighter-d/ 
+    - name: Highlighter
+      link: /highlighter/
 - name: Other
   dropdown:
     - name: Button
@@ -58,9 +52,13 @@
       link: /methods-filter/
     - name: Stories teaser
       link: /stories-teaser/
+    - name: Stories
+      link: /stories/
     - name: Text
       link: /textblock/
     - name: Text highlight
       link: /textblock-highlight/
     - name: Text with image
       link: /textblock-with-image/
+    - name: Search
+      link: /search/

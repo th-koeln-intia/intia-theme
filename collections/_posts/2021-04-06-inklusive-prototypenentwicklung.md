@@ -1,12 +1,16 @@
 ---
 title: "Methoden einer inklusiven Prototypenentwicklung mit Jugendlichen mit Beeinträchtigung"
+title_above: AKTUELLES
 published: true
 author: Alena Schmier, Hanna Thielmann, Jan Seidler
+date: 04.06.2021
 categories: News
 tags: news intia prototyping covid-19 inclusive behaviour-driven
+preview_image: /assets/img/posts/messenger.jpg
 hero_image: /assets/img/posts/messenger.jpg
-image: /assets/img/posts/messenger.jpg
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+hero_tags: subpage post pdf
+subtitle: |
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
 ---
 
 Methoden einer inklusiven Prototypenentwicklung mit Jugendlichen mit Beeinträchtigung
