@@ -545,19 +545,25 @@ footer .columns {
 
 // Tool-Tip
 
-a:hover .tooltip-popup {
+.tooltip-popup {  
+  position: absolute;
+  width: 20vw;
+  z-index: 30;
+  visibility: hidden;
+  display: none;
+  background: #e7f2ea;
+  border-radius: 65px;  
+  padding: 50px;
+  margin-top: -10px;
+  margin-right: 30px;
+}
+a:hover .tooltip-popup, .show {
   visibility: visible;
   display: block;
 }
-.tooltip-popup {
-  position: relative;
-  width: 20vw;
-  visibility: hidden;
-  display: none;
-  background: $light;
-  border-radius: 65px;
+.tooltip-popup h2{  
+  padding-top: 0;
 }
-
 // Contect
 
 .input,
