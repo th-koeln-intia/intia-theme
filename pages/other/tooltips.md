@@ -9,13 +9,13 @@ hero_tags: subpage
 
 ## Sample usage of a tooltip
 
-<a href="{{ entry.url | relative_url }}">
+<a href="{{ entry.url | relative_url }}" class="tooltip-link">
     A link with tooltip
     <div class="tooltip-popup">
     <h4 class="overtitle"> Top-Title </h4>
     <h2> Titel </h2>
         <p>sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam</p>
-        <div class="button is-rounded has-text-centert is-dark {% if item.link == page.url %}is-active{% endif %}">
+        <div class="button float_right is-rounded has-text-centert is-dark {% if item.link == page.url %}is-active{% endif %}">
           <span>Mehr lesen</span>
           <span class="icon is-small">
           <i class="fas fa-chevron-right fa-xs"></i>

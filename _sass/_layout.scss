@@ -108,6 +108,14 @@ img.is-rounded {
 .text-green {
   color: $primary-dark;
 }
+a.tooltip-link {
+  color: $primary-dark;
+  font-weight: 600;
+}
+a .tooltip-popup {
+  color: #000;
+  font-weight: normal;
+}
 
 // Buttons - Mybe global in Buttons und raus damit?
 .button.is-dark {
