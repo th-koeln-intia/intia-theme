@@ -1,9 +1,11 @@
 {% assign entries=site.glossary | sort:page.sort %}
 {% for entry in entries %}
-<h1> {{entry.title}} </h1>
-{{entry.content}}
+<h2> {{entry.title}} </h2>
+<p class="text-green has-text-weight-bold">{{entry.subtitle}}</p>
 
-<a href="{{ entry.url | relative_url }}" class="button is-rounded has-text-centert is-dark {% if item.link == page.url %}is-active{% endif %}">
+{{entry.abstract}}
+
+<a href="{{ entry.url | relative_url }}" class="button float_right is-rounded has-text-centert is-dark {% if item.link == page.url %}is-active{% endif %}">
     <span>Mehr lesen</span>
     <span class="icon is-small">
     <i class="fas fa-chevron-right fa-xs"></i>

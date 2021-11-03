@@ -105,6 +105,9 @@ img.is-rounded {
   display: block;
   width: 100%;
 }
+.text-green {
+  color: $primary-dark;
+}
 
 // Buttons - Mybe global in Buttons und raus damit?
 .button.is-dark {
@@ -194,7 +197,7 @@ img.is-rounded {
   padding: 16px !important;
 }
 
-.hero-body .container .button {
+.hero-body .container .button, .float_right {
   float: right;
 }
 .home .hero-body h1,

@@ -2,15 +2,15 @@
 published: true
 author: Marc Schmidt
 date: 10.01.2020
-title: Der Buchstabe X
+title: Beispieleintrag für das Gloassar
 title_above: Glossary
 subtitle: |
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
 abstract: |
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
 synonyms:
-  - Buchstabe
-  - IKS
+  - Glossary term
+  - Stuff
 hero_tags: subpage glossary
 ---
 
