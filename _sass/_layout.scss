@@ -65,6 +65,8 @@ div.highlight {
 .overtitle {
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
 }
 .title-with-overtitle {
   margin-top: 0 !important;
@@ -176,11 +178,6 @@ img.is-rounded {
   top: -175px;
   position: inherit;
 }
-.home .hero-body img {
-  max-width: 40%;
-  height: 66vh;
-  object-fit: cover;
-}
 .hero {
   display: block;
 }
@@ -216,8 +213,18 @@ img.is-rounded {
   margin-right: auto;
   display: block;
   top: 0;
-  max-height: 50vh;
   max-width: auto;
+}
+.home .hero-body img {
+  max-width: 37%;
+  height: auto;
+  aspect-ratio: 5 / 7;
+  object-fit: cover;
+}
+.subpage .hero-body img {
+object-fit: cover;
+max-height: 30vw;
+width: 100%;
 }
 .buttons-hero {
   display: none;
