@@ -84,9 +84,11 @@ img.is-rounded {
   cursor: pointer;
   display: flex;
   flex-direction: column;
+  height: 132px;
 }
 .is-pointed-down {
   transform: scaleY(-1);
+  margin-top: auto;
 }
 .is-hidden {
   visibility: hidden;
@@ -205,7 +207,8 @@ a .tooltip-popup {
   padding: 16px !important;
 }
 
-.hero-body .container .button, .float_right {
+.hero-body .container .button,
+.float_right {
   float: right;
 }
 .home .hero-body h1,
@@ -233,9 +236,9 @@ a .tooltip-popup {
   object-fit: cover;
 }
 .subpage .hero-body img {
-object-fit: cover;
-max-height: 30vw;
-width: 100%;
+  object-fit: cover;
+  max-height: 30vw;
+  width: 100%;
 }
 .buttons-hero {
   display: none;
@@ -556,23 +559,24 @@ footer .columns {
 
 // Tool-Tip
 
-.tooltip-popup {  
+.tooltip-popup {
   position: absolute;
   width: 20vw;
   z-index: 30;
   visibility: hidden;
   display: none;
   background: #e7f2ea;
-  border-radius: 65px;  
+  border-radius: 65px;
   padding: 50px;
   margin-top: -10px;
   margin-right: 30px;
 }
-a:hover .tooltip-popup, .show {
+a:hover .tooltip-popup,
+.show {
   visibility: visible;
   display: block;
 }
-.tooltip-popup h2{  
+.tooltip-popup h2 {
   padding-top: 0;
 }
 // Contect
