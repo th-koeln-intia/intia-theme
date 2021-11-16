@@ -80,7 +80,8 @@ img.is-rounded {
 }
 .arrow-image {
   z-index: 10;
-  top: calc(50% - 68px);
+  top: calc(50% - 68px);  
+  left: 4vw;
   position: sticky;
   width: 64px;
   cursor: pointer;
@@ -655,12 +656,15 @@ a:hover .tooltip-popup,
     font-size: 0.9rem;
     line-height: 1.5rem;
 }
+.arrow-image {
+  display: none;
+}
 h1, h2, h3, p {
   padding-bottom: 0px;
 }
   h1,
   h1 p {
-    font-size: 1.3rem;
+    font-size: 1.875rem; //30px
   }
   .home .hero-body h1 {
     max-width: none;
