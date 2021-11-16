@@ -13,7 +13,9 @@
     - name: Contact
       link: /contact/               
     - name: Glossary
-      link: /glossary/ 
+      link: /glossary/                
+    - name: Styles
+      link: /styles/ 
 - name: Header
   dropdown:
     - name: Header A
