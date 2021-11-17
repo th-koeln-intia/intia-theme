@@ -273,7 +273,9 @@ a .tooltip-popup {
 .subtitle {
   padding: 50px;
 }
-
+.subtitle.is-4 {
+  font-size: 1.6rem;
+}
 .post h3 {
   font-weight: 600;
   padding-top: 2rem;
@@ -584,7 +586,12 @@ a:hover .tooltip-popup,
 }
 .contact .column {
   padding: 5rem;
+  padding-bottom: 0;
   padding-left: 0;
+}
+.contact .contact-box {  
+  flex-grow: 0;
+  padding-right: 50px;
 }
 .select:not(.is-multiple):not(.is-loading)::after {
   border-color: $primary-dark;
@@ -596,8 +603,39 @@ a:hover .tooltip-popup,
   top: 2px;
 }
 .contact .button {
+  margin-top: 50px;
   float: right;
 }
+
+[type="checkbox"] {
+  position: relative;
+  //left: 15px;
+  top: 0;
+  z-index: 0;
+  -webkit-appearance: none;
+}
+[type="checkbox"] {
+  position: absolute;
+}
+[type="checkbox"]::before {
+  width: 25px;
+  height: 25px;
+  border-radius: 8px;
+  border: 2px solid $primary-dark;
+  background-color: #fff;
+  display: block;
+  content: "";
+  float: left;
+  //margin-top: 5px;
+  //margin-right: 5px;
+  z-index: 5;
+  position: relative;
+}
+[type="checkbox"]:checked::before {
+  box-shadow: inset 0px 0px 0px 4px #fff;
+  background-color: $primary-dark;
+}
+
 
 // newss
 .news {
