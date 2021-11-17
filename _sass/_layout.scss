@@ -745,8 +745,33 @@ h1, h2, h3, p {
 .hero.is-primary .title {
   padding-top: 35px;
 }
-.navbar-menu .button.is-dark {
+.navbar-menu .button.is-dark { 
   background-color: transparent;
+  border-radius: 0;
+  width: 100vw;
+}
+.navbar-menu {
+  background-color: transparent;
+}
+a.navbar-link {
+  background-color: $primary-dark;
+}
+a.navbar-item {
+  background-color: $primary-dark !important;
+  margin-left: 50px;
+}
+.navbar-item, .navbar-link {
+  color: #fff;
+  display: block;
+  line-height: 2.5;
+  padding: 0.9rem;
+  position: relative;
+}
+.navbar-link:not(.is-arrowless)::after {
+  border-color: #fff;
+}
+.navbar.is-primary .navbar-dropdown a.navbar-item.is-active {
+  background-color: #09443e !important;
 }
   .button {
     height: auto;
@@ -756,14 +781,15 @@ h1, h2, h3, p {
     font-size: 0.8rem !important;
     font-weight: 600;
   }
+.navbar.is-primary .navbar-dropdown a.navbar-item.is-active {
+    background-color: #09443e;
+    color: #fff;
+}
   .buttons {
-    display: table-caption;
+   // display: table-caption;
   }
   .hero-body .button, .content-wrapper .button {
     padding: 0.5rem !important;
-  }
-  .navbar-menu {
-    background-color: #229387;
   }
   .hero.is-medium .hero-body {
     padding: 5rem 1rem 4.5rem;
