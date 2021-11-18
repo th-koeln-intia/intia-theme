@@ -139,10 +139,11 @@ h5 {
 .is-active-header {
   background-color: $dark !important;
 }
-.is-active-header:hover {
-  background-color: $primary-dark !important;
+@include mobile {
+  .is-active-header {
+    background-color: transparent !important;
+  }
 }
-
 // Dropdownmenüelemente
 .navbar-dropdown,
 .navbar-item:focus,
