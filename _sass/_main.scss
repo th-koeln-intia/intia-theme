@@ -132,9 +132,11 @@ h5 {
   border-color: transparent;
   color: white;
 }
-.button.is-dark:hover.has-dropdown,
-.button.is-dark.is-hovered.has-dropdown {
-  background-color: $primary-dark;
+@include desktop {
+  .navbar-menu .button.is-dark:hover.has-dropdown,
+  .navbar-menu .button.is-dark.is-hovered.has-dropdown {
+    background-color: $primary-dark;
+  }
 }
 .is-active-header {
   background-color: $dark !important;
@@ -174,6 +176,13 @@ h5 {
 // Logo Padding
 .navbar-item {
   //padding-top: 21px;
+}
+.navbar-dropdown {
+  display: none;
+}
+.button.is-dark.has-dropdown:hover .navbar-dropdown,
+.button.is-dark.is-hovered.has-dropdown .navbar-dropdown {
+  display: block;
 }
 
 .footer {
