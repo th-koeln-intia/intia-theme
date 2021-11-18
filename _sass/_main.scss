@@ -132,6 +132,16 @@ h5 {
   border-color: transparent;
   color: white;
 }
+.button.is-dark:hover.has-dropdown,
+.button.is-dark.is-hovered.has-dropdown {
+  background-color: $primary-dark;
+}
+.is-active-header {
+  background-color: $dark !important;
+}
+.is-active-header:hover {
+  background-color: $primary-dark !important;
+}
 
 // Dropdownmenüelemente
 .navbar-dropdown,
