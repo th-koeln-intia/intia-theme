@@ -152,6 +152,11 @@ h5 {
   border-width: 2px;
   color: white;
 }
+.navbar.is-primary .navbar-start .navbar-item:hover .navbar-link::after,
+.navbar.is-primary .navbar-end .navbar-item:hover .navbar-link::after {
+  transform: rotate(135deg);
+  margin-top: 0;
+}
 
 // Dropdownmenühintergrund und Rand
 .navbar-dropdown {
