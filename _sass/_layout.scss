@@ -496,8 +496,11 @@ a .tooltip-popup {
   flex-grow: 0;
 }
 .footer-logos img {
-  height: 75px;
+  height: 100px;
   margin-right: 15px;
+}
+.footer-logos p {
+  padding-bottom: 5px;
 }
 .footer .title {
   color: white;
@@ -563,13 +566,24 @@ a:hover .tooltip-popup,
 .input,
 .textarea,
 #thema {
+  background-color: $light;
   border: 3px solid $primary-dark;
   border-radius: 45px;
   padding-left: 2.5em;
   padding-right: 2.5em;
 }
-.input,
-#thema {
+.input:hover,
+.textarea:hover,
+#thema:hover {
+  border: 3px solid $dark;
+}
+.input:focus,
+.textarea:focus {
+  //border: 2px solid $primary-dark;  
+  border: 3px solid $dark;
+  box-shadow: none;
+}
+.input {
   height: 2.75em;
 }
 
@@ -581,7 +595,7 @@ a:hover .tooltip-popup,
 .label {
   color: $primary-dark;
   font-weight: 600;
-  padding-left: 1rem;
+  padding-left: 0.5rem;
   margin-bottom: 0 !important;
 }
 .contact .column {
@@ -592,6 +606,9 @@ a:hover .tooltip-popup,
 .contact .contact-box {  
   flex-grow: 0;
   padding-right: 50px;
+}
+.contact-agree{  
+  padding-right: 0 !important;
 }
 .select:not(.is-multiple):not(.is-loading)::after {
   border-color: $primary-dark;
@@ -622,10 +639,11 @@ a:hover .tooltip-popup,
   height: 25px;
   border-radius: 8px;
   border: 2px solid $primary-dark;
-  background-color: #fff;
+  background-color: $light;
   display: block;
   content: "";
   float: left;
+  left: 12px;
   //margin-top: 5px;
   //margin-right: 5px;
   z-index: 5;
