@@ -1,5 +1,6 @@
 {% if page.contact %}
 <div class="green contact">
+  <div class="container">
     <h1>{{ site.data.contact.title  }}</h1>
     {{ site.data.contact.introduction  }}
     <form action="{{ site.data.contact.action }}"  class="columns">
@@ -46,13 +47,13 @@
                       class="textarea"
                       id="message"
                       name="message"
-                      placeholder="Wie können wir dir helfen?"
+                      placeholder="Hier tippen"
                       required=""
                   ></textarea>
                 </div>
               </div>
               <div class="checkbox columns">
-                <div class="column is-1">
+                <div class="column contact-box">
                   <input class="column" type="checkbox" id="agree" name="privacy-policy" value="agreed" required oninvalid="this.setCustomValidity('Bitte dieses Feld anklicken, um fortzufahren')"
                        oninput="this.setCustomValidity('')">
                 </div>
@@ -65,4 +66,5 @@
         </div>
     </form>
   </div>
-  {% endif %}
+</div>
+{% endif %}
