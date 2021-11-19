@@ -877,6 +877,11 @@ a:hover .tooltip-popup,
     column-count: 1;
     column-gap: 1rem;
   }
+  .highlighter .is-round {
+    padding: 10px;
+    height: auto;
+    width: auto;
+}
   .footer-logos .column {
     text-align: left !important;
   }
