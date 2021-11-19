@@ -56,7 +56,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 Ideen für technik-bezogene Alltagsprobleme als erste Prototypen: Building Blocks zum Nachbau von Prototypen oder Weiterverwendung sowie ein Baukasten (Toolkit) zur Bedarfserhebung.
 
-  <a href="#" class="button is-rounded is-dark">
+  <a href="#" class="button is-rounded is-dark hidden">
       <span>Text</span>
       <span class="icon is-small">
         <i class="fas fa-chevron-right fa-xs"></i>
@@ -76,7 +76,7 @@ Ideen für technik-bezogene Alltagsprobleme als erste Prototypen: Building Block
 
 Ideen für technik-bezogene Alltagsprobleme als erste Prototypen: Building Blocks zum Nachbau von Prototypen oder Weiterverwendung sowie ein Baukasten (Toolkit) zur Bedarfserhebung.
 
-  <a href="#" class="button is-rounded is-dark">
+  <a href="#" class="button is-rounded is-dark hidden">
       <span>Text</span>
       <span class="icon is-small">
         <i class="fas fa-chevron-right fa-xs"></i>
