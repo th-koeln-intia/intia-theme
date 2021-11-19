@@ -478,19 +478,20 @@ a.navbar-item.is-active,
   display: flex;
   background-color: white;
   border-radius: 1000px;
-  padding: 3rem;
+  padding: 2rem;
   float: none;
   overflow: hidden;
   height: 300px;
-  width: 300px;
+  width: 300px;  
 }
 .highlighter .is-round img {
   background-color: white;
   padding-left: 0;
   padding-right: 0;
-  object-fit: contain;
-  height: auto;
+  object-fit: cover;
+  //height: auto;
   width: auto;
+  aspect-ratio: 1 / 1;
 }
 
 // Footer
@@ -506,8 +507,9 @@ a.navbar-item.is-active,
   flex-grow: 0;
 }
 .footer-logos img {
-  height: 100px;
+  height: 80px;
   margin-right: 15px;
+  image-rendering: -webkit-optimize-contrast;
 }
 .footer-logos p {
   padding-bottom: 5px;

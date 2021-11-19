@@ -48,7 +48,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 <div class="columns">       
   <div class="column is-4 is-round is-centered">
-    <img src="https://via.placeholder.com/800x800" alt="placeholder" class="">
+    <img src="https://via.placeholder.com/1200x800" alt="placeholder" class="">
   </div>
 <div class="column">
 
@@ -68,7 +68,7 @@ Ideen für technik-bezogene Alltagsprobleme als erste Prototypen: Building Block
 
   <div class="columns">       
   <div class="column is-4 is-round is-centered">
-    <img src="https://via.placeholder.com/800x800" alt="placeholder" class="">
+    <img src="https://via.placeholder.com/800x1000" alt="placeholder" class="">
   </div>
 <div class="column">
 
