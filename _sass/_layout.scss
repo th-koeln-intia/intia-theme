@@ -885,4 +885,10 @@ a:hover .tooltip-popup,
   .footer-logos .column {
     text-align: left !important;
   }
+  .footer-logos img {
+    height: 75px;
+    margin-right: 15px;
+    image-rendering: -webkit-optimize-contrast;
+    padding-bottom: 15px;
+}
 }
