@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "intia-theme"
-  spec.version       = "0.1.16"
+  spec.version       = "0.1.17"
   spec.authors       = ["Marc Schmidt"]
   spec.email         = ["marc.schmidt1@th-koeln.de"]
 
-  spec.summary       = "A barrier-free design by INTIA, created to be used as an Jekyll theme using Bulma. It can be viewed on theme.intia.de"
+  spec.summary       = "A accessible focused design by INTIA, created to be used as an Jekyll theme using Bulma. It can be viewed on theme.intia.de"
   spec.homepage      = "https://theme.intia.de"
   spec.license       = "MIT"
 
