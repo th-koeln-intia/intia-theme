@@ -5,36 +5,30 @@
     <form action="{{ site.data.contact.action }}"  class="columns">
         <div class="column is-6">
             <div class="field">
-                <label class="label">Name</label>
+                <label class="label">Vor- und Nachname</label>
                 <div class="control has-icons-left">
-                  <input class="input" type="text" id="name" name="name" placeholder="Name" required>
+                  <input class="input" type="text" id="name" name="name" placeholder="Hier tippen..." required>
                   <span class="icon is-small is-left">
                     <i class="fas fa-user"></i>
                   </span>
                 </div>
               </div>
               <div class="field">
-                <label class="label">E-Mail</label>
+                <label class="label">E-Mailadresse</label>
                 <div class="control has-icons-left">
-                  <input class="input" type="email" id="email" name="email" placeholder="E-Mail">
+                  <input class="input" type="email" id="email" name="email" placeholder="Hier tippen...">
                   <span class="icon is-small is-left">
                     <i class="fas fa-envelope"></i>
                   </span>
                 </div>
               </div>
               <div class="field">
-                <label class="label">Thema</label>
-                <div class="control">
-                  <div class="select">
-                    <select id="thema" name="thema">
-                      <option value="Sonstige">Sonstige</option>
-                      <option value="Plattform">Plattform</option>
-                      <option value="Innovationskoffer">Innovationskoffer</option>
-                      <option value="Methoden">Methoden</option>
-                      <option value="Prototypen">Prototypen</option>
-                      <option value="Stories">Stories</option>
-                    </select>
-                  </div>
+                <label class="label">Betreff</label>
+                 <div class="control has-icons-left">
+                  <input class="input" id="thema" name="thema" placeholder="Hier tippen...">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-pen"></i>
+                  </span>
                 </div>
               </div>
         </div>
@@ -46,7 +40,7 @@
                       class="textarea"
                       id="message"
                       name="message"
-                      placeholder="Hier tippen"
+                      placeholder="Hier tippen..."
                       required=""
                   ></textarea>
                 </div>
