@@ -132,7 +132,20 @@ h5 {
   border-color: transparent;
   color: white;
 }
-
+@include desktop {
+  .navbar-menu .button.is-dark:hover.has-dropdown,
+  .navbar-menu .button.is-dark.is-hovered.has-dropdown {
+    background-color: $primary-dark;
+  }
+}
+.is-active-header {
+  background-color: $dark !important;
+}
+@include mobile {
+  .is-active-header {
+    background-color: transparent !important;
+  }
+}
 // Dropdownmenüelemente
 .navbar-dropdown,
 .navbar-item:focus,
@@ -141,6 +154,11 @@ h5 {
   background-color: $dark;
   border-width: 2px;
   color: white;
+}
+.navbar.is-primary .navbar-start .navbar-item:hover .navbar-link::after,
+.navbar.is-primary .navbar-end .navbar-item:hover .navbar-link::after {
+  transform: rotate(135deg);
+  margin-top: 0;
 }
 
 // Dropdownmenühintergrund und Rand
@@ -158,6 +176,13 @@ h5 {
 // Logo Padding
 .navbar-item {
   //padding-top: 21px;
+}
+.navbar-dropdown {
+  display: none;
+}
+.button.is-dark.has-dropdown:hover .navbar-dropdown,
+.button.is-dark.is-hovered.has-dropdown .navbar-dropdown {
+  display: block;
 }
 
 .footer {

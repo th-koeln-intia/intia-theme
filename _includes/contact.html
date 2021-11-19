@@ -1,6 +1,5 @@
 {% if page.contact %}
-<div class="green contact">
-  <div class="container">
+  <div class="container contact">
     <h1>{{ site.data.contact.title  }}</h1>
     {{ site.data.contact.introduction  }}
     <form action="{{ site.data.contact.action }}"  class="columns">
@@ -58,7 +57,7 @@
                        oninput="this.setCustomValidity('')">
                 </div>
                 
-                <div class="column">
+                <div class="column contact-agree">
                   <label for="agree">{{ site.data.contact.checkbox  }}</label><br><br>
                   <button class="button is-rounded is-dark" type="submit">Abschicken</button>
                 </div>
@@ -66,5 +65,4 @@
         </div>
     </form>
   </div>
-</div>
 {% endif %}

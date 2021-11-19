@@ -48,7 +48,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 <div class="columns">       
   <div class="column is-4 is-round is-centered">
-    <img src="https://via.placeholder.com/800x800" alt="placeholder" class="">
+    <img src="https://via.placeholder.com/1200x800" alt="placeholder" class="">
   </div>
 <div class="column">
 
@@ -56,7 +56,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 Ideen für technik-bezogene Alltagsprobleme als erste Prototypen: Building Blocks zum Nachbau von Prototypen oder Weiterverwendung sowie ein Baukasten (Toolkit) zur Bedarfserhebung.
 
-  <a href="#" class="button is-rounded is-dark">
+  <a href="#" class="button is-rounded is-dark hidden">
       <span>Text</span>
       <span class="icon is-small">
         <i class="fas fa-chevron-right fa-xs"></i>
@@ -68,7 +68,7 @@ Ideen für technik-bezogene Alltagsprobleme als erste Prototypen: Building Block
 
   <div class="columns">       
   <div class="column is-4 is-round is-centered">
-    <img src="https://via.placeholder.com/800x800" alt="placeholder" class="">
+    <img src="https://via.placeholder.com/800x1000" alt="placeholder" class="">
   </div>
 <div class="column">
 
@@ -76,7 +76,7 @@ Ideen für technik-bezogene Alltagsprobleme als erste Prototypen: Building Block
 
 Ideen für technik-bezogene Alltagsprobleme als erste Prototypen: Building Blocks zum Nachbau von Prototypen oder Weiterverwendung sowie ein Baukasten (Toolkit) zur Bedarfserhebung.
 
-  <a href="#" class="button is-rounded is-dark">
+  <a href="#" class="button is-rounded is-dark hidden">
       <span>Text</span>
       <span class="icon is-small">
         <i class="fas fa-chevron-right fa-xs"></i>
