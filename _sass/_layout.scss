@@ -362,6 +362,19 @@ a.navbar-item.is-active,
   border-bottom-right-radius: 0px !important;
   border-top-right-radius: 0px !important;
 }
+.content_image {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+figcaption {
+  font-size: 16px;
+  color: $primary-dark;
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+}
 
 // story-slider
 .slider {
