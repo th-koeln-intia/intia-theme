@@ -142,9 +142,10 @@ a .tooltip-popup {
 }
 
 .navbar-brand img {
-  max-height: 2.5rem;
+  max-height: 3rem;
   margin-top: 1rem;
 }
+
 .navbar-brand a p {
   color: #000;
 }
@@ -485,7 +486,7 @@ a.navbar-item.is-active,
   float: none;
   overflow: hidden;
   height: 300px;
-  width: 300px;  
+  width: 300px;
 }
 .highlighter .is-round img {
   background-color: white;
@@ -504,6 +505,10 @@ a.navbar-item.is-active,
   margin-top: 5rem;
   line-height: 1rem;
   padding-top: 0;
+}
+.footer img {
+  max-height: 4rem;
+  margin-top: 1rem;
 }
 .footer img.column {
   padding: 0 !important;
@@ -881,7 +886,7 @@ a:hover .tooltip-popup,
     padding: 10px;
     height: auto;
     width: auto;
-}
+  }
   .footer-logos .column {
     text-align: left !important;
   }
@@ -890,5 +895,5 @@ a:hover .tooltip-popup,
     margin-right: 15px;
     image-rendering: -webkit-optimize-contrast;
     padding-bottom: 15px;
-}
+  }
 }
