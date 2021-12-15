@@ -3,191 +3,191 @@
  * Copied from: https://gitlab.com/find-it-program-locator/newtowne/-/blob/8.x-1.x/src/global/_print.sass
  */
 
-
 /**
  * This may get into Bulma proper: https://github.com/jgthms/bulma/pull/2329
  * And https://github.com/jgthms/bulma/issues/721
  */
 
-
 /* This mixin would be in sass/utilities/mixins.sass per pull/2329 */
 
 // Media types
 @mixin print {
-    @media print {
-        @content;
+  @media print {
+    @content;
+  }
+  @media screen and (min-width: 1024px) {
+    .navbar.is-primary .navbar-start .navbar-link::after,
+    .navbar.is-primary .navbar-end .navbar-link::after {
+      border-color: white;
     }
-    @media screen and (min-width: 1024px) {
-        .navbar.is-primary .navbar-start .navbar-link::after,
-        .navbar.is-primary .navbar-end .navbar-link::after {
-            border-color: white;
-        }
+  }
+  @media screen and (min-width: 1024px) {
+    .navbar.is-primary .navbar-start > .navbar-item,
+    .navbar.is-primary .navbar-start .navbar-link,
+    .navbar.is-primary .navbar-end > .navbar-item,
+    .navbar.is-primary .navbar-end .navbar-link {
+      color: white;
     }
-    @media screen and (min-width: 1024px) {
-        .navbar.is-primary .navbar-start>.navbar-item,
-        .navbar.is-primary .navbar-start .navbar-link,
-        .navbar.is-primary .navbar-end>.navbar-item,
-        .navbar.is-primary .navbar-end .navbar-link {
-            color: white;
-        }
+  }
+  @media screen and (min-width: 1024px) {
+    .navbar.is-primary .navbar-item.has-dropdown:focus .navbar-link,
+    .navbar.is-primary .navbar-item.has-dropdown:hover .navbar-link,
+    .navbar.is-primary .navbar-item.has-dropdown.is-active .navbar-link {
+      background-color: transparent;
+      color: white;
     }
-    @media screen and (min-width: 1024px) {
-        .navbar.is-primary .navbar-item.has-dropdown:focus .navbar-link,
-        .navbar.is-primary .navbar-item.has-dropdown:hover .navbar-link,
-        .navbar.is-primary .navbar-item.has-dropdown.is-active .navbar-link {
-            background-color: transparent;
-            color: white;
-        }
+  }
+  @media screen and (min-width: 1024px) {
+    .navbar-dropdown {
+      background-color: transparent;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+      border-top: transparent;
+      box-shadow: none;
     }
-    @media screen and (min-width: 1024px) {
-        .navbar-dropdown {
-            background-color: transparent;
-            border-bottom-left-radius: 6px;
-            border-bottom-right-radius: 6px;
-            border-top: transparent;
-            box-shadow: none;
-        }
-    }
+  }
 }
-
 
 /* From https://github.com/jgthms/bulma/pull/2329#issuecomment-459391961 */
 
 .columns {
-    @include print {
-        &.no-print {
-            display:block {}
-        }
+  @include print {
+    &.no-print {
+      display:block {
+      }
     }
+  }
 }
-
 
 /* Rest from https://github.com/jgthms/bulma/pull/2329/files as was mixin */
 
 @include print {
-    .is-hidden-print {
-        display: none !important;
-    }
-    /* i added or modified these print link URLs */
-    a:not(.is-not-linked-print)[href]::after {
-        content: attr(href);
-        text-decoration: underline;
-        font-size: 90%;
-        padding-left: 0.5rem;
-    }
-    a[href].clearfix::after {
-        content: attr(href);
-        text-decoration: underline;
-        font-size: 90%;
-        padding-top: 0.5rem;
-    }
-    /* and i did this drastic war on color */
-    * {
-        background-color: white !important;
-        color: black !important;
-    }
-    .is-together-print {
-        page-break-inside: avoid;
-    }
-    /* prevent break inside of a table row */
-    table {
-        page-break-inside: auto
-    }
-    tr {
-        page-break-inside: avoid;
-        page-break-after: auto
-    }
-    .section {
-        padding-top: 0;
-    }
-    .column.is-narrow {
-        display: inline-block;
-    }
-    .column.is-narrow~.column {
-        display: inline-block;
-    }
+  .is-hidden-print {
+    display: none !important;
+  }
+  .arrow-image {
+    display: none;
+  }
+  /* i added or modified these print link URLs */
+  a:not(.is-not-linked-print)[href]::after {
+    content: attr(href);
+    text-decoration: underline;
+    font-size: 90%;
+    padding-left: 0.5rem;
+  }
+  a[href].clearfix::after {
+    content: attr(href);
+    text-decoration: underline;
+    font-size: 90%;
+    padding-top: 0.5rem;
+  }
+  /* and i did this drastic war on color */
+  * {
+    background-color: white !important;
+    color: black !important;
+  }
+  .is-together-print {
+    page-break-inside: avoid;
+  }
+  /* prevent break inside of a table row */
+  table {
+    page-break-inside: auto;
+  }
+  tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  .section {
+    padding-top: 0;
+  }
+  .column.is-narrow {
+    display: inline-block;
+  }
+  .column.is-narrow ~ .column {
+    display: inline-block;
+  }
 }
 
 .column {
-    @include print {
-        &.is-narrow-print {
-            flex: none;
-        }
-        &.is-full-print {
-            flex: none;
-            width: 100%;
-        }
-        &.is-three-quarters-print {
-            flex: none;
-            width: 75%;
-        }
-        &.is-two-thirds-print {
-            flex: none;
-            width: 66.6666%;
-        }
-        &.is-half-print {
-            flex: none;
-            width: 50%;
-        }
-        &.is-one-third-print {
-            flex: none;
-            width: 33.3333%;
-        }
-        &.is-one-quarter-print {
-            flex: none;
-            width: 25%;
-        }
-        &.is-one-fifth-print {
-            flex: none;
-            width: 20%;
-        }
-        &.is-two-fifths-print {
-            flex: none;
-            width: 40%;
-        }
-        &.is-three-fifths-print {
-            flex: none;
-            width: 60%;
-        }
-        &.is-four-fifths-print {
-            flex: none;
-            width: 80%;
-        }
-        &.is-offset-three-quarters-print {
-            margin-left: 75%;
-        }
-        &.is-offset-two-thirds-print {
-            margin-left: 66.6666%;
-        }
-        &.is-offset-half-print {
-            margin-left: 50%;
-        }
-        &.is-offset-one-third-print {
-            margin-left: 33.3333%;
-        }
-        &.is-offset-one-quarter-print {
-            margin-left: 25%;
-        }
-        &.is-offset-one-fifth-print {
-            margin-left: 20%;
-        }
-        &.is-offset-two-fifths-print {
-            margin-left: 40%;
-        }
-        &.is-offset-three-fifths-print {
-            margin-left: 60%;
-        }
-        &.is-offset-four-fifths-print {
-            margin-left: 80%;
-        }
-        @for $i from 1 through 12 {
-            &.is-#{$i}-print {
-                flex: none;
-                width: percentage($i / 12);
-            }
-            &.is-offset-#{$i}-print {
-                margin-left: percentage($i / 12);
-            }
-        }
+  @include print {
+    &.is-narrow-print {
+      flex: none;
     }
+    &.is-full-print {
+      flex: none;
+      width: 100%;
+    }
+    &.is-three-quarters-print {
+      flex: none;
+      width: 75%;
+    }
+    &.is-two-thirds-print {
+      flex: none;
+      width: 66.6666%;
+    }
+    &.is-half-print {
+      flex: none;
+      width: 50%;
+    }
+    &.is-one-third-print {
+      flex: none;
+      width: 33.3333%;
+    }
+    &.is-one-quarter-print {
+      flex: none;
+      width: 25%;
+    }
+    &.is-one-fifth-print {
+      flex: none;
+      width: 20%;
+    }
+    &.is-two-fifths-print {
+      flex: none;
+      width: 40%;
+    }
+    &.is-three-fifths-print {
+      flex: none;
+      width: 60%;
+    }
+    &.is-four-fifths-print {
+      flex: none;
+      width: 80%;
+    }
+    &.is-offset-three-quarters-print {
+      margin-left: 75%;
+    }
+    &.is-offset-two-thirds-print {
+      margin-left: 66.6666%;
+    }
+    &.is-offset-half-print {
+      margin-left: 50%;
+    }
+    &.is-offset-one-third-print {
+      margin-left: 33.3333%;
+    }
+    &.is-offset-one-quarter-print {
+      margin-left: 25%;
+    }
+    &.is-offset-one-fifth-print {
+      margin-left: 20%;
+    }
+    &.is-offset-two-fifths-print {
+      margin-left: 40%;
+    }
+    &.is-offset-three-fifths-print {
+      margin-left: 60%;
+    }
+    &.is-offset-four-fifths-print {
+      margin-left: 80%;
+    }
+    @for $i from 1 through 12 {
+      &.is-#{$i}-print {
+        flex: none;
+        width: percentage($i / 12);
+      }
+      &.is-offset-#{$i}-print {
+        margin-left: percentage($i / 12);
+      }
+    }
+  }
 }
