@@ -476,6 +476,34 @@ figcaption {
 .highlighter .button {
   float: right;
 }
+.highlighter .column.highlighter-image {
+  margin-right: 0;
+  padding: 0;
+}
+.highlighter .highlighter-image img {
+  padding: 0;
+}
+.highlighter .highlighter-image .image {
+  height: 100%;
+}
+.highlighter .highlighter-image img {
+  border-top-left-radius: 65px;
+  border-bottom-left-radius: 65px;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.highlighter .highlighter-content {
+  padding: 3em;
+}
+.highlighter .column.highlighter-content {
+  margin-right: 0;
+}
+.highlighter.highlighter-fit-image {
+  padding: 0;
+}
 
 .highlighter img {
   border-radius: 0;
@@ -495,6 +523,11 @@ figcaption {
   margin-right: 4rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+.highlighter .column .button.highlighter-column-button {
+  margin-top: 1em;
+  margin-left: 2em;
+  float: none;
 }
 
 .highlighter .is-round {

@@ -96,10 +96,10 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
 
   <a href="#" class="button is-rounded is-dark">
+      <span>Text</span>
       <span class="icon is-small">
         <i class="fas fa-chevron-right fa-xs"></i>
       </span>
-      <span>Text</span>
   </a>
   <div class="clear"></div>
 
@@ -109,9 +109,9 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
   </div>
 <div class="column">
 
-## Lösungen
+## Topic one
 
-Ideen für technik-bezogene Alltagsprobleme als erste Prototypen: Building Blocks zum Nachbau von Prototypen oder Weiterverwendung sowie ein Baukasten (Toolkit) zur Bedarfserhebung.
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
 
   <a href="#" class="button is-rounded is-dark">
       <span>Text</span>
@@ -129,9 +129,9 @@ Ideen für technik-bezogene Alltagsprobleme als erste Prototypen: Building Block
   </div>
 <div class="column">
 
-## Lösungen
+## Topic two
 
-Ideen für technik-bezogene Alltagsprobleme als erste Prototypen: Building Blocks zum Nachbau von Prototypen oder Weiterverwendung sowie ein Baukasten (Toolkit) zur Bedarfserhebung.
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
 
   <a href="#" class="button is-rounded is-dark">
       <span>Text</span>
@@ -153,3 +153,60 @@ Just calling the 'highlighter.html' include and setting the content self. Remind
 {% raw %} {% include highlighter.html content=' Lorum ipsum Lorem ipsum dolor
 sit amet, consetetur sadipscing elitr'%} {% endraw %}
 ```
+
+# Highlighter E
+
+{% include highlighter.html min-height25p=true button="To the information" image="https://via.placeholder.com/2000x2000" content="
+
+## Highlighter with big image
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+
+"%}
+
+# Highlighter F
+
+{% include highlighter.html min-height25p=true content="
+
+## Highlighter with selection
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+
+### The following options are available:
+
+<div class='columns'>
+<div class='column '>
+  <figure class='image'>
+    <img class='with-zone is-rounded' src='https://via.placeholder.com/2000x2000'>
+  </figure>
+  <a href='#' class='button highlighter-column-button is-rounded is-dark'>
+      <span>Button Set</span>
+      <span class='icon is-small'>
+        <i class='fas fa-chevron-right fa-xs'></i>
+      </span>
+  </a>
+</div>
+<div class='column'>
+  <figure class='image'>
+    <img class='with-zone is-rounded' src='https://via.placeholder.com/2000x2000'>
+  </figure>
+  <a href='#' class='button highlighter-column-button is-rounded is-dark'>
+      <span>Button Set</span>
+      <span class='icon is-small'>
+        <i class='fas fa-chevron-right fa-xs'></i>
+      </span>
+  </a>
+</div>
+<div class='column'>
+  <figure class='image'>
+    <img class='with-zone is-rounded' src='https://via.placeholder.com/2000x2000'>
+  </figure>
+  <a href='#' class='button highlighter-column-button is-rounded is-dark'>
+      <span>Button Set</span>
+      <span class='icon is-small'>
+        <i class='fas fa-chevron-right fa-xs'></i>
+      </span>
+  </a>
+</div>
+</div>
+"%}

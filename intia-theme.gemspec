@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "intia-theme"
-  spec.version       = "0.1.30"
+  spec.version       = "0.1.32"
   spec.authors       = ["Marc Schmidt"]
   spec.email         = ["marc.schmidt1@th-koeln.de"]
 
