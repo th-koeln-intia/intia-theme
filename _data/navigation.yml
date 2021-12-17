@@ -30,6 +30,8 @@
       link: /header-landing-page/
     - name: Header LP no image
       link: /header-landing-page-without-image/
+    - name: Header markdown subtitle
+      link: /header-subtitle/
 - name: Highlighter
   dropdown:
     - name: Highlighter
