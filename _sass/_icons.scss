@@ -1,0 +1,17 @@
+// Custom Icons
+.fas {
+  line-height: 2.25rem !important;
+}
+.custom-icon {
+  content: "";
+  background: url(https://via.placeholder.com/48x48) no-repeat;
+  background-position: center center;
+  display: block;
+  width: 48px;
+  height: 48px;
+  float: left;
+}
+.icon-handshake:before {
+  @extend .custom-icon;
+  background: url(/assets/img/icons/handshake.svg) no-repeat;
+}
