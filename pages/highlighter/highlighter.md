@@ -175,7 +175,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 ### The following options are available:
 
 <div class='columns'>
-<div class='column '>
+<div class='column is-one-third'>
   <figure class='image'>
     <img class='with-zone is-rounded' src='https://via.placeholder.com/2000x2000'>
   </figure>
@@ -186,7 +186,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
       </span>
   </a>
 </div>
-<div class='column'>
+<div class='column is-one-third'>
   <figure class='image'>
     <img class='with-zone is-rounded' src='https://via.placeholder.com/2000x2000'>
   </figure>
@@ -197,7 +197,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
       </span>
   </a>
 </div>
-<div class='column'>
+<div class='column is-one-third'>
   <figure class='image'>
     <img class='with-zone is-rounded' src='https://via.placeholder.com/2000x2000'>
   </figure>
