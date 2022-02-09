@@ -8,7 +8,11 @@
             {% if page.hero_image %}
                 <img src="{{page.hero_image}}" alt="placeholder"  class="is-rounded is-hidden-mobile">
             {% endif %}
-            <p class="subtitle is-4">{{ page.subtitle }}</p>
+            {% if page.subtitle_markdownify %} 
+                <p class="subtitle is-4">{{ page.subtitle | markdownify }}</p>
+            {% else %}
+                <p class="subtitle is-4">{{ page.subtitle }}</p>
+            {% endif %}
             {% if page.hero_link %}
                 <a href="{{ page.hero_link | relative_url }}" class="button is-rounded is-dark">
                     <span>{{ page.hero_link_text }}</span>
@@ -18,13 +22,13 @@
                 </a>
             {% endif %}
             <div class="buttons-hero has-text-centered">
-                <a  href=""  class="button is-rounded is-dark { % if item.link == page.url % } { % endif % }">
+                <a  onclick="window.history.back()"  class="button is-rounded is-dark { % if item.link == page.url % } { % endif % }">
                     <span class="icon is-small">
                         <i class="fas fa-chevron-left"></i>
                     </span>
                     <span>Zur Übersicht</span>
                 </a>
-                <a  href=""  class="button is-rounded is-dark { % if item.link == page.url % } { % endif % }">
+                <a  onclick="window.print()"  class="button is-rounded is-dark { % if item.link == page.url % } { % endif % }">
                     <span>Als PDF Herunterladen</span>
                     <span class="icon is-small">
                         <i class="fas fa-chevron-right"></i>

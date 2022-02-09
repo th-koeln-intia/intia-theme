@@ -55,6 +55,11 @@ Abbildungen auf Papier abstrakte Repräsentation des echten Geräts sind.
 Dadurch konnte eine Basis geschaffen werden, auf die das anschließende Prototyping aufbaut und
 mögliche neue Ideen entwickelt werden können.
 
+<figure>
+      <img src="/assets/img/posts/photoprobe.jpg" alt="Zettel mit technischen Begriffen liegen auf einem Tisch. Dort steht auch ein Bügeleisen." class="content_image">
+      <figcaption>Prototypen mit Jugendlichen entwickeln: Unter anderem mithilfe eines Bügeleisens.</figcaption>
+</figure>
+
 ### Phase 3: Ideengenerierung: Was nervt?
 
 Um eine Ideengenerierung anzustoßen, ist die alltagspraktische Frage gestellt worden „Was nervt dich

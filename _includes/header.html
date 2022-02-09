@@ -34,8 +34,11 @@
                     </div>
                 </div>
                 {% else %}
-                <a href="{{ item.link | relative_url }}"
-                    class="navbar-item has-text-left button is-rounded is-dark {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
+                <div
+                    class="navbar-item has-text-left button is-rounded is-dark has-no-dropdown is-hoverable {% if item.link == page.url %} is-active {% endif %}">
+                    <a href="{{ item.link | relative_url }}"
+                        class="navbar-link is-arrowless ">{{ item.name }}</a>
+                </div>
                 {% endif %}
                 {% endfor %}
                 {% endif %}

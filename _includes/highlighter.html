@@ -1,7 +1,26 @@
 
-<div class="highlighter {% if include.two-columns %} two-columns {% endif %} {% if include.min-height25p %} min-height25p {% endif %} {% if include.style %} include.style {% endif %} ">
+<div class="highlighter {% if include.two-columns %} two-columns {% endif %} {% if include.image %} highlighter-fit-image {% endif %} {% if include.min-height25p %} min-height25p {% endif %} {% if include.style %} include.style {% endif %} ">  
+    {% if include.image %}
+
+<div class="columns"> 
+<div class="highlighter-image column is-two-fifths">
+<figure class="image">
+<img src={{ include.image }}>             
+</figure>
+</div>
+<div class="highlighter-content column">
+
+    {% endif %}
+
     {{ include.content }}
     {% if include.button %}
         {% include button.html label=include.button %}
     {% endif %} 
+
+    {% if include.image %}
+
+</div>
+</div>
+
+    {% endif %}
 </div>

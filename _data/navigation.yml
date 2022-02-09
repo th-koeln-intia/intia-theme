@@ -30,10 +30,10 @@
       link: /header-landing-page/
     - name: Header LP no image
       link: /header-landing-page-without-image/
+    - name: Header markdown subtitle
+      link: /header-subtitle/
 - name: Highlighter
-  dropdown:
-    - name: Highlighter
-      link: /highlighter/
+  link: /highlighter/
 - name: Other
   dropdown:
     - name: Button
@@ -64,5 +64,4 @@
       link: /textblock-with-image/
     - name: Search
       link: /search/
-- name: INTIA
-- name: IS
+- name: News-Demo

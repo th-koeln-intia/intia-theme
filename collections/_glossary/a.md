@@ -1,7 +1,7 @@
 ---
 published: true
 author: Marc Schmidt
-date: 10.01.2020
+last_update: 10.01.2020
 title: Der Buchstabe A
 title_above: Glossary
 subtitle: |

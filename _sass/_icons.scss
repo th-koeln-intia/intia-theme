@@ -1,0 +1,5 @@
+// Custom Icons
+.icon-handshake:before {
+  @extend .custom-icon;
+  background: url(/assets/img/icons/handshake.svg) no-repeat;
+}
