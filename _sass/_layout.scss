@@ -112,6 +112,14 @@ ul {
   width: 180px;
   height: 47px;
 }
+.navbar-item.has-no-dropdown {
+  padding: 0;
+}
+.navbar.is-primary .navbar-item.has-no-dropdown .navbar-link:hover,
+.navbar.is-primary .navbar-item.has-no-dropdown .navbar-link.is-active {
+  background-color: transparent;
+  color: #fff;
+}
 
 // z.B. "Mehr über Intia" Button
 .button.is-dark:hover,
