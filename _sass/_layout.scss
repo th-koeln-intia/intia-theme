@@ -973,6 +973,71 @@ a:hover .tooltip-popup,
   margin: auto;
 }
 
+// Tables
+.tb {
+  border-collapse: collapse;
+}
+.tb th,
+.tb td {
+  padding: 5px;
+  border-bottom: solid 1px $primary-dark;
+}
+.tb th {
+  font-weight: bold;
+  padding-right: 2em;
+}
+
+//FAQ Box
+div.faq {
+  position: relative;
+}
+
+.faq input[type="checkbox"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.faq label {
+  cursor: pointer;
+}
+.faq label {
+  position: relative;
+  display: block;
+  padding-left: 30px;
+}
+.faq label::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 10px;
+  border-left: 8px solid black;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  margin-top: -8px;
+}
+.faq input[type="checkbox"]:checked ~ h2 label::before {
+  border-left: 8px solid transparent;
+  border-top: 8px solid black;
+  border-right: 8px solid transparent;
+  margin-left: -4px;
+  margin-top: -4px;
+}
+
+.faq p {
+  max-height: 0;
+  overflow: hidden;
+  padding-left: 30px;
+  transition: max-height 0.4s ease;
+}
+.faq input[type="checkbox"]:checked ~ h2 ~ p {
+  max-height: 80px;
+}
+
 // Mobil
 
 @include mobile {
