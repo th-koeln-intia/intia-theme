@@ -1,5 +1,6 @@
 ---
 title: Highlighter
+toc: Inhaltsverzeichnis
 subtitle: |
   A variety of different elements to highlight important aspects, summaries and more.
 permalink: /highlighter/
