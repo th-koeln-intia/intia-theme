@@ -64,4 +64,6 @@
       link: /textblock-with-image/
     - name: Search
       link: /search/
+    - name: FAQ
+      link: /faq/
 - name: News-Demo

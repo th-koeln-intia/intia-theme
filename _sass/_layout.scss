@@ -1036,11 +1036,15 @@ div.faq {
   padding-left: 30px;
   transition: max-height 0.4s ease;
 }
+.faq input[type="checkbox"]:checked ~ h2 ~ p {
+  display: inherit;
+}
 .faq input[type="checkbox"]:checked ~ h2 ~ div.faq-hide {
   display: inherit;
 }
 .faq div.faq-hide {
   display: none;
+  max-height: none !important;
   padding-left: 30px;
   padding-bottom: 50px;
 }
