@@ -7,4 +7,4 @@ subtitle: |
 hero_tags: subpage
 ---
 
-{% include glossary.html %}
+{% include glossary.html button="Read more" %}

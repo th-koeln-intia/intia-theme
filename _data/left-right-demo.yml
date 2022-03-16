@@ -5,7 +5,7 @@ sections:
     image: https://via.placeholder.com/1200x800
     icon: icon-handshake
     link: /
-    link_text: More
+    link_text: Read more
   - title: Lorem Lipsum
     text: |
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non enim dolor. Pellentesque eget eros blandit, imperdiet metus id, sagittis dolor. 

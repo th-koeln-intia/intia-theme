@@ -1,7 +1,10 @@
 
 <a href="{{ include.link }}" class="button is-rounded is-dark">
-    <span> {{ include.label }} </span>
-    <span class="icon is-small">
-    <i class="fas fa-chevron-right fa-xs"></i>
-    </span>   
+<span> {{ include.label }} </span>
+    
+{% unless include.no-icon %}
+<span class="icon is-small">
+<i class="fas fa-chevron-right fa-xs"></i>
+</span> 
+{% endunless %}
 </a>

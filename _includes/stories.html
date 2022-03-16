@@ -21,7 +21,7 @@
                   <p>
                   {{story.subtitle}}</p>
                   <a href="{{ story.url | relative_url }}" class="button is-rounded has-text-centert is-dark {% if item.link == page.url %}is-active{% endif %}">
-                      <span>Mehr lesen</span>
+                      <span>{{ page.stories_button | default:"Read more" }}</span>
                       <span class="icon is-small">
                       <i class="fas fa-chevron-right fa-xs"></i>
                       </span>

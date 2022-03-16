@@ -38,12 +38,6 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 <br>
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
 
-  <a href="#" class="button is-rounded is-dark">
-      <span class="icon is-small">
-        <i class="fas fa-chevron-right fa-xs"></i>
-      </span>
-      <span>Text</span>
-  </a>
   <div class="clear"></div>
 
 <div class="columns">       

@@ -1,5 +1,5 @@
 ---
-title: Plattform
+title: Styles
 title_above: Showcases
 permalink: /styles/
 subtitle: |
