@@ -991,9 +991,9 @@ a:hover .tooltip-popup,
 div.faq {
   position: relative;
 }
-
 .faq input[type="checkbox"] {
   position: absolute;
+  display: inherit;
   top: 0;
   left: 0;
   width: 100%;
@@ -1027,15 +1027,26 @@ div.faq {
   margin-left: -4px;
   margin-top: -4px;
 }
-
+.faq h2 {
+  padding-top: 40px;
+}
 .faq p {
-  max-height: 0;
+  display: none;
   overflow: hidden;
   padding-left: 30px;
   transition: max-height 0.4s ease;
 }
 .faq input[type="checkbox"]:checked ~ h2 ~ p {
-  max-height: 80px;
+  display: inherit;
+}
+.faq input[type="checkbox"]:checked ~ h2 ~ div.faq-hide {
+  display: inherit;
+}
+.faq div.faq-hide {
+  display: none;
+  max-height: none !important;
+  padding-left: 30px;
+  padding-bottom: 50px;
 }
 
 // Mobil

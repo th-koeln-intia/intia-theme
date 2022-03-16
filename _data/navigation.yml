@@ -1,7 +1,7 @@
+- name: Getting Started
+  link: /getting-started/
 - name: Showcases
   dropdown:
-    - name: Landing page
-      link: /landing-page/
     - name: Projekt
       link: /project/
     - name: Plattform
@@ -9,9 +9,7 @@
     - name: Network
       link: /network/   
     - name: Stories
-      link: /stories/ 
-    - name: Contact
-      link: /contact/               
+      link: /stories/              
     - name: Glossary
       link: /glossary/                
     - name: Styles
@@ -24,17 +22,17 @@
       link: /header-b/
     - name: Header C
       link: /header-c/
-    - name: Header Glossary
+    - name: Glossary
       link: /header-glossary/
-    - name: Header LP
+    - name: Landing page
       link: /header-landing-page/
-    - name: Header LP no image
+    - name: LP no image
       link: /header-landing-page-without-image/
-    - name: Header markdown subtitle
+    - name: Markdown subtitle
       link: /header-subtitle/
 - name: Highlighter
   link: /highlighter/
-- name: Other
+- name: Elements
   dropdown:
     - name: Button
       link: /buttons/
@@ -43,7 +41,7 @@
     - name: Glossary usage
       link: /glossary-usage/
     - name: Contact form
-      link: /contact-form/
+      link: /contact/
     - name: Glossary abstract
       link: /glossary-abstract/
     - name: Glossary full entry
@@ -64,4 +62,5 @@
       link: /textblock-with-image/
     - name: Search
       link: /search/
-- name: News-Demo
+    - name: FAQ
+      link: /faq/

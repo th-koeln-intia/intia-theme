@@ -14,7 +14,7 @@
 
     {{ include.content }}
     {% if include.button %}
-        {% include button.html label=include.button %}
+        {% include button.html label=include.button link=include.button_link %}
     {% endif %} 
 
     {% if include.image %}
