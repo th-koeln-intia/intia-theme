@@ -38,7 +38,7 @@ A highlighter with read more button.
 
 ## Example:
 
-{% include highlighter.html button="More" content="
+{% include highlighter.html button="More" link="#" content="
 
 ## Lorum ipsum
 
@@ -53,8 +53,8 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 Calling the 'highlighter.html' include with the parameter 'button' that contains the button label as value.
 
 ```html
-{% raw %} {% include highlighter.html button="More" content=" Lorum ipsum Lorem
-ipsum dolor sit amet"%} {% endraw %}
+{% raw %} {% include highlighter.html button="More" link="#" content=" Lorum
+ipsum Lorem ipsum dolor sit amet"%} {% endraw %}
 ```
 
 # Highligher C
