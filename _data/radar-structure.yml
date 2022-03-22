@@ -1,0 +1,40 @@
+sectors:
+  - name: 'Sector 1'
+    color: '#3498db'
+  - name: 'Sector 2'
+    color: '#e74c3c'
+  - name: 'Sector 3'
+    color: '#9b59b6'
+  - name: 'Sector 4'
+    color: '#9b59b6'
+ 
+  
+rings:
+  legendTitle: 'Ringe/Segmente'
+  list:
+    - name: 'Ring 1'
+      color: '#93c47d'
+    - name: 'Ring 2'
+      color: '#93d2c2'
+    - name: 'Ring 3'
+      color: '#fbdb84'
+
+entryStates:
+  legendTitle: 'Zustände'
+  list:
+    - name: 'New'
+      color: '#1b9e77'
+    - name: 'Testing'
+      color: '#e7298a'
+    - name: 'Old'
+      color: '#d95f02'
+
+entryMovement:
+  legendTitle: 'Movement'
+  list:
+    - name: 'Outwards'
+      value: 1
+    - name: 'Inwards'
+      value: -1
+    - name: 'Nothing'
+      value: 0
