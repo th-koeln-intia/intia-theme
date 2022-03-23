@@ -10,6 +10,11 @@
     <link href="https://fonts.googleapis.com/css?family=Verdana" rel="stylesheet" type='text/css'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+    {% unless site.hide_radar %}
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="https://methods.intia.de/src/radar/radar.js"></script>
+        <link rel="stylesheet" href="https://methods.intia.de/src/radar/radar.css" />
+    {% endunless %}
     {% unless site.hide_share_buttons %}
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
     {% endunless %}

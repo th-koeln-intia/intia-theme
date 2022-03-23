@@ -1,0 +1,25 @@
+radar:
+  id: 'radar'
+  name: 'Method radar'
+  showName: true
+  showAllSectorsText: 'All quadrants'
+  legendDropdownText: 'Legend'
+  defaultColor: 'rgba(255, 255, 255, 0)'
+  renderResolution: 518
+
+sector:
+  useColor: true
+  showName: true
+  nameOffset: 5
+
+segment: 
+  colorGradient: true
+  colorGradientLimit: 1.66
+  showName: true
+  showNameAsId: true
+  padding: 4
+
+blip:
+  size: 34
+  defaultColor: '#7570b3'
+  margin: 4

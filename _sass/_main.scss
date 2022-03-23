@@ -17,3 +17,22 @@ $dark: #09443e;
 @import "helper";
 @import "icons";
 @import "print";
+
+.breadcrumb-section {
+  margin-top: 7.5rem;
+  // position: fixed;
+  //  z-index: 29;
+  width: 100%;
+  background-color: white;
+  border-top: 2px solid #1e7d73;
+  border-bottom: 2px solid #1e7d73;
+}
+.breadcrumb a {
+  color: #1e7d73;
+}
+.navbar {
+  padding-bottom: 2.3rem;
+}
+.hero.is-medium .hero-body {
+  padding-top: 1rem;
+}

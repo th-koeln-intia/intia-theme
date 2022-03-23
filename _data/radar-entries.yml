@@ -1,0 +1,180 @@
+- name: 'Dummy'
+  sectorID: 1
+  ringID: 0
+  stateID: 0
+  active: true
+  link: ''
+  moved: 0
+- name: 'Dummy'
+  sectorID: 1
+  ringID: 1
+  stateID: -1
+  active: true
+  link: ''
+  moved: 0
+- name: 'Dummy'
+  sectorID: 1
+  ringID: 1
+  stateID: -1
+  active: true
+  link: ''
+  moved: 0
+- name: 'Dummy'
+  sectorID: 1
+  ringID: 1
+  stateID: 2
+  active: true
+  link: ''
+  moved: 0
+
+
+
+
+
+
+
+- name: 'Dummy'
+  sectorID: 4
+  ringID: 0
+  stateID: -1
+  active: true
+  link: ''
+  moved: 0
+- name: 'Dummy'
+  sectorID: 4
+  ringID: 2
+  stateID: 0
+  active: true
+  link: ''
+  moved: 0
+- name: 'Dummy'
+  sectorID: 4
+  ringID: 2
+  stateID: -1
+  active: true
+  link: ''
+  moved: 0
+- name: 'Dummy'
+  sectorID: 4
+  ringID: 2
+  stateID: 2
+  active: true
+  link: ''
+  moved: 0
+
+
+
+
+- name: 'Dummy'
+  sectorID: 0
+  ringID: 1
+  stateID: 2
+  active: true
+  link: ''
+  moved: 0
+- name: 'Dummy'
+  sectorID: 0
+  ringID: 1
+  stateID: 1
+  active: true
+  link: ''
+  moved: 0
+- name: 'Dummy'
+  sectorID: 0
+  ringID: 1
+  stateID: 0
+  active: true
+  link: ''
+  moved: 0
+- name: 'Dummy'
+  sectorID: 0
+  ringID: 1
+  stateID: 0
+  active: true
+  link: ''
+  moved: 0
+- name: 'Dummy'
+  sectorID: 0
+  ringID: 1
+  stateID: 0
+  active: true
+  link: ''
+  moved: 0
+
+
+
+
+- name: 'Dummy'
+  sectorID: 3
+  ringID: 0
+  stateID: 0
+  active: true
+  link: ''
+  moved: 1
+
+- name: 'Dummy'
+  sectorID: 3
+  ringID: 2
+  stateID: -1
+  active: true
+  link: ''
+  moved: 1
+- name: 'Dummy'
+  sectorID: 3
+  ringID: 2
+  stateID: 1
+  active: true
+  link: ''
+  moved: 1
+- name: 'Dummy'
+  sectorID: 3
+  ringID: 2
+  stateID: 2
+  active: true
+  link: ''
+  moved: 1
+- name: 'Dummy'
+  sectorID: 3
+  ringID: 2
+  stateID: -1
+  active: true
+  link: ''
+  moved: 1
+
+
+
+- name: 'Dummy'
+  sectorID: 2
+  ringID: 2
+  stateID: 0
+  active: true
+  link: ''
+  moved: 0
+- name: 'Dummy'
+  sectorID: 2
+  ringID: 2
+  stateID: 1
+  active: true
+  link: ''
+  moved: 0
+- name: 'Dummy'
+  sectorID: 2
+  ringID: 2
+  stateID: -1
+  active: true
+  link: ''
+  moved: 0
+- name: 'Dummy'
+  sectorID: 2
+  ringID: 2
+  stateID: 2
+  active: true
+  link: ''
+  moved: 0
+- name: 'Dummy'
+  sectorID: 2
+  ringID: 2
+  stateID: -1
+  active: true
+  link: ''
+  moved: 0
