@@ -17,3 +17,16 @@ $dark: #09443e;
 @import "helper";
 @import "icons";
 @import "print";
+
+.breadcrumb-section {
+  top: 5.85rem;
+  position: fixed;
+  z-index: 30;
+  width: 100%;
+  border-top: 2px solid #1e7d73;
+  border-bottom: 2px solid #1e7d73;
+  background-color: white;
+}
+.breadcrumb a {
+  color: #1e7d73;
+}
