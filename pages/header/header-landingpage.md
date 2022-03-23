@@ -6,7 +6,7 @@ hero_image: https://via.placeholder.com/440x638
 hero_link: /about/
 hero_tags: home
 hero_link_text: More about INTIA
-permalink: /header-landing-page/
+permalink: /header/header-landing-page/
 ---
 
 Ip Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.

@@ -17,19 +17,19 @@
 - name: Header
   dropdown:
     - name: Header A
-      link: /header-a/
+      link: /header/header-a/
     - name: Header B
-      link: /header-b/
+      link: /header/header-b/
     - name: Header C
-      link: /header-c/
+      link: /header/header-c/
     - name: Glossary
-      link: /header-glossary/
+      link: /header/header-glossary/
     - name: Landing page
-      link: /header-landing-page/
+      link: /header/header-landing-page/
     - name: LP no image
-      link: /header-landing-page-without-image/
+      link: /header/header-landing-page-without-image/
     - name: Markdown subtitle
-      link: /header-subtitle/
+      link: /header/header-subtitle/
 - name: Highlighter
   link: /highlighter/
 - name: Elements
