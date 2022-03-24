@@ -2,7 +2,7 @@
 title: Textblock with image
 subtitle: |
   Some Explanation.
-permalink: /textblock-with-image/
+permalink: /elements/textblock-with-image/
 hero_tags: subpage
 ---
 

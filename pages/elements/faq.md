@@ -3,7 +3,7 @@ title: FAQ
 subtitle: |
   An FAQ page that consist of fould-out elements
 hero_tags: subpage
-permalink: /faq/
+permalink: /elements/faq/
 ---
 
 ## Simple FAQ

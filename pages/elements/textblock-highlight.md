@@ -2,7 +2,7 @@
 title: Textblock highlight
 subtitle: |
   A highlighet box in a text.
-permalink: /textblock-highlight/
+permalink: /elements/textblock-highlight/
 hero_tags: subpage
 ---
 

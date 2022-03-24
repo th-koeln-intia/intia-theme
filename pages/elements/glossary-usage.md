@@ -3,7 +3,7 @@ title: Glossary usage
 title_above: Other
 subtitle: |
   An example usage of automated replacement from glossary terms with links.
-permalink: /glossary-usage/
+permalink: /elements/glossary-usage/
 hero_tags: subpage
 ---
 

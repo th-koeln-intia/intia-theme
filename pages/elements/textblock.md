@@ -2,7 +2,7 @@
 title: Textblock
 subtitle: |
   A textblock as introduction to a page
-permalink: /textblock/
+permalink: /elements/textblock/
 hero_tags: subpage
 introduction_title: Quickstart
 introduction_content: |

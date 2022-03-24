@@ -3,7 +3,7 @@ title: Buttons
 subtitle: |
   Different examples and usge of Buttons
 hero_tags: subpage
-permalink: /buttons/
+permalink: /elements/buttons/
 ---
 
 ## Simple Button

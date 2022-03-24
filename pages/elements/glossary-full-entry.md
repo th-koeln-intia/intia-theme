@@ -2,7 +2,7 @@
 title: Glossary full entry
 subtitle: |
   Some Explanation.
-permalink: /glossary-full-entry/
+permalink: /elements/glossary-full-entry/
 hero_tags: subpage
 ---
 

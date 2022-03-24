@@ -1,5 +1,6 @@
 ---
-permalink: /search/
+title: Search
+permalink: /experimental/search/
 ---
 
 <!-- Html Elements for Search -->

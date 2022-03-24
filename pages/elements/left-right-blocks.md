@@ -2,7 +2,7 @@
 title: Left-Right blocks
 subtitle: |
   A simple layout with cards that are swapping image and content with each entry.
-permalink: /left-right-blocks/
+permalink: /elements/left-right-blocks/
 hero_tags: subpage
 left_right_layout: left-right-demo
 ---

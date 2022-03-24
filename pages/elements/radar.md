@@ -3,7 +3,7 @@ title: Radar
 subtitle: |
   A radar chart to visualize data. Used for the categorization of methods in INTIA.
 hero_tags: subpage
-permalink: /radar/
+permalink: /elements/radar/
 ---
 
 <div id="radar"></div>
