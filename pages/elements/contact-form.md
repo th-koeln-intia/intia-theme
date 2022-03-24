@@ -2,7 +2,7 @@
 title: Contact form
 subtitle: |
   A simple form to send requests via email.
-permalink: /contact/
+permalink: /elements/contact/
 contact: true
 hero_tags: subpage
 ---

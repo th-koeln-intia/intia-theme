@@ -2,7 +2,7 @@
 title: Glossary Abstract
 subtitle: |
   Some Explanation.
-permalink: /glossary-abstract/
+permalink: /elements/glossary-abstract/
 hero_tags: subpage
 ---
 

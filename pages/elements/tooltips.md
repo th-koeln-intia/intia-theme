@@ -3,7 +3,7 @@ title: Tooltips
 title_above: Other
 subtitle: |
   Tooltips on hover. In this theme it is used for glossary entries.
-permalink: /tooltips/
+permalink: /experimental/tooltips/
 hero_tags: subpage
 ---
 
@@ -31,7 +31,6 @@ hero_tags: subpage
 <h3>H3</h3>
 <h4>H4</h4>
 <h5>H5</h5>
-
 
 ## As part of a text
 

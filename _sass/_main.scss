@@ -18,6 +18,7 @@ $dark: #09443e;
 @import "icons";
 @import "print";
 
+// Breadcrumb tests
 .breadcrumb-section {
   margin-top: 7.5rem;
   // position: fixed;
@@ -35,4 +36,29 @@ $dark: #09443e;
 }
 .hero.is-medium .hero-body {
   padding-top: 1rem;
+}
+
+// Green version adopted
+.breadcrumb-section.green-version {
+  background-color: #e7f2ea;
+  border: 0;
+}
+.green-version .breadcrumb a {
+  color: #000;
+}
+.green-version .breadcrumb li + li::before {
+  color: #000;
+}
+
+// Dark-green adopted
+// Green version adopted
+.breadcrumb-section.dark-green-version {
+  background-color: #1e7d73;
+  border: 0;
+}
+.dark-green-version .breadcrumb a {
+  color: #ffffff;
+}
+.dark-green-version .breadcrumb li + li::before {
+  color: #ffffff;
 }

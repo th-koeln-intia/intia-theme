@@ -3,66 +3,70 @@
 - name: Showcases
   dropdown:
     - name: Projekt
-      link: /project/
+      link: /showcases/project/
     - name: Plattform
-      link: /about/
+      link: /showcases/about/
     - name: Network
-      link: /network/   
+      link: /showcases/network/   
     - name: Stories
-      link: /stories/              
+      link: /showcases/stories/              
     - name: Glossary
-      link: /glossary/                
+      link: /showcases/glossary/                
     - name: Styles
-      link: /styles/ 
+      link: /showcases/styles/ 
 - name: Header
   dropdown:
     - name: Header A
-      link: /header-a/
+      link: /header/header-a/
     - name: Header B
-      link: /header-b/
+      link: /header/header-b/
     - name: Header C
-      link: /header-c/
+      link: /header/header-c/
     - name: Glossary
-      link: /header-glossary/
+      link: /header/header-glossary/
     - name: Landing page
-      link: /header-landing-page/
+      link: /header/header-landing-page/
     - name: LP no image
-      link: /header-landing-page-without-image/
+      link: /header/header-landing-page-without-image/
     - name: Markdown subtitle
-      link: /header-subtitle/
+      link: /header/header-subtitle/
 - name: Highlighter
   link: /highlighter/
 - name: Elements
   dropdown:
     - name: Button
-      link: /buttons/
-    - name: Tooltips
-      link: /tooltips/
+      link: /elements/buttons/
     - name: Glossary usage
-      link: /glossary-usage/
+      link: /elements/glossary-usage/
     - name: Contact form
-      link: /contact/
+      link: /elements/contact/
     - name: Glossary abstract
-      link: /glossary-abstract/
+      link: /elements/glossary-abstract/
     - name: Glossary full entry
-      link: /glossary-full-entry/
+      link: /elements/glossary-full-entry/
     - name: Left-Right Blocks
-      link: /left-right-blocks/
-    - name: Methods filter
-      link: /methods-filter/
+      link: /elements/left-right-blocks/
     - name: Stories teaser
-      link: /stories-teaser/
+      link: /elements/stories-teaser/
     - name: Stories
-      link: /stories/
+      link: /elements/stories/
     - name: Text
-      link: /textblock/
+      link: /elements/textblock/
     - name: Text highlight
-      link: /textblock-highlight/
+      link: /elements/textblock-highlight/
     - name: Text with image
-      link: /textblock-with-image/
-    - name: Search
-      link: /search/
+      link: /elements/textblock-with-image/
     - name: FAQ
-      link: /faq/
+      link: /elements/faq/
     - name: Radar
-      link: /radar/
+      link: /elements/radar/
+- name: Experimental
+  dropdown:
+    - name: Search
+      link: /experimental/search/
+    - name: Methods filter
+      link: /experimental/methods-filter/
+    - name: Tooltips
+      link: /experimental/tooltips/
+    - name: Breadcrumbs
+      link: /experimental/breadcrumbs/

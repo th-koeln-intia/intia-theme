@@ -2,7 +2,7 @@
 title: Methods filter
 subtitle: |
   Some Explanation.
-permalink: /methods-filter/
+permalink: /experimental/methods-filter/
 hero_tags: subpage
 ---
 

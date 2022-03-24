@@ -2,7 +2,7 @@
 title: Stories/News teaser
 subtitle: |
   A simple teaser for stories in form of a carousel.
-permalink: /stories-teaser/
+permalink: /elements/stories-teaser/
 hero_tags: subpage
 story_slider: true
 ---
