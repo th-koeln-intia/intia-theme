@@ -46,21 +46,24 @@
         </div>
     </div>
 </nav>
-<section class="breadcrumb-section">
+
+{% unless page.hide_beadcrumb %}
+<section class="breadcrumb-section green-version">
     <div class="container breadcrumb-container">
         <nav class="breadcrumb has-arrow-separator" aria-label="breadcrumbs">
             <ul>
-                {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
-                <li><a href="/">INTIA</a></li>
-                {% for crumb in crumbs offset: 1 %}
-                {% if forloop.last %}
-                <li><a href="#">{{ page.title }}</a></li>
-                {% else %}
-                <li><a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'without-plugin/','without-plugins/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a></li>
-                {% endif %}
-                {% endfor %}
+            {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+            <li><a href="/">INTIA</a></li>
+            {% for crumb in crumbs offset: 1 %}
+            {% if forloop.last %}
+            <li><a href="#">{{ page.title }}</a></li>
+            {% else %}
+            <li><a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'without-plugin/','without-plugins/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a></li>
+            {% endif %}
+            {% endfor %}
             </ul>
         </nav>
     </div>
 </section>
-
+{% else %}
+{% endunless %}
