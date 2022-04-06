@@ -54,13 +54,27 @@
             <ul>
             {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
             <li><a href="/">{{ site.title }}</a></li>
-            {% for crumb in crumbs offset: 1 %}
-            {% if forloop.last %}
-            <li><a href="#">{{ page.title }}</a></li>
+            {% if site.breadcrumb_from_url %}
+                {% for crumb in crumbs offset: 1 %}
+                {% if forloop.last %}
+                <li><a href="#">{{ page.title }}</a></li>
+                {% else %}
+                <li><a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'without-plugin/','without-plugins/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a></li>
+                {% endif %}
+                {% endfor %}
             {% else %}
-            <li><a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'without-plugin/','without-plugins/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a></li>
+                {% if page.breadcrumbs %} 
+                    {% for crumb in page.breadcrumbs %}
+                        <li><a>{{ crumb }}</a></li>
+                    {% endfor %}
+                {% elsif page.title_above %}
+                    <li><a >{{ page.title_above }}</a></li>
+                {% else %}
+                {% endif %}
+                {% unless crumbs == empty %}
+                <li><a href="#">{{ page.title }}</a></li>
+                {% endunless %}
             {% endif %}
-            {% endfor %}
             </ul>
         </nav>
     </div>

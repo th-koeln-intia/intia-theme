@@ -11,6 +11,8 @@ markdown: CommonMarkGhPages
 
 theme: null
 footer_menu: footer
+# Generate the breadcrumb menu from url instead of hardcoded
+# breadcrumb_from_url: true
 
 # ---------------------------------- Plugins --------------------------------- #
 
@@ -47,12 +49,14 @@ defaults:
       path: _glossary
     values:
       permalink: /glossary/:title/
+      breadcrumbs: [Glossary]
       layout: default      
   - scope:
       type: posts
       path: _posts
     values:
       permalink: /stories/:title/
+      breadcrumbs: Stories
       layout: default
 
 # Collections
