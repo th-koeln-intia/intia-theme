@@ -3,3 +3,12 @@
   @extend .custom-icon;
   background: url(/assets/img/icons/handshake.svg) no-repeat;
 }
+.icon-download:before {
+  @extend .custom-button-icons;
+  background: url(/assets/img/icons/download.svg) no-repeat;
+}
+.icon-external:before {
+  @extend .custom-button-icons;
+  background: url(/assets/img/icons/external.svg) no-repeat;
+  transform: rotate(-90deg);
+}

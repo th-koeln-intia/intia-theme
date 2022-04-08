@@ -6,7 +6,13 @@ hero_tags: subpage
 permalink: /elements/buttons/
 ---
 
-## Simple Button
+## Button
+
+{% include button.html label="Button" link="/" %}
+{% include button.html label="Button" link="/" type="external" %}
+{% include button.html label="Button" link="/" type="download" %}
+
+## Simple Button direct from HTML
 
 This is an example of a button:
 <a href="/" class="button is-rounded is-dark {% if item.link == page.url %} is-active {% endif %}">
@@ -49,7 +55,21 @@ This adapts to the size of its column.
 
 ## Using buttons
 
-A button is created with:
+Button is created with an include:
+
+```html
+{% raw %}{% include button.html label="Button" link="/" type="external" %}{%
+endraw %}
+```
+
+Parameters:
+
+- label: The text that is shown in the button
+- link: The link where the buttons points towards
+- (optional) type: The type of button. Can be: external, download, or internal
+- (optional) no-icon: removes the icon altogether
+
+Or directly with html:
 
 ```html
 <a
