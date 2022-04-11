@@ -177,6 +177,75 @@ ul {
 .navbar-dropdown {
   display: none;
 }
+// Search 
+.navbar-search{
+  padding-left: 0.75rem !important;
+  padding-top: 0.5rem !important;
+}
+//Search overlay
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 40;
+  top: 0;
+  left: 0;
+  background-color: #1e7d73be;
+}
+
+.overlay-content {
+  position: relative;
+  top: 46%;
+  width: 80%;
+  margin-top: 30px;
+  margin: auto;
+}
+
+.overlay .closebtn {
+  font-size: 60px;
+  cursor: pointer;
+  color: white;
+}
+
+.overlay .closebtn:hover {
+  color: #ccc;
+}
+
+.overlay input[type=text] {
+  padding: 15px;
+  font-size: 17px;
+  float: left;
+  width: 80%;
+  background: white;
+  border: 3px solid $primary-dark;
+}
+
+.overlay input[type=text]:hover {
+  background: #f1f1f1;
+}
+
+.overlay button {
+  float: left;
+  width: 20%;
+  padding: 15px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.overlay button:hover {
+  background: #bbb;
+}
+
+.search-item {
+  color: white;
+}
+.overlay-content ul{
+  list-style-type: none;
+}
+
 .button.is-dark.has-dropdown:hover .navbar-dropdown,
 .button.is-dark.is-hovered.has-dropdown .navbar-dropdown {
   display: block;
@@ -1094,6 +1163,9 @@ div.faq {
 .dark-green-version .breadcrumb li + li::before {
   color: #ffffff;
 }
+
+
+
 
 // Mobil
 

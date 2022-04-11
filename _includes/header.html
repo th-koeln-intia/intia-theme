@@ -42,6 +42,15 @@
                 {% endif %}
                 {% endfor %}
                 {% endif %}
+                <div class="navbar-end">
+                    <div class="navbar-item navbar-search">
+                        <a id="openSearch">
+                            <span class="icon">
+                                <i class="fa-solid icon-search"></i>
+                            </span>
+                        </a>  
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -81,3 +90,30 @@
 </section>
 {% else %}
 {% endunless %}
+
+
+<div id="SearchOverlay" class="overlay">
+    
+    <div class="overlay-content">
+        
+        <div class="field">
+            <div id="search-container" class="control">
+              <input class="input" type="text" id="search-input" placeholder="Suchbegriff eintippen">
+            </div>
+        </div>
+        <span class="closebtn" id="closeSearch" title="Close Overlay">×</span>
+        <ul id="results-container"></ul>
+    </div>
+</div>
+  <!-- Script pointing to search-script.js -->
+  <script src="/assets/js/search.js" type="text/javascript"></script>
+  
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json',
+    searchResultTemplate: '<li><a class="search-item" href="{{ site.url }}{url}">{title}</a></li>'
+  })
+  </script>

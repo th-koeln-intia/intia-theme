@@ -48,3 +48,14 @@ window.onscroll = function(ev) {
         scrollUpArrow.classList.remove("is-hidden"); 
     }
 };
+
+document.getElementById("openSearch").addEventListener("click", openSearch);
+document.getElementById("closeSearch").addEventListener("click", closeSearch);
+
+function openSearch() {
+    document.getElementById("SearchOverlay").style.display = "block";
+}
+  
+function closeSearch() {
+    document.getElementById("SearchOverlay").style.display = "none";
+}

@@ -4,10 +4,12 @@ permalink: /experimental/search/
 ---
 
 <!-- Html Elements for Search -->
-<div id="search-container">
-<input type="text" id="search-input" placeholder="search...">
-<ul id="results-container"></ul>
+<div class="field">
+  <div id="search-container" class="control">
+    <input class="input" type="text" id="search-input" placeholder="Suchbegriff eintippen">
+  </div>
 </div>
+<ul id="results-container"></ul>
 
 <!-- Script pointing to search-script.js -->
 <script src="/assets/js/search.js" type="text/javascript"></script>
@@ -17,6 +19,7 @@ permalink: /experimental/search/
 SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('results-container'),
-  json: '/search.json'
+  json: '/search.json',
+  searchResultTemplate: '<a href="{{ site.url }}{url}">{title}</a>'
 })
 </script>
