@@ -183,67 +183,35 @@ ul {
   padding-top: 0.5rem !important;
 }
 //Search overlay
-.overlay {
-  height: 100%;
-  width: 100%;
+.searchbar .field{
+  margin-bottom: 0;
+}
+.searchbar-overlay{
   display: none;
-  position: fixed;
-  z-index: 40;
-  top: 0;
-  left: 0;
-  background-color: #1e7d73be;
 }
-
-.overlay-content {
-  position: relative;
-  top: 46%;
-  width: 80%;
-  margin-top: 30px;
-  margin: auto;
+.searchbar{
+  height: 47px;
+  width: 800px;
+  padding-top: 0 !important;
 }
-
-.overlay .closebtn {
-  font-size: 60px;
-  cursor: pointer;
-  color: white;
-}
-
-.overlay .closebtn:hover {
-  color: #ccc;
-}
-
-.overlay input[type=text] {
-  padding: 15px;
-  font-size: 17px;
-  float: left;
-  width: 80%;
-  background: white;
-  border: 3px solid $primary-dark;
-}
-
-.overlay input[type=text]:hover {
-  background: #f1f1f1;
-}
-
-.overlay button {
-  float: left;
-  width: 20%;
-  padding: 15px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-}
-
-.overlay button:hover {
-  background: #bbb;
-}
-
 .search-item {
-  color: white;
+  color: black;
 }
-.overlay-content ul{
+.searchbar-overlay ul{
   list-style-type: none;
+}
+.search-result-list {
+  display: none;
+  background-color: #e7f2ea;
+  color: black;
+  border-bottom-left-radius: 45px;
+  border-bottom-right-radius: 45px;
+  border-left: 3px solid #1e7d73;
+  border-right: 3px solid #1e7d73;
+  border-bottom: 3px solid #1e7d73;
+}
+.search-input:active, .search-input:hover{
+  border-color: #1e7d73 !important ;
 }
 
 .button.is-dark.has-dropdown:hover .navbar-dropdown,
@@ -399,7 +367,6 @@ a .tooltip-popup {
 // Navi
 .navbar {
   padding-top: 0.6rem;
-  padding-bottom: 2.6rem;
 }
 
 .navbar.is-primary .navbar-dropdown a.navbar-item.is-active {
@@ -1132,9 +1099,6 @@ div.faq {
   color: #1e7d73;
   cursor: default;
 }
-.navbar {
-  padding-bottom: 2.3rem;
-}
 .hero.is-medium .hero-body {
   padding-top: 1rem;
 }
@@ -1222,7 +1186,6 @@ div.faq {
   }
   .navbar {
     padding-top: 0.6rem;
-    padding-bottom: 0.6rem;
   }
   .navbar-brand img {
     margin: 1rem;
@@ -1340,5 +1303,11 @@ div.faq {
     margin-right: 15px;
     image-rendering: -webkit-optimize-contrast;
     padding-bottom: 15px;
+  }
+  //Searchbar
+  .searchbar{
+    height: 47px;
+    width: auto;
+    padding-top: 0 !important;
   }
 }

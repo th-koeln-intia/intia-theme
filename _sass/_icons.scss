@@ -19,3 +19,11 @@
   height: 32px;
   filter: invert(35%) sepia(93%) saturate(355%) hue-rotate(124deg) brightness(93%) contrast(88%);
 }
+.icon-remove:before {
+  @extend .custom-button-icons;
+  background: url(/assets/img/icons/remove.svg) no-repeat;
+  width: 32px;
+  height: 32px;
+  filter: invert(35%) sepia(93%) saturate(355%) hue-rotate(124deg) brightness(93%) contrast(88%);
+}
+

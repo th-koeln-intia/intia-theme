@@ -51,11 +51,32 @@ window.onscroll = function(ev) {
 
 document.getElementById("openSearch").addEventListener("click", openSearch);
 document.getElementById("closeSearch").addEventListener("click", closeSearch);
+document.getElementById("search-input").addEventListener("input", showsearchresults);
+
+var searchOverlay = document.getElementById("SearchOverlay");
+var navmenu = document.getElementById("navmenu");
+var resultsContainer = document.getElementById("results-container");
+var searchInput = document.getElementById("search-input");
 
 function openSearch() {
-    document.getElementById("SearchOverlay").style.display = "block";
+    searchOverlay.style.display = "flex";
+    navmenu.style.display = "none";
 }
   
 function closeSearch() {
-    document.getElementById("SearchOverlay").style.display = "none";
+    searchOverlay.style.display = "none";
+    navmenu.style.display = "flex";
+}
+
+
+function showsearchresults(e) {
+    if(e.target.value.length>0){
+        resultsContainer.style.display = "block";
+        searchInput.style.borderBottomLeftRadius = "0px";
+        searchInput.style.borderBottomRightRadius = "0px";
+    }else{
+        resultsContainer.style.display = "none";
+        searchInput.style.borderBottomLeftRadius = "45px";
+        searchInput.style.borderBottomRightRadius = "45px";
+    }
 }
