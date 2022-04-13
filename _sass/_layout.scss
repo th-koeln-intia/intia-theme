@@ -79,6 +79,21 @@ ul {
   list-style-type: disc;
   padding-left: 1em;
 }
+a:link {
+  color: #1E7D73;
+}
+
+a:visited {
+  color: #1E7D73;
+}
+
+a:hover {
+  color: #77B9A5;
+}
+
+a:active {
+  color: #1E7D73;
+}
 // Button Animation + Gleiche Breite
 .button {
   // Schrifft
