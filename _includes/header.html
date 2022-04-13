@@ -12,7 +12,26 @@
             </a>
         </div>
         <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
-            <div class="navbar-end buttons">
+            <div id="SearchOverlay" class="searchbar-overlay navbar-end buttons">
+                <div class="navbar-item searchbar">
+                    <div class="field">
+                        <div id="search-container" class="control">
+                          <input class="input search-input" type="text" id="search-input" placeholder="Suchbegriff eintippen">
+                        </div>
+                    </div>
+                    <ul id="results-container" class="search-result-list"></ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item navbar-search">
+                        <a id="closeSearch">
+                            <span class="icon">
+                                <i class="fa-solid icon-remove"></i>
+                            </span>
+                        </a>  
+                    </div>
+                </div>
+            </div>
+            <div id="navmenu" class="navbar-end buttons">
                 {% if site.data.navigation %}
                 {% for item in site.data.navigation %}
                 {% if item.dropdown %}
@@ -42,16 +61,27 @@
                 {% endif %}
                 {% endfor %}
                 {% endif %}
+                <div class="navbar-end">
+                    <div class="navbar-item navbar-search">
+                        <a id="openSearch">
+                            <span class="icon">
+                                <i class="fa-solid icon-search"></i>
+                            </span>
+                        </a>  
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </nav>
-<section class="breadcrumb-section">
+{% unless page.hide_beadcrumb %}
+<section class="breadcrumb-section green-version">
     <div class="container breadcrumb-container">
         <nav class="breadcrumb has-arrow-separator" aria-label="breadcrumbs">
             <ul>
-                {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
-                <li><a href="/">INTIA</a></li>
+            {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+            <li><a href="/">{{ site.title }}</a></li>
+            {% if site.breadcrumb_from_url %}
                 {% for crumb in crumbs offset: 1 %}
                 {% if forloop.last %}
                 <li><a href="#">{{ page.title }}</a></li>
@@ -59,8 +89,35 @@
                 <li><a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'without-plugin/','without-plugins/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a></li>
                 {% endif %}
                 {% endfor %}
+            {% else %}
+                {% if page.breadcrumbs %} 
+                    {% for crumb in page.breadcrumbs %}
+                        <li><a>{{ crumb }}</a></li>
+                    {% endfor %}
+                {% elsif page.title_above %}
+                    <li><a >{{ page.title_above }}</a></li>
+                {% else %}
+                {% endif %}
+                {% unless crumbs == empty %}
+                <li><a href="#">{{ page.title }}</a></li>
+                {% endunless %}
+            {% endif %}
             </ul>
         </nav>
     </div>
 </section>
+{% else %}
+{% endunless %}
 
+  <!-- Script pointing to search-script.js -->
+  <script src="/assets/js/search.js" type="text/javascript"></script>
+  
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json',
+    searchResultTemplate: '<li><a class="search-item" href="{{ site.url }}{url}">{title}</a></li>'
+  })
+  </script>

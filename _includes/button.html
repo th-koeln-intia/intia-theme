@@ -3,8 +3,18 @@
 <span> {{ include.label }} </span>
     
 {% unless include.no-icon %}
+{% if include.type == "external" %}
 <span class="icon is-small">
-<i class="fas fa-chevron-right fa-xs"></i>
-</span> 
+    <i class="fas icon-external fa-xs invert"></i>
+    </span> 
+{% elsif include.type == "download" %}
+<span class="icon is-small">
+    <i class="fas icon-download fa-xs invert"></i>
+    </span> 
+{% else %}
+<span class="icon is-small">
+    <i class="fas fa-chevron-right fa-xs"></i>
+    </span> 
+{% endif %}
 {% endunless %}
 </a>
