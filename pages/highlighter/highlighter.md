@@ -4,7 +4,7 @@ toc: Inhaltsverzeichnis
 subtitle: |
   A variety of different elements to highlight important aspects, summaries and more.
 permalink: /highlighter/
-hero_tags: subpage
+hero_tags: toppage
 ---
 
 # Highligher A
