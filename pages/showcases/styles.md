@@ -7,6 +7,8 @@ subtitle: |
 hero_tags: toppage
 ---
 
+<h2>(H2) Change Fontsize </h2>
+
 <a id="changeFontsize" class="button is-rounded is-dark">
   <span>Change Fontsize</span>
 </a>
