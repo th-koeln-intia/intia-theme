@@ -8,6 +8,7 @@ const carousels = bulmaCarousel.attach('.carousel',{
         'next': `<img src="../assets/img/arrow-left.png" style="transform: rotate(180deg);"></img>`}
 });
 
+// Scrollarrows
 var scrollUpArrow= document.getElementById("scroll-up");
 var scrollDownArrow= document.getElementById("scroll-down");
 var scrollStep=10,
@@ -49,6 +50,7 @@ window.onscroll = function(ev) {
     }
 };
 
+// Searchbar
 document.getElementById("openSearch").addEventListener("click", openSearch);
 document.getElementById("closeSearch").addEventListener("click", closeSearch);
 document.getElementById("search-input").addEventListener("input", showsearchresults);
@@ -80,3 +82,14 @@ function showsearchresults(e) {
         searchInput.style.borderBottomRightRadius = "45px";
     }
 }
+
+//Change font size
+document.getElementById("changeFontsize").addEventListener("click", changeFontSize);
+function changeFontSize() {
+    var html=document.querySelector('html');
+    if(html.style.fontSize=="1.2rem"){
+        html.style.fontSize="1.5rem";
+    }else{
+        html.style.fontSize="1.2rem";
+    } 
+  }
