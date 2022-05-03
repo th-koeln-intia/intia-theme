@@ -10,12 +10,14 @@ hero_tags: toppage
 <a id="changeFontsize" class="button is-rounded is-dark">
   <span>Change Fontsize</span>
 </a>
+
 <h2>(H2) Body</h2>
 (Body, Standard) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ligula neque, volutpat eget interdum nec, ultrices ac magna. Etiam laoreet nisl faucibus massa rhoncus sollicitudin. Cras ac quam pretium, posuere nulla sagittis, feugiat sapien. Nulla a risus at magna ornare cursus nec eu massa.
 
 Vivamus sed lacus nec nisl sagittis convallis. Nunc molestie ligula eget diam molestie, et porttitor sem tempor. Curabitur at dignissim mi. In hac habitasse platea dictumst. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin ac efficitur ante. Nullam sem massa, ornare ut ex ac, fermentum tempor nunc. Etiam semper magna vel lacinia ultricies.
 
 <br>
+
 (Body, Bold)
 <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ligula neque, volutpat eget interdum nec, ultrices ac magna. Etiam laoreet nisl faucibus massa rhoncus sollicitudin. Cras ac quam pretium, posuere nulla sagittis, feugiat sapien. Nulla a risus at magna ornare cursus nec eu massa.</strong>
 
