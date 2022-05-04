@@ -7,12 +7,6 @@ subtitle: |
 hero_tags: toppage
 ---
 
-<h2>(H2) Change Fontsize </h2>
-
-<a id="changeFontsize" class="button is-rounded is-dark">
-  <span>Change Fontsize</span>
-</a>
-
 <h2>(H2) Body</h2>
 (Body, Standard) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ligula neque, volutpat eget interdum nec, ultrices ac magna. Etiam laoreet nisl faucibus massa rhoncus sollicitudin. Cras ac quam pretium, posuere nulla sagittis, feugiat sapien. Nulla a risus at magna ornare cursus nec eu massa.
 
