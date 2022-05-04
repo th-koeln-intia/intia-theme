@@ -17,7 +17,7 @@ $tabs-link-active-border-bottom-color: $primary;
 html {
   scroll-behavior: smooth;
   font-size: 24px;
-  line-height: 1.5rem;
+  line-height: 150%;
 }
 h1,
 h2,
@@ -74,6 +74,15 @@ h5 {
   text-align: center;
   text-transform: uppercase;
 }
+h6 {
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 20%;
+}
+//h7
+.date {
+  font-size: 0.5833rem;
+}
 ul {
   list-style-type: disc;
   padding-left: 1em;
@@ -122,35 +131,32 @@ a:active {
   -moz-transition-duration: 0.3s;
 }
 
-.button a,
-.button span {
-  // Schrifft
-  font-size: 16px !important;
-  font-weight: 600;
+.button {
+  height: 2rem;
 }
 
 .navbar-menu .button,
 .navbar-dropdown .button {
   // Buttongröße aus Figma
   width: 180px;
-  height: 47px;
+  font-weight: 600;
 }
 .navbar-item.has-no-dropdown {
   padding: 0;
 }
 .navbar.is-primary .navbar-item.has-no-dropdown .navbar-link:hover,
 .navbar.is-primary .navbar-item.has-no-dropdown .navbar-link.is-active {
-  background-color: transparent;
-  color: #fff;
+  color: #fff !important;
+  background-color: $dark !important;
 }
 
 // z.B. "Mehr über Intia" Button
 .button.is-dark:hover,
 .button.is-dark.is-hovered {
   border-width: 1px;
-  background-color: $dark;
+  background-color: $dark !important;
   border-color: transparent;
-  color: white;
+  color: white !important;
 }
 @include desktop {
   .navbar-menu .button.is-dark:hover.has-dropdown,
@@ -396,7 +402,7 @@ a .tooltip-popup {
 }
 
 .navbar-brand img {
-  max-height: 48px;
+  max-height: 2rem;
   margin-top: 16px;
 }
 
@@ -1113,9 +1119,11 @@ div.faq {
   font-size: 0.667rem;
 }
 .breadcrumb-section {
-  margin-top: 120px;
+  margin-top: calc(80px + 1rem);
   // position: fixed;
   //  z-index: 29;
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 100%;
   background-color: white;
   border-top: 2px solid #1e7d73;

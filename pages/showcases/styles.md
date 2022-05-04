@@ -32,7 +32,7 @@ Vivamus sed lacus nec nisl sagittis convallis. Nunc molestie ligula eget diam mo
 <h4>(H4) Subhead 2</h4>
 <h5>(H5) Subhead 3</h5>
 <h6>(H6) Subhead 4</h6>
-<h7>(H7) Dates</h7>
+<div class="date">(H7) Dates</div>
 <h2>(H2) Button</h2>
 <br>
 {% include button.html label="Button" link="/" type="external" %}
