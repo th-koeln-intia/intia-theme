@@ -42,8 +42,10 @@ h1 p {
 }
 h2,
 h2 p {
-  @extend h1;
+  font-size: 2rem;
+  line-height: 3rem;
   font-weight: 400;
+  text-align: center;
 }
 h3,
 h3 p {
@@ -209,12 +211,12 @@ a:active {
 // Search 
 .navbar-search{
   padding: 0px !important;
-  height: 47px;
+  height: 2rem;
   margin-bottom: 12px;
 }
 .navbar-search .icon {
-  height: 32px;
-  width: 32px;
+  height: 1.5rem;
+  width: 1.5rem;
   vertical-align : middle;
 }
 //Search overlay
@@ -228,6 +230,7 @@ a:active {
   height: 47px;
   width: 800px;
   padding-top: 0 !important;
+  margin-right: 1rem;
 }
 .search-item {
   color: black;
@@ -345,13 +348,25 @@ img.is-rounded {
 .arrow-image {
   z-index: 10;
   top: calc(50% - 68px);
-  left: 4vw;
+  left: calc(100% - 2vw - 64px);
   position: sticky;
   width: 64px;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   height: 132px;
+}
+.accessibility-image {
+  z-index: 10;
+  top: calc(50% - 68px);
+  left: 0.5vw;
+  position: sticky;
+  cursor: pointer;
+}
+.accessibility-image .button {
+  border-radius: 9999px;
+  height: 3rem;
+  width: 3rem;
 }
 .is-pointed-down {
   transform: scaleY(-1);
@@ -918,7 +933,7 @@ a:hover .tooltip-popup,
   box-shadow: none;
 }
 .input {
-  height: 2.75em;
+  height: 2em;
 }
 
 .textarea {
@@ -1342,6 +1357,7 @@ div.faq {
   .searchbar{
     height: 47px;
     width: auto;
+    margin-right: 1rem;
     padding-top: 0 !important;
   }
 }
