@@ -83,13 +83,63 @@ function showsearchresults(e) {
     }
 }
 
-//Change font size
+// Simple storage for site wide changes
+var siteData
+window.addEventListener('load', (event) => {
+    init()
+});
+// Triggered on load of body element
+function init() {
+    loadFromStorage()
+    if (siteData == null) {
+        setDefaultData()
+    }
+}
+
+// Default data when no data is found
+function setDefaultData() {
+    updateSiteData(null, 1.2)
+}
+function updateSiteData(newSiteData, newFontSize = 1.2) {
+    console.log("update " + newSiteData + " fontsize: " +newFontSize )
+    if (newSiteData == null) {
+        siteData = {
+            fontSize: newFontSize
+        }
+    } else {
+        siteData = newSiteData
+    }
+    saveToStorage()
+    updateSite()
+}
+function saveToStorage(){
+    localStorage.setItem("intiaSiteData", JSON.stringify(siteData))
+}
+function loadFromStorage() {
+    var data = JSON.parse(localStorage.getItem("intiaSiteData"))
+    loadFromJson(data)
+}
+function loadFromJson(jsonString){
+    if (jsonString !== null) {
+        updateSiteData(jsonString)
+    }
+}
+
+// Trigger update for all elements that are based on site wide data
+function updateSite() {
+    updateFontSize()
+}
+
+// Font size
+var html=document.querySelector('html');
+
+function updateFontSize() {
+    html.style.fontSize=siteData.fontSize+"rem";
+}
+
+// Change font size Button
 document.getElementById("changeFontsize").addEventListener("click", changeFontSize);
 function changeFontSize() {
-    var html=document.querySelector('html');
-    if(html.style.fontSize=="1.2rem"){
-        html.style.fontSize="1.5rem";
-    }else{
-        html.style.fontSize="1.2rem";
-    } 
+    console.log("Fontsize changed "+ (siteData.fontSize == 1.2) ? 1.5 : 1.2)
+    updateSiteData(null, (siteData.fontSize == 1.2) ? 1.5 : 1.2)
   }
