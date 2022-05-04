@@ -146,8 +146,8 @@ a:active {
 }
 .navbar.is-primary .navbar-item.has-no-dropdown .navbar-link:hover,
 .navbar.is-primary .navbar-item.has-no-dropdown .navbar-link.is-active {
-  color: #fff !important;
-  background-color: $dark !important;
+  color: #fff;
+  background-color: transparent;
 }
 
 // z.B. "Mehr über Intia" Button
