@@ -111,7 +111,12 @@ a:active {
 .slider h2,
 .slider p {
   padding-top: 0;
+}
+.card h2.fas {
   padding-bottom: 0;
+}
+.fas p {
+  font-family: "Verdana", sans-serif;
 }
 // Button Animation + Gleiche Breite
 .button {
@@ -577,10 +582,6 @@ a.navbar-item.is-active,
   box-shadow: none;
 }
 
-.card .button {
-  margin-top: 50px;
-}
-
 .content-wrapper h1 {
   padding-top: 50px;
 }
@@ -613,10 +614,10 @@ a.navbar-item.is-active,
   margin: auto;
 }
 .card-content p {
-  padding-left: 4rem;
+  padding-left: 15px + 48px;
 }
 .card-content a {
-  margin-left: 4rem;
+  margin-left: 15px + 48px;
 }
 .card-image:last-child img {
   border-bottom-left-radius: 65px;
@@ -662,6 +663,12 @@ figcaption {
 }
 .slider-container .card-content .content {
   margin: 50px;
+}
+.slider-item {
+  margin: auto;
+}
+.slider-titel {
+  padding-top: 0px !important;
 }
 .story-slider {
   background-color: white;
@@ -728,7 +735,6 @@ figcaption {
   background-color: $light;
   border-radius: 65px;
   padding: 75px;
-  font-size: 1.4rem;
   margin-top: 3em;
   margin-bottom: 3em;
 }
@@ -743,8 +749,6 @@ figcaption {
 }
 .highlighter h2 {
   padding-top: 0;
-  font-size: 2rem;
-  font-weight: 600;
 }
 .two-columns p {
   column-count: 2;
@@ -789,7 +793,6 @@ figcaption {
   width: 50%;
   float: right;
   padding-left: 5rem;
-  padding-right: 5rem;
 }
 .highlighter img.with-zone {
   width: 100%;
