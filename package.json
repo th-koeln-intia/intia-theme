@@ -1,0 +1,13 @@
+{
+  "name": "INTIA",
+  "author": "Marc Schmidt",
+  "license": "MIT",
+  "dependencies": {
+    "bulma": "^0.9.3",
+    "bulma-block-list": "^0.4.1",
+    "bulma-carousel": "^4.0.24"
+  },
+  "devDependencies": {
+    "@creativebulma/bulma-tooltip": "^1.2.0"
+  }
+}

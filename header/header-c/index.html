@@ -1,0 +1,609 @@
+<!--
+The Default layout that everything is using 
+-->
+
+<!-- Control the width with, if sidebars or menus should appear   -->
+
+
+<!DOCTYPE html>
+<html id="default-layout">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content=#ffffff>
+    <link rel="stylesheet" href="/assets/styles/main.css">
+    <link rel="shortcut icon" type="image/png"
+           href="/favicon.png" 
+    />
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+    
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="https://methods.intia.de/src/radar/radar.js"></script>
+        <link rel="stylesheet" href="https://methods.intia.de/src/radar/radar.css" />
+    
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Header C | INTIA</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Header C" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A plattform for methods, techniques, toolkits and patterns for participative development in a social context." />
+<meta property="og:description" content="A plattform for methods, techniques, toolkits and patterns for participative development in a social context." />
+<link rel="canonical" href="/header/header-c/" />
+<meta property="og:url" content="/header/header-c/" />
+<meta property="og:site_name" content="INTIA" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Header C" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"A plattform for methods, techniques, toolkits and patterns for participative development in a social context.","headline":"Header C","url":"/header/header-c/"}</script>
+<!-- End Jekyll SEO tag -->
+<!-- head scripts -->
+<script src="https://unpkg.com/@botpoison/browser"></script>
+<script type="module" src="/assets/js/main.js"async></script></head>
+
+    <body>
+        <nav class="navbar is-hidden-print is-primary is-fixed-top" x-data="{ openNav: false }">
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="/" class="">
+                <img src="/assets/img/logo-black.png">
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu"
+                :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
+            <div id="SearchOverlay" class="searchbar-overlay navbar-end buttons">
+                <div class="navbar-item searchbar">
+                    <div class="field">
+                        <div id="search-container" class="control">
+                          <input class="input search-input" type="text" id="search-input" placeholder="Suchbegriff eintippen">
+                        </div>
+                    </div>
+                    <ul id="results-container" class="search-result-list"></ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item navbar-search">
+                        <a id="closeSearch">
+                            <span class="icon">
+                                <i class="fa-solid icon-remove"></i>
+                            </span>
+                        </a>  
+                    </div>
+                </div>
+            </div>
+            <div id="navmenu" class="navbar-end buttons">
+                
+                
+                
+                <div
+                    class="navbar-item has-text-left button is-rounded is-dark has-no-dropdown is-hoverable ">
+                    <a href="/getting-started/"
+                        class="navbar-link is-arrowless ">Getting Started</a>
+                </div>
+                
+                
+                
+                <div
+                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable              ">
+                    
+                    
+                     <a for="navbar-click" class="navbar-link">Showcases</a>
+                    
+                    <div class="navbar-dropdown">
+                        
+                        <a href="/showcases/project/"
+                            class="navbar-item button is-rounded is-dark  ">Projekt</a>
+                        
+                        <a href="/showcases/about/"
+                            class="navbar-item button is-rounded is-dark  ">Plattform</a>
+                        
+                        <a href="/showcases/network/"
+                            class="navbar-item button is-rounded is-dark  ">Network</a>
+                        
+                        <a href="/showcases/stories/"
+                            class="navbar-item button is-rounded is-dark  ">Stories</a>
+                        
+                        <a href="/showcases/glossary/"
+                            class="navbar-item button is-rounded is-dark  ">Glossary</a>
+                        
+                        <a href="/showcases/styles/"
+                            class="navbar-item button is-rounded is-dark  ">Styles</a>
+                        
+                    </div>
+                </div>
+                
+                
+                
+                <div
+                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable        is-active-header          ">
+                    
+                    
+                     <a for="navbar-click" class="navbar-link">Header</a>
+                    
+                    <div class="navbar-dropdown">
+                        
+                        <a href="/header/header-a/"
+                            class="navbar-item button is-rounded is-dark  ">Header A</a>
+                        
+                        <a href="/header/header-b/"
+                            class="navbar-item button is-rounded is-dark  ">Header B</a>
+                        
+                        <a href="/header/header-c/"
+                            class="navbar-item button is-rounded is-dark   is-active ">Header C</a>
+                        
+                        <a href="/header/header-glossary/"
+                            class="navbar-item button is-rounded is-dark  ">Glossary</a>
+                        
+                        <a href="/header/header-landing-page/"
+                            class="navbar-item button is-rounded is-dark  ">Landing page</a>
+                        
+                        <a href="/header/header-landing-page-without-image/"
+                            class="navbar-item button is-rounded is-dark  ">LP no image</a>
+                        
+                        <a href="/header/header-subtitle/"
+                            class="navbar-item button is-rounded is-dark  ">Markdown subtitle</a>
+                        
+                    </div>
+                </div>
+                
+                
+                
+                <div
+                    class="navbar-item has-text-left button is-rounded is-dark has-no-dropdown is-hoverable ">
+                    <a href="/highlighter/"
+                        class="navbar-link is-arrowless ">Highlighter</a>
+                </div>
+                
+                
+                
+                <div
+                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable                            ">
+                    
+                    
+                     <a for="navbar-click" class="navbar-link">Elements</a>
+                    
+                    <div class="navbar-dropdown">
+                        
+                        <a href="/elements/buttons/"
+                            class="navbar-item button is-rounded is-dark  ">Button</a>
+                        
+                        <a href="/elements/glossary-usage/"
+                            class="navbar-item button is-rounded is-dark  ">Glossary usage</a>
+                        
+                        <a href="/elements/contact/"
+                            class="navbar-item button is-rounded is-dark  ">Contact form</a>
+                        
+                        <a href="/elements/glossary-abstract/"
+                            class="navbar-item button is-rounded is-dark  ">Glossary abstract</a>
+                        
+                        <a href="/elements/glossary-full-entry/"
+                            class="navbar-item button is-rounded is-dark  ">Glossary full entry</a>
+                        
+                        <a href="/elements/left-right-blocks/"
+                            class="navbar-item button is-rounded is-dark  ">Left-Right Blocks</a>
+                        
+                        <a href="/elements/stories-teaser/"
+                            class="navbar-item button is-rounded is-dark  ">Stories teaser</a>
+                        
+                        <a href="/elements/stories/"
+                            class="navbar-item button is-rounded is-dark  ">Stories</a>
+                        
+                        <a href="/elements/textblock/"
+                            class="navbar-item button is-rounded is-dark  ">Text</a>
+                        
+                        <a href="/elements/textblock-highlight/"
+                            class="navbar-item button is-rounded is-dark  ">Text highlight</a>
+                        
+                        <a href="/elements/textblock-with-image/"
+                            class="navbar-item button is-rounded is-dark  ">Text with image</a>
+                        
+                        <a href="/elements/faq/"
+                            class="navbar-item button is-rounded is-dark  ">FAQ</a>
+                        
+                        <a href="/elements/radar/"
+                            class="navbar-item button is-rounded is-dark  ">Radar</a>
+                        
+                    </div>
+                </div>
+                
+                
+                
+                <div
+                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable          ">
+                    
+                    
+                     <a for="navbar-click" class="navbar-link">Experimental</a>
+                    
+                    <div class="navbar-dropdown">
+                        
+                        <a href="/experimental/search/"
+                            class="navbar-item button is-rounded is-dark  ">Search</a>
+                        
+                        <a href="/experimental/methods-filter/"
+                            class="navbar-item button is-rounded is-dark  ">Methods filter</a>
+                        
+                        <a href="/experimental/tooltips/"
+                            class="navbar-item button is-rounded is-dark  ">Tooltips</a>
+                        
+                        <a href="/experimental/breadcrumbs/"
+                            class="navbar-item button is-rounded is-dark  ">Breadcrumbs</a>
+                        
+                    </div>
+                </div>
+                
+                
+                
+   
+                    <div class="navbar-item navbar-search">
+                        <a id="openSearch">
+                            <span class="icon">
+                                <i class="fa-solid icon-search"></i>
+                            </span>
+                        </a>  
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section class="breadcrumb-section green-version">
+    <div class="container breadcrumb-container">
+        <nav class="breadcrumb has-arrow-separator" aria-label="breadcrumbs">
+            <ul>
+            
+            <li><a href="/">INTIA</a></li>
+            
+                
+                    <li><a >Titel</a></li>
+                
+                
+                <li><a href="#">Header C</a></li>
+                
+            
+            </ul>
+        </nav>
+    </div>
+</section>
+
+
+  <!-- Script pointing to search-script.js -->
+  <script src="/assets/js/search.js" type="text/javascript"></script>
+  
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json',
+    searchResultTemplate: '<li><a class="search-item" href="{url}">{title}</a></li>'
+  })
+  </script>
+        <div class="arrow-image is-pulled-left is-hidden-mobile">
+            <img id="scroll-up" src="/assets/img/arrow-down.png" alt="placeholder">
+            <img id="scroll-down" src="/assets/img/arrow-down.png" alt="placeholder"  class="is-pointed-down">     
+        </div>
+        <div class="accessibility-image is-pulled-left is-hidden-mobile">
+                <a id="changeFontsize"class="button is-rounded is-dark">
+                    <span class="icon is-small">
+                        <i class="fas icon-font-size fa-xs invert"></i>
+                        </span> 
+                    </a>    
+        </div>
+        
+            <section class="hero is-hidden-print  is-medium   subpage " >
+    <div class="hero-body">
+        <div class="container">
+            
+                <h5 class="overtitle">Titel</h5>
+            
+            <h1 class=" title-with-overtitle ">Header C</h1>
+            
+                <img src="https://via.placeholder.com/840x440" alt="placeholder"  class="is-rounded is-hidden-mobile">
+            
+            
+                <h4>Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas malesuada. Praesent congue erat at massa.
+</h4>
+            
+            
+            <div class="buttons-hero has-text-centered">
+                <a  onclick="window.history.back()"  class="button is-rounded is-dark { % if item.link == page.url % } { % endif % }">
+                    <span class="icon is-small">
+                        <i class="fas fa-chevron-left"></i>
+                    </span>
+                    <span>Zur Übersicht</span>
+                </a>
+                <a  onclick="window.print()"  class="button is-rounded is-dark { % if item.link == page.url % } { % endif % }">
+                    <span>Als PDF Herunterladen</span>
+                    <span class="icon is-small">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+        
+        <div id="main" class="content-wrapper has-background-primary-light">
+            
+            
+            
+            <div class="columns is-centered">
+                <div id="content" class="container column is-10-desktop is-12-tablet">
+                    
+                    <h2 id="lorem-ipsum">Lorem ipsum</h2>
+<p>Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas malesuada. Praesent congue erat at massa.</p>
+<h2 id="how-to-use-it">How to use it</h2>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+title: Header C
+title_above: Titel
+hero_tags: subpage
+subtitle: |
+  Vestibulum volutpat pretium libero.
+hero_image: https://via.placeholder.com/840x440
+permalink: /header-c/
+---
+</code></pre></div></div>
+
+                </div>
+            </div> 
+        </div> 
+        
+            <footer class="footer is-hidden-print is-primary">
+    
+    <div class="container columns is-centered is-multiline is-bordered-bottom">
+        <div class="navbar-brand column is-full">
+            <a href="/" class="columns navbar-item">
+                <img class="column" src="/assets/img/logo-white.png">
+                <p class="calumn brand-title"></p>
+            </a>
+        </div>
+        <div class="column is-2">
+            <div class="title">www.intia.de</div>
+                TH-Köln | DITES<br>
+                Campus Südstadt<br>
+                Ubierring 48<br>
+                50678 Köln
+
+        </div>
+        
+        <div class="column ">
+            <div class="title">Site Map</div>
+            <div class="columns footer-nav">
+                
+                    <div class="column">
+                        <a href=" " class="link"><strong>Getting Started</strong></a>
+                        
+                    </div>
+                
+                    <div class="column">
+                        <a href=" " class="link"><strong>Showcases</strong></a>
+                        
+                        <div class="">
+                            
+                            <div class="">
+                                <a href="/showcases/project/" class="link">Projekt</a>
+                            </div>
+                            
+                            <div class="">
+                                <a href="/showcases/about/" class="link">Plattform</a>
+                            </div>
+                            
+                            <div class="">
+                                <a href="/showcases/network/" class="link">Network</a>
+                            </div>
+                            
+                            <div class="">
+                                <a href="/showcases/stories/" class="link">Stories</a>
+                            </div>
+                            
+                            <div class="">
+                                <a href="/showcases/glossary/" class="link">Glossary</a>
+                            </div>
+                            
+                            <div class="">
+                                <a href="/showcases/styles/" class="link">Styles</a>
+                            </div>
+                            
+                        </div>                                            
+                    
+                    </div>
+                
+                    <div class="column">
+                        <a href=" " class="link"><strong>Header</strong></a>
+                        
+                        <div class="">
+                            
+                            <div class="">
+                                <a href="/header/header-a/" class="link">Header A</a>
+                            </div>
+                            
+                            <div class="">
+                                <a href="/header/header-b/" class="link">Header B</a>
+                            </div>
+                            
+                            <div class="">
+                                <a href="/header/header-c/" class="link">Header C</a>
+                            </div>
+                            
+                            <div class="">
+                                <a href="/header/header-glossary/" class="link">Glossary</a>
+                            </div>
+                            
+                            <div class="">
+                                <a href="/header/header-landing-page/" class="link">Landing page</a>
+                            </div>
+                            
+                            <div class="">
+                                <a href="/header/header-landing-page-without-image/" class="link">LP no image</a>
+                            </div>
+                            
+                            <div class="">
+                                <a href="/header/header-subtitle/" class="link">Markdown subtitle</a>
+                            </div>
+                            
+                        </div>                                            
+                    
+                    </div>
+                
+                    <div class="column">
+                        <a href=" " class="link"><strong>Highlighter</strong></a>
+                        
+                    </div>
+                
+                    <div class="column">
+                        <a href=" " class="link"><strong>Elements</strong></a>
+                        
+                        <div class="">
+                            
+                            <div class="">
+                                <a href="/elements/buttons/" class="link">Button</a>
+                            </div>
+                            
+                            <div class="">
+                                <a href="/elements/glossary-usage/" class="link">Glossary usage</a>
+                            </div>
+                            
+                            <div class="">
+                                <a href="/elements/contact/" class="link">Contact form</a>
+                            </div>
+                            
+                            <div class="">
+                                <a href="/elements/glossary-abstract/" class="link">Glossary abstract</a>
+                            </div>
+                            
+                            <div class="">
+                                <a href="/elements/glossary-full-entry/" class="link">Glossary full entry</a>
+                            </div>
+                            
+                            <div class="">
+                                <a href="/elements/left-right-blocks/" class="link">Left-Right Blocks</a>
+                            </div>
+                            
+                            <div class="">
+                                <a href="/elements/stories-teaser/" class="link">Stories teaser</a>
+                            </div>
+                            
+                            <div class="">
+                                <a href="/elements/stories/" class="link">Stories</a>
+                            </div>
+                            
+                            <div class="">
+                                <a href="/elements/textblock/" class="link">Text</a>
+                            </div>
+                            
+                            <div class="">
+                                <a href="/elements/textblock-highlight/" class="link">Text highlight</a>
+                            </div>
+                            
+                            <div class="">
+                                <a href="/elements/textblock-with-image/" class="link">Text with image</a>
+                            </div>
+                            
+                            <div class="">
+                                <a href="/elements/faq/" class="link">FAQ</a>
+                            </div>
+                            
+                            <div class="">
+                                <a href="/elements/radar/" class="link">Radar</a>
+                            </div>
+                            
+                        </div>                                            
+                    
+                    </div>
+                
+                    <div class="column">
+                        <a href=" " class="link"><strong>Experimental</strong></a>
+                        
+                        <div class="">
+                            
+                            <div class="">
+                                <a href="/experimental/search/" class="link">Search</a>
+                            </div>
+                            
+                            <div class="">
+                                <a href="/experimental/methods-filter/" class="link">Methods filter</a>
+                            </div>
+                            
+                            <div class="">
+                                <a href="/experimental/tooltips/" class="link">Tooltips</a>
+                            </div>
+                            
+                            <div class="">
+                                <a href="/experimental/breadcrumbs/" class="link">Breadcrumbs</a>
+                            </div>
+                            
+                        </div>                                            
+                    
+                    </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="column is-2">
+            <div class="title">Rechtliches</div>
+            <div class="">
+                
+                <div class="">
+                    <div>
+                        <a href="/contact/" class="link">Kontakt</a>
+                    </div>
+                </div>
+                
+                <div class="">
+                    <div>
+                        <a href="/about/" class="link">Über die Plattform</a>
+                    </div>
+                </div>
+                
+                <div class="">
+                    <div>
+                        <a href="https://www.th-koeln.de/hochschule/impressum_8159.php" class="link">Impressum</a>
+                    </div>
+                </div>
+                
+                <div class="">
+                    <div>
+                        <a href="https://www.th-koeln.de/hochschule/haftungshinweis_8277.php" class="link">Haftungshinweis</a>
+                    </div>
+                </div>
+                
+                <div class="">
+                    <div>
+                        <a href="https://www.th-koeln.de/hochschule/datenschutzhinweis_8279.php" class="link">Datenschutzhinweis</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+        <div class="columns content is-small has-text-centered footer-logos">
+            <div class="column has-text-right"><div class="page-owner">
+                <p class="has-text-left">Eine Seite von</p>
+                <img src="/assets/img/logos/INTIA_Plattform_Logos_TH_weiss.png">
+                <img src="/assets/img/logos/INTIA_Plattform_Logos_Dites_weiss.png">
+            </div></div>
+            <div class="column has-text-left"><div class="page-sponsor">                
+                <img class="footer-logo-2" src="/assets/img/logos/BMBF_logo.jpg">
+            </div></div>
+        </div>
+        <div class="content is-small has-text-centered">
+            <p class="">INTIA, 2021</p>
+        </div>
+    
+</footer>
+
+        
+    </body>
+</html>
