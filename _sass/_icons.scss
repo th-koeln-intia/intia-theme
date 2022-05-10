@@ -1,6 +1,8 @@
 // Custom Icons
 .icon-handshake:before {
   @extend .custom-icon;
+  width: 48px;
+  height: 48px;
   background: url(/assets/img/icons/handshake.svg) no-repeat;
 }
 .icon-download:before {
@@ -30,6 +32,7 @@
   @extend .custom-button-icons;
   width: 1.5rem;
   height: 1.5rem;
+  filter: invert(100%);
   background: url(/assets/img/icons/font-size.svg) no-repeat;
 }
 
